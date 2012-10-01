@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <systemtable filter="Default">
+  <columns>
+   <connections preferredWidth="47" />
+   <export visible="0" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="156" />
+   <tags preferredWidth="66" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="473" />
+   <clocksource preferredWidth="472" />
+   <frequency preferredWidth="453" />
+  </columns>
+ </clocktable>
+ <window width="1936" height="1034" x="-8" y="-8" />
+ <library
+   expandedCategories="Library,Library/Memories and Memory Controllers,Library/University Program,Library/Processors,Library/Memories and Memory Controllers/On-Chip,Library/Memories and Memory Controllers/SRAM,Library/University Program/Audio &amp; Video,Project,Library/University Program/Memory" />
+</preferences>
