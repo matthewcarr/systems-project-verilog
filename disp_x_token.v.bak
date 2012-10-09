@@ -1,14 +1,19 @@
 module disp_x_token(
-	input[3:0]num_token,
-	input start,
-	input clock,
-	input reset,
-	output pwm_out,
-	output done,
-	output [2:0]state_out);
+	input[3:0]num_token,	//input to state num of tokens to dispense
+	input start,			//trigger to start the FSM
+	input clock,			//input for the 50MHZ clock
+	input reset,			//reset line should be held high when the device does not need reset
+	input mtne_mode,		//toggle to override normal opeerations and enter maintenance mode
+	input [7:0]mtne_pos,	//position to go to in maintenance mode
+	output pwm_out,			//output to the servo pin
+	output done,			//output to tell master FSM all tokens dipsensed
+	output [2:0]state_out); //debug output do not hook up
 	
-	assign state_out=state;
+	assign state_out=state; //for debug
 	
+	assign servo_pos_pass = mtne_mode ? mtne_pos : servo_pos_clked;
+	
+	//following registers are need in code note some have a keep command to stop the optimizer messing up
 	reg [2:0]state /* synthesis keep */;		//state and next state regs
 	reg [2:0]nxt_state;
 	reg [11:0]pulsecount /* synthesis keep*/;
@@ -16,13 +21,15 @@ module disp_x_token(
 	reg [3:0]disp_count;
 	reg [7:0]servo_pos;
 	reg start_reg;
-	reg [7:0]servo_pos_pass /* synthesis keep */;
+	reg [7:0]servo_pos_clked /* synthesis keep */;
 	reg flag;
 	
+	//wires to connect modules together
 	wire pwm_connect; 	//wire to transfer the pwm from the servo unit to output
 	wire servo_update;
+	wire [7:0]servo_pos_pass;
 	
-		//instation of the RCServo control module. this module generates the pwm that will controll the servo
+	//instation of the RCServo control module. this module generates the pwm that will controll the servo
 	RCServo rc1 (.clk(clock), .RxD_data(servo_pos_pass), .RC_cycle_start(servo_update) , .RCServo_pulse_out(pwm_connect));
 	
 	localparam 	s_reset = 3'b000, //state names local params so not over written by mistake
@@ -104,7 +111,7 @@ module disp_x_token(
 					end
 			s_comp: begin
 						servo_pos=servo_in;
-						pulsecount_clear='d0; //comparison stage so not real outputs
+						pulsecount_clear='d1; //comparison stage so only reset and servo position hold
 					end
 			default:begin
 						servo_pos=8'h0f;  //deafulat stage is identical to reset on case something goes wrong
@@ -114,8 +121,8 @@ module disp_x_token(
 			end
 						
 	//block to update the pulse count resgister register is 12 bit and each pulse
-	//~10ms thus giving an abilty to count ~4000 servo pulses giving a total delay in excess of
-	//40 second real time. thus count is cleared when ever pulsecount clear is asserted
+	//~15ms thus giving an abilty to count ~4000 servo pulses giving a total delay in excess of
+	//60 second real time. count is cleared when ever pulsecount clear is asserted
 	always@(posedge clock) begin
 		if (servo_update==='d1 && flag==='d0)begin
 			pulsecount<=pulsecount+1;
@@ -139,8 +146,9 @@ module disp_x_token(
 			disp_count <=0;
 	end
 	
+	//register to clock the vaule of the desired servo postion
 	always@(posedge clock) begin
-		servo_pos_pass=servo_pos;
+		servo_pos_clked=servo_pos;
 	end
 		
 

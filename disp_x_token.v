@@ -3,11 +3,15 @@ module disp_x_token(
 	input start,			//trigger to start the FSM
 	input clock,			//input for the 50MHZ clock
 	input reset,			//reset line should be held high when the device does not need reset
+	input mtne_mode,		//toggle to override normal opeerations and enter maintenance mode
+	input [7:0]mtne_pos,	//position to go to in maintenance mode
 	output pwm_out,			//output to the servo pin
 	output done,			//output to tell master FSM all tokens dipsensed
 	output [2:0]state_out); //debug output do not hook up
 	
 	assign state_out=state; //for debug
+	
+	assign servo_pos_pass = mtne_mode ? mtne_pos : servo_pos_clked;
 	
 	//following registers are need in code note some have a keep command to stop the optimizer messing up
 	reg [2:0]state /* synthesis keep */;		//state and next state regs
@@ -17,12 +21,13 @@ module disp_x_token(
 	reg [3:0]disp_count;
 	reg [7:0]servo_pos;
 	reg start_reg;
-	reg [7:0]servo_pos_pass /* synthesis keep */;
+	reg [7:0]servo_pos_clked /* synthesis keep */;
 	reg flag;
 	
 	//wires to connect modules together
 	wire pwm_connect; 	//wire to transfer the pwm from the servo unit to output
 	wire servo_update;
+	wire [7:0]servo_pos_pass/* synthesis keep */;
 	
 	//instation of the RCServo control module. this module generates the pwm that will controll the servo
 	RCServo rc1 (.clk(clock), .RxD_data(servo_pos_pass), .RC_cycle_start(servo_update) , .RCServo_pulse_out(pwm_connect));
@@ -137,13 +142,13 @@ module disp_x_token(
 	always@(posedge clock) begin
 		if (state===s_s_in)
 			disp_count <= disp_count+1;
-		else if (state===s_reset) 
+		else if (state===s_init) 
 			disp_count <=0;
 	end
 	
 	//register to clock the vaule of the desired servo postion
 	always@(posedge clock) begin
-		servo_pos_pass=servo_pos;
+		servo_pos_clked=servo_pos;
 	end
 		
 
