@@ -1,0 +1,13 @@
+this is a help file for the disp_x_token module.
+
+the module works by being hooked up in the main module.
+
+for inputs it requires a 50MHZ clock, normally high reset signal, 
+start signal and a 4 bit number to tell how many tokens to do.
+
+as an output it gives a done signal when all tokens are dispenced and a
+PWM to control the servos.
+
+as parameters it takes a wait_cycle which dictates the number of Pulses to 
+wait before moving the servo back to the start, and 2 postions in and out to be set to the reguired
+postion for the servo.
