@@ -9,7 +9,7 @@ module led_control(
 	
 	reg [3:0] led_counter;
 	
-	clk_div #(.clock_div(10000000)) c1hz (.old_clock(clock), .reset(reset), .new_clock(slow_clock));
+	clk_div #(.clock_div(10000000)) c5hz (.old_clock(clock), .reset(reset), .new_clock(slow_clock));
 
 	always @(posedge slow_clock or negedge reset) begin
 		if (reset ===1'b0) begin

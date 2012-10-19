@@ -3,15 +3,15 @@ module clk_div(
 	input  reset,
 	output new_clock);
 	
-	reg [16:0]counter; 	//counter to count up to the clock pulse
+	reg [32:0]counter; 	//counter to count up to the clock pulse
 	
 	parameter clock_div=4;
 	
 	always@(posedge old_clock or negedge reset) begin
 		if (reset==='b0) begin
-			counter <= 16'b0;
+			counter <= 32'b0;
 		end else if (counter === (clock_div-1)) begin
-			counter <=16'b0;
+			counter <=32'b0;
 		end else begin
 			counter <= counter + 1'b1;
 		end

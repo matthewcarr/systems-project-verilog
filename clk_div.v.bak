@@ -20,4 +20,3 @@ module clk_div(
 	assign new_clock = (counter<=((clock_div/2)-1));
 
 endmodule
-		
