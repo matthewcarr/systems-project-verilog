@@ -54,7 +54,6 @@ set_global_assignment -name EXTRACT_VERILOG_STATE_MACHINES ON
 set_global_assignment -name VERILOG_FILE RCservo.v
 set_global_assignment -name VERILOG_FILE disp_x_token.v
 set_global_assignment -name TEXT_FILE disp_x_token.txt
-set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
 set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL1
 set_global_assignment -name MISC_FILE "F:/documents/doc/GitHub/systems-project-verilog/systemsproject.dpf"
 set_global_assignment -name VERILOG_FILE clk_div.v
