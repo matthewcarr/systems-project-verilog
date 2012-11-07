@@ -1102,6 +1102,96 @@ SIGNAL("txbusy")
 	PARENT = "";
 }
 
+SIGNAL("trans_word_clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("trans_word_clk[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
+SIGNAL("trans_word_clk[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "trans_word_clk";
+}
+
 TRANSITION_LIST("data[7]")
 {
 	NODE
@@ -2039,6 +2129,78 @@ TRANSITION_LIST("txbusy")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
+	}
+}
+
+TRANSITION_LIST("trans_word_clk[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000000.0;
 	}
 }
 
@@ -3104,6 +3266,96 @@ DISPLAY_LINE
 	RADIX = Hexadecimal;
 	TREE_INDEX = 106;
 	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 107;
+	TREE_LEVEL = 0;
+	CHILDREN = 108, 109, 110, 111, 112, 113, 114, 115;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 108;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 109;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 110;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 111;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 112;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 113;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 114;
+	TREE_LEVEL = 1;
+	PARENT = 107;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "trans_word_clk[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 115;
+	TREE_LEVEL = 1;
+	PARENT = 107;
 }
 
 TIME_BAR

@@ -38,12 +38,15 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg mled;
 	reg tran_trig_clk;
 	reg tran_trig;
+	reg start_disp;
+	reg trans_word_clk;
 
 	
 	wire [7:0]w_serial_data; //wire to connect to the reciver
 	wire w_data_ready;
 	wire w_serial_out;
 	wire w_trans_busy;
+	wire all_done;
 	
 	assign  w_data_ready = data_trig;
 	assign  w_serial_data= data;
@@ -63,15 +66,18 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				s_decode = 5'd8,
 				s_ping = 5'd9,
 				s_disp = 5'd10,
-				s_wt_disp = 5'd11,
+				s_dsip_tran = 5'd11,
+				s_wt_disp = 5'd12,
+				s_wt_fresp = 5'd19,
 				s_confirm = 5'd20;
 				
-	localparam v_ping = 8'd2;
+	localparam v_ping = 8'd2,
+				v_go  =8'd6;
 
 	
 	//instantiate the transmitter/reciver
 	//async_receiver #(.ClkFrequency(50000000), .Baud(115200)) rec1 (.clk(clk50m), .RxD(serial_raw), .RxD_data_ready(w_data_ready), .RxD_data(w_serial_data));
-	async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
+	async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word_clk), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
 	//instatiate the led_controller
 	
 	//instatiate the 3 token dispensors
@@ -154,24 +160,34 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							v_ping: begin
 									nxt_state <= s_ping;
 									end
+							v_go:	begin
+									nxt_state <= s_disp;
+									end
 							default: begin
 									nxt_state <= s_reset;
 									end
 							endcase
 						end
 			s_ping:		begin
-						nxt_state <= s_wt_verb;
+						nxt_state <= s_wt_ftran;
 						end
-//			s_disp:		begin
-//						nxt_state <= s_wt_disp;
-//						end
-//			s_wt_disp:	begin
-//							if (all_done===1'b1) begin
-//								nxt_state <=s_confirm;
-//							end else begin
-//								nxt_state <=s_wt_disp;
-//							end
-//						end
+			s_disp:		begin
+						nxt_state <= s_disp;
+						end
+			s_dsip_tran:begin
+						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+								nxt_state <=s_wt_disp;
+							end else begin
+								nxt_state <=s_dsip_tran;
+							end	
+						end
+			s_wt_disp:	begin
+							if (all_done===1'b1) begin
+								nxt_state <=s_wt_fresp;
+							end else begin
+								nxt_state <=s_wt_disp;
+							end
+						end
 //			s_leds:		begin
 //							nxt_state <= s_confirm;
 //						end
@@ -201,8 +217,15 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //			s_mled:		begin
 //							nxt_state <= s_confirm;
 //						end
+			s_wt_fresp:	begin
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+								nxt_state <=s_confirm;
+							end else begin
+								nxt_state <=s_wt_fresp;
+							end						
+						end
 			s_confirm:  begin
-							nxt_state <= s_wt_verb;
+							nxt_state <= s_wt_ftran;
 						end
 			default:	begin
 							nxt_state <=reset;
@@ -210,7 +233,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			endcase
 		end
 	
-	always @ (state) begin
+	always @ (*) begin
 		case(state)
 			s_reset:begin
 						verb =0;
@@ -218,6 +241,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =0;
 						arg3 =0;
 						tran_trig=1'b0;
+						trans_word='b0;
 					end
 			s_init: begin
 						verb =0;
@@ -225,12 +249,14 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =0;
 						arg3 =0;
 						tran_trig=1'b0;
+						trans_word='b0;
 					end
 			s_annow: begin
 						verb =0;
 						arg1 =0;
 						arg2 =0;
 						arg3 =0;
+						trans_word='b1;
 						tran_trig=1'b1;
 					end
 					
@@ -240,6 +266,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =0;
 						arg3 =0;
 						tran_trig=1'b0;
+						trans_word='b0;
 						end
 					
 			s_wt_verb:begin
@@ -247,8 +274,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg1 =0;
 						arg2 =0;
 						arg3 =0;
-						//cmd_word[31:0]<=32'b0;
-						tran_trig=1'b0; 
+						tran_trig=1'b0;
+						trans_word='b0; 
 					end
 					
 			s_wt_arg1:begin
@@ -257,13 +284,15 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =0;
 						arg3 =0;
 						tran_trig = 1'b0;
+						trans_word='b0;
 						end
 			s_wt_arg2:begin
 						verb =verb_clk;
 						arg1 =serial_in;
 						arg2 =0;
 						arg3 =0;
-						 tran_trig = 1'b0;
+						tran_trig = 1'b0;
+						trans_word='b0;
 						 end
 			s_wt_arg3:begin 
 						verb =verb_clk;
@@ -271,13 +300,14 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =serial_in;
 						arg3 =0;
 						tran_trig = 1'b0;
+						trans_word='b0;
 					end
 			s_decode: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
 						arg3 =serial_in; 
-						trans_word=verb;
+						trans_word=8'd4;
 						tran_trig=1'b0;
 					end
 			s_ping:begin
@@ -285,56 +315,84 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
 						arg3 =arg3_clk;
-							tran_trig=1'b1;
+						trans_word=8'd5;
+						tran_trig=1'b1;
 						end
-//			s_disp:	begin 
-//					start_disp<=1'b1;
-//					 tran_trig<=1'b1;
-//					 end
-//			s_wt_disp: begin
-//						start_disp<=1'b0;
-//						tran_trig<=1'b0; 
-//						trans_word<=complete;
-//						end
-//						
+			s_disp:	begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b1;
+						trans_word=verb;						
+						tran_trig=1'b1;
+					 end
+			s_dsip_tran: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b1;
+						tran_trig=1'b1;
+						trans_word='b0;
+						end
+			s_wt_disp: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk;
+						start_disp=1'b0;
+						tran_trig=1'b0; 
+						trans_word=8'd3;
+						end
+						
 //			s_leds: begin
-//					led_cont[5:0]<=cmd[13:8]; 
-//					tran_trig<=1'b1; 
-//					trans_word<=complete;
+//					led_cont[5:0]=cmd[13:8]; 
+//					tran_trig=1'b1; 
+//					trans_word=complete;
 //					end
 //			s_mtne: begin 
-//						tran_trig<=1'b1;
+//						tran_trig=1'b1;
 //						
 //					end
 //			s_mservo1:begin
-//						servo_pos1<=cmd_word[23:16];
-//						 mtne_servo1<=1'b1;
+//						servo_pos1=cmd_word[23:16];
+//						 mtne_servo1=1'b1;
 //						end
 //			s_mservo2:begin 
-//						servo_pos2<=cmd_word[23:16];
-//						 mtne_servo2<=1'b1;
+//						servo_pos2=cmd_word[23:16];
+//						 mtne_servo2=1'b1;
 //						end
 //			s_mservo3:begin
-//						servo_pos3<=cmd_word[23:16]; 
-//						mtne_servo3<=1'b1;
+//						servo_pos3=cmd_word[23:16]; 
+//						mtne_servo3=1'b1;
 //						end
 //			s_mservo4:begin
-//						servo_pos4<=cmd_word[23:16]; 
-//						mtne_servo4<=1'b1;
+//						servo_pos4=cmd_word[23:16]; 
+//						mtne_servo4=1'b1;
 //						end
 //			s_mservo5:begin 
-//						servo_pos5<=cmd_word[23:16]; 
-//						mtne_servo5<=1'b1;
+//						servo_pos5=cmd_word[23:16]; 
+//						mtne_servo5=1'b1;
 //						end
 //			s_mled:	begin
-//					mled<=1'b1;
+//					mled=1'b1;
 //					end
+			s_wt_fresp: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk;
+						tran_trig=1'b0;
+						trans_word=8'd3;
+						end
 			s_confirm: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
 						arg3 =arg3_clk;
 						tran_trig=1'b1;
+						trans_word=8'd0;
 						end
 			default : begin
 						verb =verb_clk;
@@ -342,6 +400,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =arg2_clk;
 						arg3 =arg3_clk;
 						tran_trig=1'b0;
+						trans_word=8'd0;
 						end
 		endcase
 	end
@@ -352,6 +411,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		arg2_clk=arg2;
 		arg3_clk=arg3;
 		tran_trig_clk=tran_trig;
+		trans_word_clk=trans_word;
 	end
 	
 	
