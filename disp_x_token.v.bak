@@ -27,7 +27,7 @@ module disp_x_token(
 	//wires to connect modules together
 	wire pwm_connect; 	//wire to transfer the pwm from the servo unit to output
 	wire servo_update;
-	wire [7:0]servo_pos_pass;
+	wire [7:0]servo_pos_pass/* synthesis keep */;
 	
 	//instation of the RCServo control module. this module generates the pwm that will controll the servo
 	RCServo rc1 (.clk(clock), .RxD_data(servo_pos_pass), .RC_cycle_start(servo_update) , .RCServo_pulse_out(pwm_connect));
@@ -57,7 +57,7 @@ module disp_x_token(
 		case(state) 
 			s_reset: nxt_state<=s_init;
 			s_init: begin
-						if(start_reg ==1'b1) nxt_state <= s_s_out;
+						if((start_reg ==1'b1) && (num_token===1'b0)) nxt_state <= s_s_out;
 						else nxt_state <=s_init;
 					end
 			s_s_out: begin
@@ -142,7 +142,7 @@ module disp_x_token(
 	always@(posedge clock) begin
 		if (state===s_s_in)
 			disp_count <= disp_count+1;
-		else if (state===s_reset) 
+		else if (state===s_init) 
 			disp_count <=0;
 	end
 	

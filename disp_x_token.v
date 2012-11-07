@@ -57,7 +57,7 @@ module disp_x_token(
 		case(state) 
 			s_reset: nxt_state<=s_init;
 			s_init: begin
-						if(start_reg ==1'b1) nxt_state <= s_s_out;
+						if((start_reg ==1'b1) && (num_token!==1'b0)) nxt_state <= s_s_out;
 						else nxt_state <=s_init;
 					end
 			s_s_out: begin

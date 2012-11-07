@@ -5,16 +5,17 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	output serial_return,
 	input [7:0]data,
 	input data_trig,
-	output reg [4:0] state,
+	output [4:0] state_out,
 	output [6:0] HEX0,
 	output [6:0] HEX1,
 	output [6:0] HEX2,
-	output [6:0] HEX3
+	output [6:0] HEX3,
+	output txbusy
 	);
 	
 	reg [7:0]serial_in; //regiuster to store the vaule of the most recent valid command from the RS232
 	reg [7:0]trans_word; //register to store the vaule to send to the Mbed controller over rs232
-	//reg [4:0]state;
+	reg [4:0]state;
 	reg [4:0]nxt_state;
 	reg [7:0]verb;
 	reg [7:0]verb_clk;
@@ -42,23 +43,27 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	wire [7:0]w_serial_data; //wire to connect to the reciver
 	wire w_data_ready;
 	wire w_serial_out;
+	wire w_trans_busy;
 	
 	assign  w_data_ready = data_trig;
 	assign  w_serial_data= data;
 	assign  serial_return = w_serial_out;
+	assign  txbusy = w_trans_busy;
+	assign	state_out = state;
 	
 	
 	localparam s_reset = 5'd0;
 	localparam s_init = 5'd1,
 				s_annow = 5'd2,
-				s_wt_verb = 5'd3,
-				s_wt_arg1 = 5'd4,
-				s_wt_arg2 = 5'd5,
-				s_wt_arg3 = 5'd6,
-				s_decode = 5'd7,
-				s_ping = 5'd8,
-				s_disp = 5'd9,
-				s_wt_disp = 5'd10,
+				s_wt_ftran = 5'd3,
+				s_wt_verb = 5'd4,
+				s_wt_arg1 = 5'd5,
+				s_wt_arg2 = 5'd6,
+				s_wt_arg3 = 5'd7,
+				s_decode = 5'd8,
+				s_ping = 5'd9,
+				s_disp = 5'd10,
+				s_wt_disp = 5'd11,
 				s_confirm = 5'd20;
 				
 	localparam v_ping = 8'd2;
@@ -102,8 +107,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						end
 				
 			s_annow:	begin
-							if(w_trans_busy===1'b1) begin
-								nxt_state <=s_annow;
+							nxt_state <=s_wt_ftran;
+						end
+						
+			s_wt_ftran: begin
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+								nxt_state <=s_wt_ftran;
 							end else begin
 								nxt_state <=s_wt_verb;
 							end
@@ -151,7 +160,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							endcase
 						end
 			s_ping:		begin
-						nxt_state <= s_wt_verb;
+						nxt_state <= s_wt_ftran;
 						end
 //			s_disp:		begin
 //						nxt_state <= s_wt_disp;
@@ -215,15 +224,23 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg1 =0;
 						arg2 =0;
 						arg3 =0;
-						tran_trig=1'b1;
+						tran_trig=1'b0;
 					end
 			s_annow: begin
 						verb =0;
 						arg1 =0;
 						arg2 =0;
 						arg3 =0;
-						tran_trig=1'b0;
+						tran_trig=1'b1;
 					end
+					
+			s_wt_ftran:begin
+						verb =0;
+						arg1 =0;
+						arg2 =0;
+						arg3 =0;
+						tran_trig=1'b0;
+						end
 					
 			s_wt_verb:begin
 						verb =0;
