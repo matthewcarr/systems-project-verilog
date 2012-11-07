@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at input_decoder_test2.v(72): always construct contains both blocking and non-blocking assignments
+Warning (10236): Verilog HDL Implicit Net warning at top_level_fsm.v(103): created implicit net for "clk_50m"

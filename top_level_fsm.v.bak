@@ -10,7 +10,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	output [6:0] HEX1,
 	output [6:0] HEX2,
 	output [6:0] HEX3,
-	output txbusy
+	output txbusy,
+	output [4:0] pwm
 	);
 	
 	reg [7:0]serial_in; //regiuster to store the vaule of the most recent valid command from the RS232
@@ -25,11 +26,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg [7:0]arg2_clk;
 	reg [7:0]arg3;
 	reg [7:0]arg3_clk;
-	reg servo_pos1;
-	reg servo_pos2;
-	reg servo_pos3;
-	reg servo_pos4;
-	reg servo_pos5;
+	reg [7:0]servo_pos1;
+	reg [7:0]servo_pos2;
+	reg [7:0]servo_pos3;
+	reg [7:0]servo_pos4;
+	reg [7:0]servo_pos5;
 	reg mtne_servo1;
 	reg mtne_servo2;
 	reg mtne_servo3;
@@ -39,21 +40,30 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg tran_trig_clk;
 	reg tran_trig;
 	reg start_disp;
-	reg trans_word_clk;
+	reg [7:0]trans_word_clk;
 
 	
 	wire [7:0]w_serial_data; //wire to connect to the reciver
 	wire w_data_ready;
 	wire w_serial_out;
 	wire w_trans_busy;
-	wire all_done;
+	wire w_all_done;
+	wire w_red_done;
+	wire w_blue_done;
+	wire w_green_done;
+	wire w_pwm_red;
+	wire w_pwm_blue;
+	wire w_pwm_green;
 	
 	assign  w_data_ready = data_trig;
 	assign  w_serial_data= data;
 	assign  serial_return = w_serial_out;
 	assign  txbusy = w_trans_busy;
 	assign	state_out = state;
-	
+	assign  w_all_done= (w_red_done && w_blue_done && w_green_done);
+	assign  pwm[0]= w_pwm_red;
+	assign  pwm[1]= w_pwm_blue;
+	assign  pwm[2]= w_pwm_green;
 	
 	localparam s_reset = 5'd0;
 	localparam s_init = 5'd1,
@@ -66,8 +76,9 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				s_decode = 5'd8,
 				s_ping = 5'd9,
 				s_disp = 5'd10,
-				s_dsip_tran = 5'd11,
-				s_wt_disp = 5'd12,
+				s_disp_tran = 5'd11,
+				s_disp_txvb =5'd12,
+				s_wt_disp = 5'd13,
 				s_wt_fresp = 5'd19,
 				s_confirm = 5'd20;
 				
@@ -81,6 +92,57 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	//instatiate the led_controller
 	
 	//instatiate the 3 token dispensors
+	disp_x_token  #(
+		.wait_cyles(12'h50),
+		.servo_out(8'h00),
+		.servo_in(8'hf8)
+		)
+	red_tokens
+		(
+		.num_token(arg1_clk) ,	// input [3:0] num_token_sig
+		.start(start_disp) ,	// input  start_sig
+		.clock(clk50m) ,	// input  clock_sig
+		.reset(reset) ,	// input  reset_sig
+		.mtne_mode(mtne_servo1) ,	// input  mtne_mode_sig
+		.mtne_pos(servo_pos1) ,	// input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_red) ,	// output  pwm_out_sig
+		.done(w_red_done)	// output  done_sig
+		);
+		
+	disp_x_token  #(
+		.wait_cyles(12'h50),
+		.servo_out(8'h00),
+		.servo_in(8'hf8)
+		)
+	blue_tokens
+		(
+		.num_token(arg2_clk) ,	// input [3:0] num_token_sig
+		.start(start_disp) ,	// input  start_sig
+		.clock(clk50m) ,	// input  clock_sig
+		.reset(reset) ,	// input  reset_sig
+		.mtne_mode(mtne_servo2) ,	// input  mtne_mode_sig
+		.mtne_pos(servo_pos2) ,	// input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_blue) ,	// output  pwm_out_sig
+		.done(w_blue_done)	// output  done_sig
+		);
+		
+	disp_x_token  #(
+		.wait_cyles(12'h50),
+		.servo_out(8'h00),
+		.servo_in(8'hf8)
+		)
+	green_tokens
+		(
+		.num_token(arg3_clk) ,	// input [3:0] num_token_sig
+		.start(start_disp) ,	// input  start_sig
+		.clock(clk50m) ,	// input  clock_sig
+		.reset(reset) ,	// input  reset_sig
+		.mtne_mode(mtne_servo3) ,	// input  mtne_mode_sig
+		.mtne_pos(servo_pos3) ,	// input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_green) ,	// output  pwm_out_sig
+		.done(w_green_done)	// output  done_sig
+		);
+
 	
 	//whenever there is valid data avalible from the reciver
 	//update the register serial in. if no new data is ready hold
@@ -172,17 +234,20 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						nxt_state <= s_wt_ftran;
 						end
 			s_disp:		begin
-						nxt_state <= s_disp;
+						nxt_state <= s_disp_tran;
 						end
-			s_dsip_tran:begin
+			s_disp_tran:begin
 						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_wt_disp;
+								nxt_state <=s_disp_tran;
 							end else begin
-								nxt_state <=s_dsip_tran;
+								nxt_state <=s_disp_txvb;
 							end	
 						end
+			s_disp_txvb:begin
+						 nxt_state <=s_wt_disp;
+						end				
 			s_wt_disp:	begin
-							if (all_done===1'b1) begin
+							if (w_all_done===1'b1) begin
 								nxt_state <=s_wt_fresp;
 							end else begin
 								nxt_state <=s_wt_disp;
@@ -219,9 +284,9 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						end
 			s_wt_fresp:	begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_confirm;
-							end else begin
 								nxt_state <=s_wt_fresp;
+							end else begin
+								nxt_state <=s_confirm;
 							end						
 						end
 			s_confirm:  begin
@@ -324,26 +389,35 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
 						start_disp=1'b1;
-						trans_word=verb;						
+						trans_word=8'd4;						
 						tran_trig=1'b1;
 					 end
-			s_dsip_tran: begin
+			s_disp_tran: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
-						start_disp=1'b1;
-						tran_trig=1'b1;
-						trans_word='b0;
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=8'd0;
 						end
+			s_disp_txverb: begin
+					   	verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk;
+						start_disp=1'b0;
+						tran_trig =1'b1; //need to solve how to stop it constantly sending the verb back preferablly without adding a new state
+						trans_word=verb;
+					   end
 			s_wt_disp: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
 						arg3 =arg3_clk;
 						start_disp=1'b0;
-						tran_trig=1'b0; 
-						trans_word=8'd3;
+						tran_trig = 1'b0; //need to solve how to stop it constantly sending the verb back preferablly without adding a new state
+						trans_word=8'd0;						
 						end
 						
 //			s_leds: begin
