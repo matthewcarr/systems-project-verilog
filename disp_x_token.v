@@ -125,7 +125,7 @@ module disp_x_token(
 	//60 second real time. count is cleared when ever pulsecount clear is asserted
 	always@(posedge clock) begin
 		if (servo_update==='d1 && flag==='d0)begin
-			pulsecount<=pulsecount+1;
+			pulsecount<=pulsecount+12'd1;
 			flag<=1;
 		end
 		else if (servo_update==='d0 && flag==='d1) flag<=0;
@@ -141,7 +141,7 @@ module disp_x_token(
 	//incerment at servo in and clear at inital 
 	always@(posedge clock) begin
 		if (state===s_s_in)
-			disp_count <= disp_count+1;
+			disp_count <= disp_count+4'd1;
 		else if (state===s_init) 
 			disp_count <=0;
 	end

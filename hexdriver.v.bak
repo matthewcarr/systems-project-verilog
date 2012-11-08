@@ -1,6 +1,7 @@
-module hexdisplay (value, display);
+module hexdisplay (value, display, overflow);
 
 	// Define our inputs
+	input 			overflow;	// Single bit to represent an overflow
 	input	[3:0] 	value;		// A 4 bit binary number
 	
 	// Define our seven-segment output, 7 bits
@@ -28,6 +29,10 @@ module hexdisplay (value, display);
 			default: display= 7'b0001110;
 			
 		endcase
+		
+	// Display F if the overflow bit is high
+	if (overflow) display= 7'b0001110;
+	
 	end
 	
 endmodule
