@@ -1,11 +1,11 @@
-ok roy here goes some info on this massive code tream :) one everything up to decide works fine and has been tested in the lab so no need to change it
-2) curently im using a wait after each transmitt command state this the condition to implement this is : (w_trans_busy===1'b1 || tran_trig_clk===1'b1)
-3) my sections go trnamit 4 or confirm then then verb then jump to s_wt_fresp which is state_wait_finish_repsonse from here its auto maticlly back up to the top and seems ok
-4) the dispensing is in but not tested in hard ware dont really bother with it easiest to do on the bench with a set of servos
-5) to avoid latchs i have 2 version of the signals 1 is updated in the FSM and isnt really clock the second is clocked properly, so all data to be sent to things like submodules should use the name_clk signal
-6) finally the HEx displays are left to right atm where they shoudl be right to left this may need sorted
-
-have fun any problem feel free to text me 
+//ok roy here goes some info on this massive code tream :) one everything up to decide works fine and has been tested in the lab so no need to change it
+//2) curently im using a wait after each transmitt command state this the condition to implement this is : (w_trans_busy===1'b1 || tran_trig_clk===1'b1)
+//3) my sections go trnamit 4 or confirm then then verb then jump to s_wt_fresp which is state_wait_finish_repsonse from here its auto maticlly back up to the top and seems ok
+//4) the dispensing is in but not tested in hard ware dont really bother with it easiest to do on the bench with a set of servos
+//5) to avoid latchs i have 2 version of the signals 1 is updated in the FSM and isnt really clock the second is clocked properly, so all data to be sent to things like submodules should use the name_clk signal
+//6) finally the HEx displays are left to right atm where they shoudl be right to left this may need sorted
+//
+//have fun any problem feel free to text me 
 	
 	
 module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servopwms,leds
@@ -13,8 +13,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	input reset,
 	input serial_raw,
 	output serial_return,
-	//input [7:0]data,
-	//input data_trig,
+	input [7:0]data,
+	input data_trig,
 	output [4:0] state_out,
 	output [6:0] HEX0,
 	output [6:0] HEX1,
@@ -66,8 +66,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	wire w_pwm_blue;
 	wire w_pwm_green;
 	
-//	assign  w_data_ready = data_trig;
-//	assign  w_serial_data= data;
+	assign  w_data_ready = data_trig;
+	assign  w_serial_data= data;
 	assign  serial_return = w_serial_out;
 	assign  txbusy = w_trans_busy;
 	assign	state_out = state;
@@ -101,7 +101,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 
 	
 	//instantiate the transmitter/reciver
-	async_receiver #(.ClkFrequency(50000000), .Baud(115200)) rec1 (.clk(clk50m), .RxD(serial_raw), .RxD_data_ready(w_data_ready), .RxD_data(w_serial_data));
+	//async_receiver #(.ClkFrequency(50000000), .Baud(115200)) rec1 (.clk(clk50m), .RxD(serial_raw), .RxD_data_ready(w_data_ready), .RxD_data(w_serial_data));
 	async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word_clk), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
 	//instatiate the led_controller
 	

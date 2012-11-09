@@ -92,7 +92,6 @@ set_location_assignment PIN_L8 -to HEX3[4]
 set_location_assignment PIN_F3 -to HEX3[5]
 set_location_assignment PIN_D4 -to HEX3[6]
 set_global_assignment -name VECTOR_WAVEFORM_FILE top_level_fsm.vwf
-set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
 set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL1
 set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id clk50m
 set_instance_assignment -name CLOCK_SETTINGS clk50m -to clk50m
