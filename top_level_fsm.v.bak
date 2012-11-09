@@ -41,6 +41,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg tran_trig;
 	reg start_disp;
 	reg [7:0]trans_word_clk;
+	reg start_disp_clk;
 
 	
 	wire [7:0]w_serial_data; //wire to connect to the reciver
@@ -103,7 +104,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	red_tokens
 		(
 		.num_token(arg1_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp) ,	// input  start_sig
+		.start(start_disp_clk) ,	// input  start_sig
 		.clock(clk50m) ,	// input  clock_sig
 		.reset(reset) ,	// input  reset_sig
 		.mtne_mode(mtne_servo1) ,	// input  mtne_mode_sig
@@ -120,7 +121,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	blue_tokens
 		(
 		.num_token(arg2_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp) ,	// input  start_sig
+		.start(start_disp_clk) ,	// input  start_sig
 		.clock(clk50m) ,	// input  clock_sig
 		.reset(reset) ,	// input  reset_sig
 		.mtne_mode(mtne_servo2) ,	// input  mtne_mode_sig
@@ -137,7 +138,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	green_tokens
 		(
 		.num_token(arg3_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp) ,	// input  start_sig
+		.start(start_disp_clk) ,	// input  start_sig
 		.clock(clk50m) ,	// input  clock_sig
 		.reset(reset) ,	// input  reset_sig
 		.mtne_mode(mtne_servo3) ,	// input  mtne_mode_sig
@@ -508,6 +509,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			arg3_clk=8'd0;
 			tran_trig_clk=1'd0;
 			trans_word_clk=8'd0;
+			start_disp_clk=1'd0;
 		end else begin
 			verb_clk=verb;
 			arg1_clk=arg1;
@@ -515,6 +517,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			arg3_clk=arg3;
 			tran_trig_clk=tran_trig;
 			trans_word_clk=trans_word;
+			start_disp_clk=start_disp;
 		end
 	end
 	

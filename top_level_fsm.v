@@ -1,3 +1,13 @@
+ok roy here goes some info on this massive code tream :) one everything up to decide works fine and has been tested in the lab so no need to change it
+2) curently im using a wait after each transmitt command state this the condition to implement this is : (w_trans_busy===1'b1 || tran_trig_clk===1'b1)
+3) my sections go trnamit 4 or confirm then then verb then jump to s_wt_fresp which is state_wait_finish_repsonse from here its auto maticlly back up to the top and seems ok
+4) the dispensing is in but not tested in hard ware dont really bother with it easiest to do on the bench with a set of servos
+5) to avoid latchs i have 2 version of the signals 1 is updated in the FSM and isnt really clock the second is clocked properly, so all data to be sent to things like submodules should use the name_clk signal
+6) finally the HEx displays are left to right atm where they shoudl be right to left this may need sorted
+
+have fun any problem feel free to text me 
+	
+	
 module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servopwms,leds
 	input clk50m,
 	input reset,
