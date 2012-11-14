@@ -58,6 +58,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg start_led;
 	reg start_servo;
 	reg mled_clk;
+	reg mtne_servo1_clk;
+	reg mtne_servo2_clk;
+	reg mtne_servo3_clk;
+	reg mtne_servo4_clk;
+	reg mtne_servo5_clk;
 	
 	wire [7:0]w_serial_data; //wire to connect to the reciver
 	wire w_data_ready;
@@ -138,10 +143,10 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	localparam 	m_servo1 = 8'd1,
 				m_servo2 = 8'd2,
-				m_servo3 = 8'd6,
+				m_servo3 = 8'd6,	//swap with led
 				m_servo4 = 8'd4,
 				m_servo5 = 8'd5,
-				m_leds = 8'd3;
+				m_leds = 8'd3;		//swap with servo3
 	
 	
 	//instantiate the transmitter/reciver
@@ -467,6 +472,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = 1'b0;
+						mtne_servo1 = 1'b0;
+						mtne_servo2 = 1'b0;
+						mtne_servo3 = 1'b0;
+						mtne_servo4 = 1'b0;
+						mtne_servo5 = 1'b0;
 					end
 			s_init: begin
 						verb =0;
@@ -479,6 +489,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					end
 			s_annow: begin
 						verb =0;
@@ -491,6 +506,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					end				
 			s_wt_ftran:begin
 						verb =0;
@@ -503,6 +523,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end				
 			s_wt_verb:begin
 						verb =0;
@@ -515,6 +540,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk; 
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end					
 			s_wt_arg1:begin
 						verb =serial_in;
@@ -527,6 +557,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_wt_arg2:begin
 						verb =verb_clk;
@@ -539,6 +574,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						 end
 			s_wt_arg3:begin 
 						verb =verb_clk;
@@ -551,6 +591,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					end
 			s_decode: begin
 						verb =verb_clk;
@@ -563,6 +608,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					end
 			s_ping:begin
 						verb =verb_clk;
@@ -575,6 +625,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_disp:	begin
 						verb =verb_clk;
@@ -587,6 +642,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					 end
 			s_disp_tran: begin
 						verb =verb_clk;
@@ -600,6 +660,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_disp_txvb: begin
 					   	verb =verb_clk;
@@ -613,6 +678,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					   end
 			s_wt_disp: begin
 						verb =verb_clk;
@@ -625,7 +695,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b0;
-						mled = mled_clk;						
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;						
 						end
 			s_anim:	begin
 					tran_trig=1'b1;
@@ -638,6 +713,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 					start_led = 1'b0;
 					start_servo = 1'b0;
 					mled = mled_clk;
+					mtne_servo1 = mtne_servo1_clk;
+					mtne_servo2 = mtne_servo2_clk;
+					mtne_servo3 = mtne_servo3_clk;
+					mtne_servo4 = mtne_servo4_clk;
+					mtne_servo5 = mtne_servo5_clk;
 					end					
 			s_aleds: begin
 					tran_trig=1'b0;
@@ -650,6 +730,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 					start_led = 1'b0;
 					start_servo = 1'b0;
 					mled = mled_clk;
+					mtne_servo1 = mtne_servo1_clk;
+					mtne_servo2 = mtne_servo2_clk;
+					mtne_servo3 = mtne_servo3_clk;
+					mtne_servo4 = mtne_servo4_clk;
+					mtne_servo5 = mtne_servo5_clk;
 					end
 			s_aleds_tran: begin
 						verb =verb_clk;
@@ -663,6 +748,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_aleds_txvb: begin
 					   	verb =verb_clk;
@@ -676,6 +766,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					   end
 			s_wt_aleds: begin
 						verb =verb_clk;
@@ -688,7 +783,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b1;
 						start_servo = 1'b0;	
-						mled = mled_clk;					
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;					
 						end
 			s_aservos: 	begin
 						tran_trig=1'b0;
@@ -701,6 +801,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_aservos_tran: begin
 						verb =verb_clk;
@@ -714,6 +819,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_aservos_txvb: begin
 					   	verb =verb_clk;
@@ -727,6 +837,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					   end
 			s_wt_aservos: begin
 						verb =verb_clk;
@@ -739,7 +854,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b1;
-						mled = mled_clk;						
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;						
 						end
 			s_mtne:		begin 
 						tran_trig=1'b1;
@@ -752,6 +872,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo1:	begin
 						tran_trig=1'b1;
@@ -764,6 +889,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = arg1_clk[1];
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo2:	begin 
 						tran_trig=1'b1;
@@ -776,6 +906,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = arg1_clk[2];
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo3:	begin 
 						tran_trig=1'b1;
@@ -788,6 +923,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = arg1_clk[3];
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo4:	begin 
 						tran_trig=1'b1;
@@ -800,6 +940,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = arg1_clk[4];
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo5:	begin 
 						tran_trig=1'b1;
@@ -812,6 +957,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = arg1_clk[5];
 						end
 			s_mservo_tran: begin
 						verb =verb_clk;
@@ -825,6 +975,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mservo_txvb: begin
 					   	verb =verb_clk;
@@ -838,6 +993,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					   end
 			s_wt_mservo: begin
 						verb =verb_clk;
@@ -850,7 +1010,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b1;
-						mled = mled_clk;						
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;						
 						end
 			s_mled:		begin
 						tran_trig=1'b0;
@@ -862,7 +1027,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_led = 1'b0;
 						start_servo = 1'b0;
-						mled = arg3_clk[0];
+						mled = arg1_clk[0];
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mled_tran: begin
 						verb =verb_clk;
@@ -876,6 +1046,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_mled_txvb: begin
 					   	verb =verb_clk;
@@ -889,6 +1064,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 					   end
 			s_wt_mled: begin
 						verb =verb_clk;
@@ -901,7 +1081,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b0;
-						mled = mled_clk;						
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;						
 						end
 			s_wt_fresp: begin
 						verb =verb_clk;
@@ -914,6 +1099,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			s_confirm: begin
 						verb =verb_clk;
@@ -926,6 +1116,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_led = 1'b0;
 						start_servo = 1'b0;
 						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
 						end
 			default : begin
 						verb =8'd0;
@@ -937,114 +1132,120 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b0;
+						mled = 1'b0;
+						mtne_servo1 = 1'b0;
+						mtne_servo2 = 1'b0;
+						mtne_servo3 = 1'b0;
+						mtne_servo4 = 1'b0;
+						mtne_servo5 = 1'b0;
 						end
 		endcase
 	end
 	
-	always @ (posedge start_servo) begin							//servo control
-		case(state)
-			s_wt_mservo:begin
-						case(arg2_clk)
-							m_servo1:	begin
-											servo_pos1=arg3_clk;
-											servo_pos2=8'd0;
-											servo_pos3=8'd0;
-											servo_pos4=8'd0;
-											servo_pos5=8'd0;
-											mtne_servo1=1'b1;
-											mtne_servo2=1'b0;
-											mtne_servo3=1'b0;
-											mtne_servo4=1'b0;
-											mtne_servo5=1'b0;
-										end
-							m_servo2:	begin
-											servo_pos1=8'd0;
-											servo_pos2=arg3_clk;
-											servo_pos3=8'd0;
-											servo_pos4=8'd0;
-											servo_pos5=8'd0;
-											mtne_servo1=1'b0;
-											mtne_servo2=1'b1;
-											mtne_servo3=1'b0;
-											mtne_servo4=1'b0;
-											mtne_servo5=1'b0;
-										end
-							m_servo3:	begin
-											servo_pos1=8'd0;
-											servo_pos2=8'd0;
-											servo_pos3=arg3_clk;
-											servo_pos4=8'd0;
-											servo_pos5=8'd0;
-											mtne_servo1=1'b0;
-											mtne_servo2=1'b0;
-											mtne_servo3=1'b1;
-											mtne_servo4=1'b0;
-											mtne_servo5=1'b0;
-										end
-							m_servo4:	begin
-											servo_pos1=8'd0;
-											servo_pos2=8'd0;
-											servo_pos3=8'd0;
-											servo_pos4=arg3_clk;
-											servo_pos5=8'd0;
-											mtne_servo1=1'b0;
-											mtne_servo2=1'b0;
-											mtne_servo3=1'b0;
-											mtne_servo4=1'b1;
-											mtne_servo5=1'b0;
-										end
-							m_servo5:	begin
-											servo_pos1=8'd0;
-											servo_pos2=8'd0;
-											servo_pos3=8'd0;
-											servo_pos4=8'd0;
-											servo_pos5=arg3_clk;
-											mtne_servo1=1'b0;
-											mtne_servo2=1'b0;
-											mtne_servo3=1'b0;
-											mtne_servo4=1'b0;
-											mtne_servo5=1'b1;
-										end
-							default:	begin
-											servo_pos1=8'd0;
-											servo_pos2=8'd0;
-											servo_pos3=8'd0;
-											servo_pos4=8'd0;
-											servo_pos5=8'd0;
-											mtne_servo1=1'b0;
-											mtne_servo2=1'b0;
-											mtne_servo3=1'b0;
-											mtne_servo4=1'b0;
-											mtne_servo5=1'b0;
-										end
-							endcase
-						end
-			s_wt_aservos:begin
-						servo_pos1=8'd0;
-						servo_pos2=8'd0;
-						servo_pos3=8'd0;
-						servo_pos4=arg3_clk;
-						servo_pos5=arg3_clk;
-						mtne_servo1=1'b0;
-						mtne_servo2=1'b0;
-						mtne_servo3=1'b0;
-						mtne_servo4=arg2_clk[6];
-						mtne_servo5=arg2_clk[7];
-						end
-			default:	begin
-						servo_pos1=8'd0;
-						servo_pos2=8'd0;
-						servo_pos3=8'd0;
-						servo_pos4=8'd0;
-						servo_pos5=8'd0;
-						mtne_servo1=1'b0;
-						mtne_servo2=1'b0;
-						mtne_servo3=1'b0;
-						mtne_servo4=1'b0;
-						mtne_servo5=1'b0;
-						end
-			endcase
-	end
+//	always @ (posedge start_servo) begin							//servo control
+//		case(state)
+//			s_wt_mservo:begin
+//						case(arg2_clk)
+//							m_servo1:	begin
+//											servo_pos1=arg3_clk;
+//											servo_pos2=8'd0;
+//											servo_pos3=8'd0;
+//											servo_pos4=8'd0;
+//											servo_pos5=8'd0;
+//											mtne_servo1=1'b1;
+//											mtne_servo2=1'b0;
+//											mtne_servo3=1'b0;
+//											mtne_servo4=1'b0;
+//											mtne_servo5=1'b0;
+//										end
+//							m_servo2:	begin
+//											servo_pos1=8'd0;
+//											servo_pos2=arg3_clk;
+//											servo_pos3=8'd0;
+//											servo_pos4=8'd0;
+//											servo_pos5=8'd0;
+//											mtne_servo1=1'b0;
+//											mtne_servo2=1'b1;
+//											mtne_servo3=1'b0;
+//											mtne_servo4=1'b0;
+//											mtne_servo5=1'b0;
+//										end
+//							m_servo3:	begin
+//											servo_pos1=8'd0;
+//											servo_pos2=8'd0;
+//											servo_pos3=arg3_clk;
+//											servo_pos4=8'd0;
+//											servo_pos5=8'd0;
+//											mtne_servo1=1'b0;
+//											mtne_servo2=1'b0;
+//											mtne_servo3=1'b1;
+//											mtne_servo4=1'b0;
+//											mtne_servo5=1'b0;
+//										end
+//							m_servo4:	begin
+//											servo_pos1=8'd0;
+//											servo_pos2=8'd0;
+//											servo_pos3=8'd0;
+//											servo_pos4=arg3_clk;
+//											servo_pos5=8'd0;
+//											mtne_servo1=1'b0;
+//											mtne_servo2=1'b0;
+//											mtne_servo3=1'b0;
+//											mtne_servo4=1'b1;
+//											mtne_servo5=1'b0;
+//										end
+//							m_servo5:	begin
+//											servo_pos1=8'd0;
+//											servo_pos2=8'd0;
+//											servo_pos3=8'd0;
+//											servo_pos4=8'd0;
+//											servo_pos5=arg3_clk;
+//											mtne_servo1=1'b0;
+//											mtne_servo2=1'b0;
+//											mtne_servo3=1'b0;
+//											mtne_servo4=1'b0;
+//											mtne_servo5=1'b1;
+//										end
+//							default:	begin
+//											servo_pos1=8'd0;
+//											servo_pos2=8'd0;
+//											servo_pos3=8'd0;
+//											servo_pos4=8'd0;
+//											servo_pos5=8'd0;
+//											mtne_servo1=1'b0;
+//											mtne_servo2=1'b0;
+//											mtne_servo3=1'b0;
+//											mtne_servo4=1'b0;
+//											mtne_servo5=1'b0;
+//										end
+//							endcase
+//						end
+//			s_wt_aservos:begin
+//						servo_pos1=8'd0;
+//						servo_pos2=8'd0;
+//						servo_pos3=8'd0;
+//						servo_pos4=arg3_clk;
+//						servo_pos5=arg3_clk;
+//						mtne_servo1=1'b0;
+//						mtne_servo2=1'b0;
+//						mtne_servo3=1'b0;
+//						mtne_servo4=arg2_clk[6];
+//						mtne_servo5=arg2_clk[7];
+//						end
+//			default:	begin
+//						servo_pos1=8'd0;
+//						servo_pos2=8'd0;
+//						servo_pos3=8'd0;
+//						servo_pos4=8'd0;
+//						servo_pos5=8'd0;
+//						mtne_servo1=1'b0;
+//						mtne_servo2=1'b0;
+//						mtne_servo3=1'b0;
+//						mtne_servo4=1'b0;
+//						mtne_servo5=1'b0;
+//						end
+//			endcase
+//	end
 	
 //	always @ (posedge start_led) begin							//led control
 //		case(state)
@@ -1078,6 +1279,52 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	always @ (posedge clk50m or negedge reset) begin
 		if (reset===1'b0) begin
+			servo_pos1 = 8'd0;
+			servo_pos2 = 8'd0;
+			servo_pos3 = 8'd0;
+			servo_pos4 = 8'd0;
+			servo_pos5 = 8'd0;
+		end else if (mtne_servo1) begin
+			servo_pos1 = arg2_clk;
+			servo_pos2 = 8'd0;
+			servo_pos3 = 8'd0;
+			servo_pos4 = 8'd0;
+			servo_pos5 = 8'd0;
+		end else if (mtne_servo2) begin
+			servo_pos1 = 8'd0;
+			servo_pos2 = arg2_clk;
+			servo_pos3 = 8'd0;
+			servo_pos4 = 8'd0;
+			servo_pos5 = 8'd0;
+		end else if (mtne_servo3) begin
+			servo_pos1 = 8'd0;
+			servo_pos2 = 8'd0;
+			servo_pos3 = arg2_clk;
+			servo_pos4 = 8'd0;
+			servo_pos5 = 8'd0;
+		end else if (mtne_servo4) begin
+			servo_pos1 = 8'd0;
+			servo_pos2 = 8'd0;
+			servo_pos3 = 8'd0;
+			servo_pos4 = arg2_clk;
+			servo_pos5 = 8'd0;
+		end else if (mtne_servo5) begin
+			servo_pos1 = 8'd0;
+			servo_pos2 = 8'd0;
+			servo_pos3 = 8'd0;
+			servo_pos4 = 8'd0;
+			servo_pos5 = arg2_clk;
+		end else begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = servo_pos5;
+		end
+	end
+	
+	always @ (posedge clk50m or negedge reset) begin
+		if (reset===1'b0) begin
 			verb_clk=8'd0;
 			arg1_clk=8'd0;
 			arg2_clk=8'd0;
@@ -1087,6 +1334,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			start_disp_clk=1'd0;
 			led_out = 6'd0;
 			mled_clk = 6'd0;
+			mtne_servo1_clk = 1'b0;
+			mtne_servo2_clk = 1'b0;
+			mtne_servo3_clk = 1'b0;
+			mtne_servo4_clk = 1'b0;
+			mtne_servo5_clk = 1'b0;
 		end else begin
 			verb_clk=verb;
 			arg1_clk=arg1;
@@ -1097,6 +1349,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			start_disp_clk=start_disp;
 			led_out = w_led_out;
 			mled_clk = mled;
+			mtne_servo1_clk = mtne_servo1;
+			mtne_servo2_clk = mtne_servo2;
+			mtne_servo3_clk = mtne_servo3;
+			mtne_servo4_clk = mtne_servo4;
+			mtne_servo5_clk = mtne_servo5;
 		end
 	end
 	
