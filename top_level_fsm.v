@@ -1239,7 +1239,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
-				if (arg2_clk[0] === 1'b1) servo_pos4 = 8'h01;					//may need to be zero
+				if (arg2_clk[0] === 1'b1) servo_pos4 = 8'hff;					//may need to be zero
 				else servo_pos4 = servo_pos4;
 				servo_pos5 = servo_pos5;
 			end if (mtne_servo5) begin
@@ -1247,7 +1247,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
 				servo_pos4 = servo_pos4;
-				if (arg2_clk[0] === 1'b1) servo_pos5 = 8'h01;					//may need to be zero
+				if (arg2_clk[0] === 1'b1) servo_pos5 = 8'hff;					//may need to be zero
 				else servo_pos5 = servo_pos5;
 			end else begin
 				servo_pos1 = servo_pos1;
