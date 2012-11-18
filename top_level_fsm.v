@@ -143,7 +143,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	localparam 	m_servo1 	= 	8'd1,
 				m_servo2 	= 	8'd2,
-				m_servo3 	= 	8'd6,	//swap with led
+				m_servo3 	= 	8'd6,		//swap with led
 				m_servo4 	= 	8'd4,
 				m_servo5 	= 	8'd5,
 				m_leds 		= 	8'd3;		//swap with servo3
@@ -1228,25 +1228,27 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				servo_pos4 = 8'd0;
 				servo_pos5 = arg2_clk;
 			end else begin
-				servo_pos1 = 8'd0;
-				servo_pos2 = 8'd0;
-				servo_pos3 = 8'd0;
-				servo_pos4 = 8'd0;
-				servo_pos5 = 8'd0;
+				servo_pos1 = servo_pos1;
+				servo_pos2 = servo_pos2;
+				servo_pos3 = servo_pos3;
+				servo_pos4 = servo_pos4;
+				servo_pos5 = servo_pos5;
 			end
 		end else if (start_servo===1'b1) begin		//animatronics
 			if (mtne_servo4) begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
-				servo_pos4 = 8'h01;					//may need to be zero
+				if (arg2_clk[0] === 1'b1) servo_pos4 = 8'h01;					//may need to be zero
+				else servo_pos4 = servo_pos4;
 				servo_pos5 = servo_pos5;
 			end if (mtne_servo5) begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
 				servo_pos4 = servo_pos4;
-				servo_pos5 = 8'h01;					//may need to be zero
+				if (arg2_clk[0] === 1'b1) servo_pos5 = 8'h01;					//may need to be zero
+				else servo_pos5 = servo_pos5;
 			end else begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
@@ -1254,12 +1256,12 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				servo_pos4 = 8'h01;
 				servo_pos5 = 8'h01;		
 			end
-		end else begin
-			servo_pos1 = servo_pos1;
-			servo_pos2 = servo_pos2;
-			servo_pos3 = servo_pos3;
-			servo_pos4 = servo_pos4;
-			servo_pos5 = servo_pos5;
+//		end else begin
+//			servo_pos1 = servo_pos1;
+//			servo_pos2 = servo_pos2;
+//			servo_pos3 = servo_pos3;
+//			servo_pos4 = servo_pos4;
+//			servo_pos5 = servo_pos5;
 		end
 	end
 	
