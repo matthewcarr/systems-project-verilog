@@ -1,16 +1,10 @@
 module motor_control (
-	input go,
 	input reset,
 	input clk_50,
 	input direct,
-	output pwm,
-	output [2:0]o_state,
-	output slowc,
-	output [6:0]HEX0,
-	output [6:0]HEX1,
-	output last_pos
+	output pwm
 	);
-	
+
 	reg [2:0] state /* synthesis keep */;   //registers for the state and next state
 	reg [2:0] nxt_state;
 	reg last_direct;  //register to store the last direction sent before current 1
@@ -20,15 +14,12 @@ module motor_control (
 	reg [11:0]counter;		// this is the counter to store the current timer
 	reg counter_en;
 	reg counter_en_clk/*synthesis keep*/;
-	
+
 	wire slow_clock;		//wire to move the slow clock to the counter
 	wire w_pwm;				//wire to move the pwm to output
-	
+
 	assign pwm = w_pwm;
-	assign o_state = state;
-	assign slowc = slow_clock;
-	assign last_pos = last_direct_clk;
-	
+
 	localparam s_reset 		= 3'd0; //parameters for the state for the state machine
 	localparam s_init  		= 3'd1;
 	localparam s_wt_go 		= 3'd2;
@@ -42,13 +33,11 @@ module motor_control (
 	parameter m_up= 8'hff;			//postion that cause servo to drive up
 	parameter m_halt = 8'h50;		//postion that halts the motor from turning
 	parameter m_down = 8'h0f;		//postion that drivers motor down
-	
+
 	clk_div #(.clock_div(50000)) ms (.old_clock(clk_50),.reset(reset),.new_clock(slow_clock)); 
-	
+
 	RCServo servo_m(.clk(clk_50),.RxD_data(motor_pos_clk),.RCServo_pulse_out(w_pwm));
-	hexdisplay hx1(motor_pos_clk[3:0], HEX0);
-	hexdisplay hx2(motor_pos_clk[7:4], HEX1);
-	
+
 	always@(posedge clk_50 or negedge reset) begin
 		if (reset===1'b0) begin
 			state<=s_reset;
@@ -56,7 +45,7 @@ module motor_control (
 			state<=nxt_state;
 		end
 	end
-	
+
 	always @(posedge clk_50) begin
 		case(state)
 			s_reset:	begin
@@ -93,7 +82,7 @@ module motor_control (
 			default: 	nxt_state <= reset;
 			endcase
 		end
-		
+
 		always@(*) begin
 			case(state)
 			s_reset:	begin
@@ -132,8 +121,8 @@ module motor_control (
 						end	
 		endcase	
 	end
-	
-	
+
+
 	//at reset clear these vaules if not reset sync the data to a clock before sending out again
 	always @(posedge clk_50 or negedge reset) begin
 		if (reset===1'b0) begin
@@ -146,11 +135,11 @@ module motor_control (
 			last_direct_clk = last_direct;
 		end
 	end
-	
 
-	
-	
-	
+
+
+
+
 	//counter tht will count up when reset is asserted and an enble held high else 
 	//it clears
 	always@(posedge slow_clock or negedge reset or negedge counter_en_clk) begin
@@ -162,8 +151,8 @@ module motor_control (
 			counter = counter + 12'd1;
 		end
 	end
-	
 
-			
-	
+
+
+
 endmodule
