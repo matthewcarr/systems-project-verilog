@@ -1,1 +1,2 @@
-Warning (10236): Verilog HDL Implicit Net warning at top_level_fsm.v(103): created implicit net for "clk_50m"
+Warning (10275): Verilog HDL Module Instantiation warning at top_level_fsm.v(221): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at top_level_fsm.v(234): ignored dangling comma in List of Port Connections

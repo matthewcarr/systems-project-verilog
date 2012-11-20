@@ -4,9 +4,9 @@ module clk_div(
 	output new_clock);
 	
 	reg [32:0]counter; 	//counter to count up to the clock pulse
-	
+	reg r_new_clock;    //new register to smooth out the output from this module
+
 	parameter clock_div=4;  //parameter that declears the divison factor
-	
   	
 
 	//at a rising clock or falling reset one fo 3 things happens
@@ -25,6 +25,10 @@ module clk_div(
 		end
 	end
 	
-	assign new_clock = (counter<=((clock_div/2)-1)); //when below half vaule set high
+	always @(posedge old_clock) begin
+	r_new_clock <= (counter<=((clock_div/2)-1));
+	end
+	
+	assign new_clock = r_new_clock; //when below half vaule set high
 
 endmodule
