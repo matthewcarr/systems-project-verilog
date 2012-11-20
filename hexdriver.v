@@ -25,6 +25,11 @@ module hexdisplay (value, display);
 			4'd7: display= 7'b1111000;
 			4'd8: display= 7'b0000000;
 			4'd9: display= 7'b0011000;
+			4'd10:display= 7'b0001000;
+			4'd11:display= 7'b1100000;
+			4'd12:display= 7'b0110001;
+			4'd13:display= 7'b1000010;
+			4'd14:display= 7'b0110000;
 			default: display= 7'b0001110;
 			
 		endcase

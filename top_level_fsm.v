@@ -89,7 +89,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	assign  pwm[1] 			= 	w_pwm_blue;
 	assign  pwm[2] 			= 	w_pwm_green;
 	
-	localparam  s_reset 		=	6'd0;
+	localparam  s_reset 	=	6'd0;
 	localparam  s_init 		= 	6'd1,
 				s_annow 	= 	6'd2,
 				s_wt_ftran 	= 	6'd3,
@@ -250,7 +250,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	always @(posedge clk50m or negedge reset) begin
 		if (reset===1'b0) begin
-			state<=reset;
+			state<=s_reset;
 		end else begin
 			state<=nxt_state;
 		end
@@ -518,7 +518,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg2 =0;
 						arg3 =0;
 						tran_trig=1'b0;
-						trans_word=8'b0;
+						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b1;
 						start_servo = 1'b1;
@@ -534,8 +534,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						arg1 =0;
 						arg2 =0;
 						arg3 =0;
-						trans_word=8'b1;
-						tran_trig=r_init;
+						trans_word=r_init;
+						tran_trig=1'b1;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						start_servo = 1'b0;
@@ -1199,62 +1199,70 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		end else if (start_servo===1'b0) begin		//maintenance
 			if (mtne_servo1) begin
 				servo_pos1 = arg2_clk;
-				servo_pos2 = 8'd0;
-				servo_pos3 = 8'd0;
-				servo_pos4 = 8'd0;
-				servo_pos5 = 8'd0;
-			end if (mtne_servo2) begin
-				servo_pos1 = 8'd0;
-				servo_pos2 = arg2_clk;
-				servo_pos3 = 8'd0;
-				servo_pos4 = 8'd0;
-				servo_pos5 = 8'd0;
-			end if (mtne_servo3) begin
-				servo_pos1 = 8'd0;
-				servo_pos2 = 8'd0;
-				servo_pos3 = arg2_clk;
-				servo_pos4 = 8'd0;
-				servo_pos5 = 8'd0;
-			end if (mtne_servo4) begin
-				servo_pos1 = 8'd0;
-				servo_pos2 = 8'd0;
-				servo_pos3 = 8'd0;
-				servo_pos4 = arg2_clk;
-				servo_pos5 = 8'd0;
-			end if (mtne_servo5) begin
-				servo_pos1 = 8'd0;
-				servo_pos2 = 8'd0;
-				servo_pos3 = 8'd0;
-				servo_pos4 = 8'd0;
-				servo_pos5 = arg2_clk;
-			end else begin
-				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
 				servo_pos4 = servo_pos4;
 				servo_pos5 = servo_pos5;
+			end if (mtne_servo2) begin
+				servo_pos1 = servo_pos1;
+				servo_pos2 = arg2_clk;
+				servo_pos3 = servo_pos3;
+				servo_pos4 = servo_pos4;
+				servo_pos5 = servo_pos5;
+			end if (mtne_servo3) begin
+				servo_pos1 = servo_pos1;
+				servo_pos2 = servo_pos2;
+				servo_pos3 = arg2_clk;
+				servo_pos4 = servo_pos4;
+				servo_pos5 = servo_pos5;
+			end if (mtne_servo4) begin
+				servo_pos1 = servo_pos1;
+				servo_pos2 = servo_pos2;
+				servo_pos3 = servo_pos3;
+				servo_pos4 = arg2_clk;
+				servo_pos5 = servo_pos5;
+			end if (mtne_servo5) begin
+				servo_pos1 = servo_pos1;
+				servo_pos2 = servo_pos2;
+				servo_pos3 = servo_pos3;
+				servo_pos4 = servo_pos4;
+				servo_pos5 = arg2_clk;
+//			end else begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = servo_pos3;
+//				servo_pos4 = servo_pos4;
+//				servo_pos5 = servo_pos5;
 			end
 		end else if (start_servo===1'b1) begin		//animatronics
 			if (mtne_servo4) begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
-				if (arg2_clk[0] === 1'b1) servo_pos4 = 8'hff;					//may need to be zero
-				else servo_pos4 = servo_pos4;
+				//if (arg2_clk[0] === 1'b1) 
+				servo_pos4 = 8'hff;					//may need to be zero
+				//else servo_pos4 = servo_pos4;
 				servo_pos5 = servo_pos5;
+			end else begin
+				servo_pos1 = servo_pos1;
+				servo_pos2 = servo_pos2;
+				servo_pos3 = servo_pos3;
+				servo_pos4 = 8'd0;					//may need to be 8'hff
+				servo_pos5 = servo_pos5;		
 			end if (mtne_servo5) begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
 				servo_pos4 = servo_pos4;
-				if (arg2_clk[0] === 1'b1) servo_pos5 = 8'hff;					//may need to be zero
-				else servo_pos5 = servo_pos5;
+				//if (arg2_clk[0] === 1'b1) 
+				servo_pos5 = 8'hff;					//may need to be zero
+				//else servo_pos5 = servo_pos5;
 			end else begin
 				servo_pos1 = servo_pos1;
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
-				servo_pos4 = 8'h01;
-				servo_pos5 = 8'h01;		
+				servo_pos4 = servo_pos4;
+				servo_pos5 = 8'd0;					//may need to be 8'hff
 			end
 //		end else begin
 //			servo_pos1 = servo_pos1;
