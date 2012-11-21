@@ -1,1 +1,2 @@
-Warning (10236): Verilog HDL Implicit Net warning at top_level_fsm.v(230): created implicit net for "servo_lid_en"
+Warning (10236): Verilog HDL Implicit Net warning at top_level_fsm.v(91): created implicit net for "txbusy"
+Warning (10236): Verilog HDL Implicit Net warning at top_level_fsm.v(92): created implicit net for "state_out"

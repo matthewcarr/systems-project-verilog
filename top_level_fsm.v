@@ -169,7 +169,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	led_control		led	(.led_enable(led_en), .reset(reset), .clock(clk50m), .mtne_mode(mled), .led_output(w_led_out));
 	//instatiate the 3 token dispensors
 	disp_x_token  #(
-		.wait_cyles(12'h40),
+		.wait_cyles(12'h004),
 		.servo_out(8'h00),
 		.servo_in(8'he8)
 		)
@@ -186,7 +186,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		);
 		
 	disp_x_token  #(
-		.wait_cyles(12'h40),
+		.wait_cyles(12'h004),
 		.servo_out(8'h00),
 		.servo_in(8'he8)
 		)
@@ -203,7 +203,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		);
 		
 	disp_x_token  #(
-		.wait_cyles(12'h40),
+		.wait_cyles(12'h004),
 		.servo_out(8'h00),
 		.servo_in(8'he8)
 		)
@@ -220,7 +220,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		);
 
 	disp_x_token  #(
-		.wait_cyles(12'h50),
+		.wait_cyles(12'h004),
 		.servo_out(8'h00),
 		.servo_in(8'he8)
 		)
@@ -293,11 +293,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							nxt_state <=s_wt_ftran;
 						end					
 			s_wt_ftran: begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_wt_ftran;
-							end else begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//								nxt_state <=s_wt_ftran;
+//							end else begin
 								nxt_state <=s_wt_verb;
-							end
+							//end
 						end
 			s_wt_verb: 	begin
 							if(w_data_ready===1'b1) begin
@@ -362,11 +362,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						nxt_state <= s_disp_tran;
 						end
 			s_disp_tran:begin
-						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_disp_tran;
-							end else begin
+//						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//								nxt_state <=s_disp_tran;
+//							end else begin
 								nxt_state <=s_disp_txvb;
-							end	
+							//end	
 						end
 			s_disp_txvb:begin
 						 nxt_state <=s_wt_disp;
@@ -382,11 +382,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							nxt_state <= s_sound_tran;
 						end
 			s_sound_tran:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_sound_tran;
-								end else begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//									nxt_state <=s_sound_tran;
+//								end else begin
 									nxt_state <=s_sound_txvb;
-								end	
+								//end	
 							end
 			s_sound_txvb: 	begin
 								nxt_state <= s_wt_verb;
@@ -438,11 +438,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							nxt_state <= s_mservo_tran;
 						end
 			s_mservo_tran:begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_mservo_tran;
-								end else begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//									nxt_state <=s_mservo_tran;
+//								end else begin
 									nxt_state <=s_mservo_txvb;
-								end	
+								//end	
 							end
 			s_mservo_txvb:begin
 							nxt_state <=s_wt_verb;
@@ -459,11 +459,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						nxt_state <= s_mled_tran;
 						end
 			s_mled_tran:begin
-						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_mled_tran;
-							end else begin
+//						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//								nxt_state <=s_mled_tran;
+//							end else begin
 								nxt_state <=s_mled_txvb;
-							end	
+							//end	
 						end
 			s_mled_txvb:begin
 						 nxt_state <=s_wt_verb;
@@ -515,21 +515,21 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //							nxt_state <=s_wt_verb;
 //							end
 			s_anim_tran:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_anim_tran;
-								end else begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//									nxt_state <=s_anim_tran;
+//								end else begin
 									nxt_state <=s_anim_txvb;
-								end	
+								//end	
 							end
 			s_anim_txvb:	begin
 								nxt_state <=s_wt_verb;
 							end		
 			s_wt_fresp:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		//this state will probably not be used as it has been decide not to send done after every command
-								nxt_state <=s_wt_fresp;
-							end else begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		//this state will probably not be used as it has been decide not to send done after every command
+//								nxt_state <=s_wt_fresp;
+//							end else begin
 								nxt_state <=s_confirm;
-							end						
+							//end						
 						end
 			s_confirm:  begin
 							nxt_state <= s_wt_ftran;
@@ -1352,61 +1352,102 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			servo_pos3 = 8'd0;
 			servo_pos4 = 8'd0;
 			servo_pos5 = 8'd0;
-			servo_lid_en = 1'b1;
-		//end else if (servo_anim===1'b0) begin		//maintenance
-		end else if (mtne_servo1===1'b1 || mtne_servo2===1'b1 || mtne_servo3===1'b1 ||mtne_servo4===1'b1 ||mtne_servo5===1'b1) begin
-			if (mtne_servo1===1'b1) begin
-				servo_pos1 = arg2_clk;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-				servo_lid_en = 1'b0;
-			end if (mtne_servo2===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = arg2_clk;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-				servo_lid_en = 1'b0;
-			end if (mtne_servo3===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = arg2_clk;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-				servo_lid_en = 1'b0;
-			end if (mtne_servo4===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
+			//servo_lid_en = 1'b1;
+		end else begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = servo_pos5;
+			//servo_lid_en = 1'b1;
+			if (mtne_servo1===1'b1) servo_pos1 = arg2_clk;
+			else servo_pos1 = 8'd0;
+			if (mtne_servo2===1'b1) servo_pos2 = arg2_clk;
+			else servo_pos2 = 8'd0;
+			if (mtne_servo3===1'b1) servo_pos3 = arg2_clk;
+			else servo_pos3 = 8'd0;
+			if (mtne_servo4===1'b1) begin
 				servo_pos4 = arg2_clk;
-				servo_pos5 = servo_pos5;
-				servo_lid_en = 1'b1;
-			end if (mtne_servo5===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = arg2_clk;			//only first bit does anything, 1 for up, 0 for down
-				servo_lid_en = 1'b0;
-			end 
+				//servo_lid_en = 1'b1;
 			end else begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				if (servo_anim===1'b1) begin
-					servo_pos4 = 8'hf8;
-					servo_lid_en = 1'b1;
-				end else begin
-					servo_pos4 = 8'd0;
-					servo_lid_en = 1'b1;
-				end
-				if (motor_anim===1'b1) begin
-					servo_pos5 = 8'h01;			//set the motor to up
-				end else begin
-					servo_pos5 = 8'h00;			//set the motor to down
+				servo_pos4 = 8'd0;
+				//servo_lid_en = 1'b0;
+			end if (mtne_servo5===1'b1) servo_pos5 = arg2_clk;
+			else servo_pos5 = 8'd0;
+			if (servo_anim===1'b1 && mtne_servo4===1'b0) begin
+				servo_pos4 = 8'hf8;
+				//servo_lid_en = 1'b1;
+			end else if (servo_anim===1'b0 && mtne_servo4===1'b0) begin
+				servo_pos4 = 8'd0;
+				//servo_lid_en = 1'b1;
+			end 
+			if (motor_anim===1'b1 && mtne_servo5===1'b0) begin
+				servo_pos5 = 8'h01;			//set the motor to up
+			end else if (motor_anim===1'b0 && mtne_servo5===1'b0) begin
+				servo_pos5 = 8'h00;			//set the motor to down
 			end
+		//end else if (servo_anim===1'b0) begin		//maintenance
+//		end else if (mtne_servo1===1'b1 || mtne_servo2===1'b1 || mtne_servo3===1'b1 ||mtne_servo4===1'b1 ||mtne_servo5===1'b1) begin
+//			if (mtne_servo1===1'b1) begin
+//				servo_pos1 = arg2_clk;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = servo_pos3;
+//				servo_pos4 = servo_pos4;
+//				servo_pos5 = servo_pos5;
+//				servo_lid_en = 1'b0;
+//			end if (mtne_servo2===1'b1) begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = arg2_clk;
+//				servo_pos3 = servo_pos3;
+//				servo_pos4 = servo_pos4;
+//				servo_pos5 = servo_pos5;
+//				servo_lid_en = 1'b0;
+//			end if (mtne_servo3===1'b1) begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = arg2_clk;
+//				servo_pos4 = servo_pos4;
+//				servo_pos5 = servo_pos5;
+//				servo_lid_en = 1'b0;
+//			end if (mtne_servo4===1'b1) begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = servo_pos3;
+//				servo_pos4 = arg2_clk;
+//				servo_pos5 = servo_pos5;
+//				servo_lid_en = 1'b1;
+//			end if (mtne_servo5===1'b1) begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = servo_pos3;
+//				servo_pos4 = servo_pos4;
+//				servo_pos5 = arg2_clk;			//only first bit does anything, 1 for up, 0 for down
+//				servo_lid_en = 1'b0;
+//			end 
+//		end else if (mtne_servo1===1'b0 && mtne_servo2===1'b0 && mtne_servo3===1'b0 && mtne_servo4===1'b0 && mtne_servo5===1'b0) begin
+//				servo_pos1 = servo_pos1;
+//				servo_pos2 = servo_pos2;
+//				servo_pos3 = servo_pos3;
+//				if (servo_anim===1'b1) begin
+//					servo_pos4 = 8'hf8;
+//					servo_lid_en = 1'b1;
+//				end else begin
+//					servo_pos4 = 8'd0;
+//					servo_lid_en = 1'b1;
+//				end
+//				if (motor_anim===1'b1) begin
+//					servo_pos5 = 8'h01;			//set the motor to up
+//				end else begin
+//					servo_pos5 = 8'h00;			//set the motor to down
+//			end
+//		end else begin
+//			servo_pos1 = servo_pos1;
+//			servo_pos2 = servo_pos2;
+//			servo_pos3 = servo_pos3;
+//			servo_pos4 = servo_pos4;
+//			servo_pos5 = servo_pos5;			
+//			servo_lid_en = 1'b0;
+//			end
 		end
 	end
 	
