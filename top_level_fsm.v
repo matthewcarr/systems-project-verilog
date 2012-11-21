@@ -56,7 +56,10 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	reg [5:0] led_en;
 	reg start_led;
-	reg start_servo;
+	reg servo_anim;
+	reg servo_anim_clk;
+	reg motor_anim;
+	reg motor_anim_clk;
 	reg mled_clk;
 	reg mtne_servo1_clk;
 	reg mtne_servo2_clk;
@@ -121,18 +124,20 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 				s_mled_txvb = 	6'd25,
 //				s_wt_mled 	= 	6'd26,
 				s_anim 		= 	6'd27,
-				s_aleds 	= 	6'd28,
-				s_aleds_tran = 	6'd29,
-				s_aleds_txvb = 	6'd30,
+//				s_aleds 	= 	6'd28,
+				s_anim_tran = 	6'd29,
+				s_anim_txvb = 	6'd30,
 //				s_wt_aleds 	= 	6'd31,
-				s_aservos 	= 	6'd32,
-				s_aservos_tran = 6'd33,
-				s_aservos_txvb = 6'd34,
+//				s_aservos 	= 	6'd32,
+//				s_aservos_tran = 6'd33,
+//				s_aservos_txvb = 6'd34,
 //				s_wt_aservos = 	6'd35,
-//				s_sound 	= 	6'd36,
+				s_sound 	= 	6'd36,
 				s_wt_fresp 	= 	6'd37,
 				s_confirm 	= 	6'd38,
-				s_mclear	=	6'd39;
+				s_mclear	=	6'd39,
+				s_sound_tran =	6'd40,
+				s_sound_txvb =	6'd41;
 				
 	localparam  v_ping 	= 	8'd2,
 				v_go 	= 	8'd6,
@@ -338,9 +343,9 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 							v_mtne:	begin
 									nxt_state <= s_mtne;
 									end
-//							v_sound: begin
-//									 nxt_state <= s_sound;
-//									 end
+							v_sound: begin
+									 nxt_state <= s_sound;
+									 end
 							v_anim:	begin
 									nxt_state <= s_anim;
 									end
@@ -372,6 +377,19 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 								nxt_state <=s_wt_disp;
 							end
 						end
+			s_sound:	begin
+							nxt_state <= s_sound_tran;
+						end
+			s_sound_tran:	begin
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+									nxt_state <=s_sound_tran;
+								end else begin
+									nxt_state <=s_sound_txvb;
+								end	
+							end
+			s_sound_txvb: 	begin
+								nxt_state <= s_wt_verb;
+							end
 			s_mtne:		begin
 							case(arg1_clk)
 							m_clear:	begin
@@ -449,30 +467,23 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			s_mled_txvb:begin
 						 nxt_state <=s_wt_verb;
 						end				
-//			s_wt_mled:	begin
-////							if (arg2_clk[0]===1'b0) begin
-////								nxt_state <=s_wt_fresp;
-////							end else begin
-////								nxt_state <=s_wt_mled;
-////							end
-//						nxt_state <=s_wt_verb;
-//						end
+
 			s_anim:		begin
-							nxt_state <= s_aleds;
+							nxt_state <= s_anim_tran;
 						end
-			s_aleds:		begin
-							nxt_state <= s_aleds_tran;
-						end
-			s_aleds_tran:begin
-						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_aleds_tran;
-							end else begin
-								nxt_state <=s_aleds_txvb;
-							end	
-						end
-			s_aleds_txvb:begin
-						 nxt_state <=s_wt_verb;
-						end				
+//			s_aleds:		begin
+//							nxt_state <= s_aleds_tran;
+//						end
+//			s_aleds_tran:begin
+//						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//								nxt_state <=s_aleds_tran;
+//							end else begin
+//								nxt_state <=s_aleds_txvb;
+//							end	
+//						end
+//			s_aleds_txvb:begin
+//						 nxt_state <=s_wt_verb;
+//						end				
 //			s_wt_aleds:	begin
 ////							if (arg2_clk[0]===1'b0) begin
 ////								nxt_state <=s_wt_fresp;
@@ -481,19 +492,19 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 ////							end
 //							nxt_state <=s_wt_verb;
 //						end
-			s_aservos:	begin
-							nxt_state <= s_aservos_tran;
-						end
-			s_aservos_tran:begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_aservos_tran;
-								end else begin
-									nxt_state <=s_aservos_txvb;
-							end	
-						end
-			s_aservos_txvb:begin
-						 nxt_state <=s_wt_verb;
-						end				
+//			s_aservos:	begin
+//							nxt_state <= s_aservos_tran;
+//						end
+//			s_aservos_tran:begin
+//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+//									nxt_state <=s_aservos_tran;
+//								end else begin
+//									nxt_state <=s_aservos_txvb;
+//							end	
+//						end
+//			s_aservos_txvb:begin
+//						 nxt_state <=s_wt_verb;
+//						end				
 //			s_wt_aservos:	begin
 ////							if (arg2_clk[0]===1'b0) begin
 ////								nxt_state <=s_wt_fresp;
@@ -502,6 +513,16 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 ////							end
 //							nxt_state <=s_wt_verb;
 //							end
+			s_anim_tran:	begin
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+									nxt_state <=s_anim_tran;
+								end else begin
+									nxt_state <=s_anim_txvb;
+								end	
+							end
+			s_anim_txvb:	begin
+								nxt_state <=s_wt_verb;
+							end		
 			s_wt_fresp:	begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		//this state will probably not be used as it has been decide not to send done after every command
 								nxt_state <=s_wt_fresp;
@@ -529,7 +550,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = 1'b0;
+						motor_anim = 1'b0;
 						mled = 1'b0;
 						mtne_servo1 = 1'b0;
 						mtne_servo2 = 1'b0;
@@ -546,7 +568,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b1;
-						start_servo = 1'b1;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -563,7 +586,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						tran_trig=1'b1;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -580,7 +604,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -597,7 +622,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk; 
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -614,7 +640,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -631,7 +658,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -648,7 +676,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -665,7 +694,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						tran_trig=1'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -682,7 +712,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						tran_trig=1'b1;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -690,6 +721,62 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						mtne_servo4 = mtne_servo4_clk;
 						mtne_servo5 = mtne_servo5_clk;
 						end
+			s_sound:begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk;
+						trans_word=r_ack;
+						tran_trig=1'b1;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
+						end
+			s_sound_tran: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=8'd0;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
+						end
+			s_sound_txvb: begin
+					   	verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk;
+						start_disp=1'b0;
+						tran_trig =1'b1; 
+						trans_word=verb;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo5 = mtne_servo5_clk;
+					   end
 			s_disp:	begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
@@ -699,7 +786,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=r_ack;		
 						tran_trig=1'b1;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = 1'b0;
 						mtne_servo2 = 1'b0;
@@ -717,7 +805,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -735,7 +824,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=verb;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -753,7 +843,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;		//change to 1 to close mouth while dispensing
+						servo_anim = servo_anim_clk;
+						motor_anim = 1'b1;				//change to 1 to close mouth while dispensing
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -769,8 +860,9 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 					arg3 =arg3_clk;
 					start_disp=1'b0;
 					trans_word=r_ack;
-					start_led = 1'b0;
-					start_servo = 1'b0;
+					start_led = 1'b1;
+					servo_anim = arg1_clk[6];
+					motor_anim = arg1_clk[7];		
 					mled = mled_clk;
 					mtne_servo1 = mtne_servo1_clk;
 					mtne_servo2 = mtne_servo2_clk;
@@ -778,24 +870,25 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 					mtne_servo4 = mtne_servo4_clk;
 					mtne_servo5 = mtne_servo5_clk;
 					end					
-			s_aleds: begin
-					tran_trig=1'b0;
-					verb =verb_clk;
-					arg1 =arg1_clk;
-					arg2 =arg2_clk;
-					arg3 =arg3_clk;
-					start_disp=1'b0;
-					trans_word=8'd0;
-					start_led = 1'b1;
-					start_servo = 1'b0;
-					mled = mled_clk;
-					mtne_servo1 = mtne_servo1_clk;
-					mtne_servo2 = mtne_servo2_clk;
-					mtne_servo3 = mtne_servo3_clk;
-					mtne_servo4 = mtne_servo4_clk;
-					mtne_servo5 = mtne_servo5_clk;
-					end
-			s_aleds_tran: begin
+//			s_aleds: begin
+//					tran_trig=1'b0;
+//					verb =verb_clk;
+//					arg1 =arg1_clk;
+//					arg2 =arg2_clk;
+//					arg3 =arg3_clk;
+//					start_disp=1'b0;
+//					trans_word=8'd0;
+//					start_led = 1'b1;
+//					servo_anim = servo_anim_clk;
+//					motor_anim = motor_anim_clk;
+//					mled = mled_clk;
+//					mtne_servo1 = mtne_servo1_clk;
+//					mtne_servo2 = mtne_servo2_clk;
+//					mtne_servo3 = mtne_servo3_clk;
+//					mtne_servo4 = mtne_servo4_clk;
+//					mtne_servo5 = mtne_servo5_clk;
+//					end
+			s_anim_tran: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
@@ -805,7 +898,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -813,7 +907,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						mtne_servo4 = mtne_servo4_clk;
 						mtne_servo5 = mtne_servo5_clk;
 						end
-			s_aleds_txvb: begin
+			s_anim_txvb: begin
 					   	verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
@@ -823,7 +917,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=verb;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -841,7 +936,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						trans_word=8'd0;
 //						start_disp=1'b0;
 //						start_led = 1'b0;
-//						start_servo = 1'b0;	
+//						servo_anim = 1'b0;	
 //						mled = mled_clk;
 //						mtne_servo1 = mtne_servo1_clk;
 //						mtne_servo2 = mtne_servo2_clk;
@@ -849,59 +944,62 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						mtne_servo4 = mtne_servo4_clk;
 //						mtne_servo5 = mtne_servo5_clk;					
 //						end
-			s_aservos: 	begin
-						tran_trig=1'b0;
-						verb =verb_clk;
-						arg1 =arg1_clk;
-						arg2 =arg2_clk;
-						arg3 =arg3_clk;
-						start_disp=1'b0;
-						trans_word=8'd0;
-						start_led = 1'b0;
-						start_servo = 1'b1;
-						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = arg1_clk[6];
-						mtne_servo5 = arg1_clk[7];
-						end
-			s_aservos_tran: begin
-						verb =verb_clk;
-						arg1 =arg1_clk;
-						arg2 =arg2_clk;
-						arg3 =arg3_clk; 
-						start_disp=1'b0;
-						tran_trig=1'b0;
-						trans_word=8'd0;
-						start_disp=1'b0;
-						start_led = 1'b0;
-						start_servo = 1'b0;
-						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
-						end
-			s_aservos_txvb: begin
-					   	verb =verb_clk;
-						arg1 =arg1_clk;
-						arg2 =arg2_clk;
-						arg3 =arg3_clk;
-						start_disp=1'b0;
-						tran_trig =1'b1; //need to solve how to stop it constantly sending the verb back preferablly without adding a new state
-						trans_word=verb;
-						start_disp=1'b0;
-						start_led = 1'b0;
-						start_servo = 1'b0;
-						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
-					   end
+//			s_aservos: 	begin
+//						tran_trig=1'b0;
+//						verb =verb_clk;
+//						arg1 =arg1_clk;
+//						arg2 =arg2_clk;
+//						arg3 =arg3_clk;
+//						start_disp=1'b0;
+//						trans_word=8'd0;
+//						start_led = 1'b0;
+//						servo_anim = arg1_clk[6];
+//						motor_anim = arg1_clk[7];
+//						mled = mled_clk;
+//						mtne_servo1 = mtne_servo1_clk;
+//						mtne_servo2 = mtne_servo2_clk;
+//						mtne_servo3 = mtne_servo3_clk;
+//						mtne_servo4 = mtne_servo4_clk;
+//						mtne_servo5 = mtne_servo5_clk;
+//						end
+//			s_aservos_tran: begin
+//						verb =verb_clk;
+//						arg1 =arg1_clk;
+//						arg2 =arg2_clk;
+//						arg3 =arg3_clk; 
+//						start_disp=1'b0;
+//						tran_trig=1'b0;
+//						trans_word=8'd0;
+//						start_disp=1'b0;
+//						start_led = 1'b0;
+//						servo_anim = servo_anim_clk;
+//						motor_anim = motor_anim_clk;
+//						mled = mled_clk;
+//						mtne_servo1 = mtne_servo1_clk;
+//						mtne_servo2 = mtne_servo2_clk;
+//						mtne_servo3 = mtne_servo3_clk;
+//						mtne_servo4 = mtne_servo4_clk;
+//						mtne_servo5 = mtne_servo5_clk;
+//						end
+//			s_aservos_txvb: begin
+//					   	verb =verb_clk;
+//						arg1 =arg1_clk;
+//						arg2 =arg2_clk;
+//						arg3 =arg3_clk;
+//						start_disp=1'b0;
+//						tran_trig =1'b1; //need to solve how to stop it constantly sending the verb back preferablly without adding a new state
+//						trans_word=verb;
+//						start_disp=1'b0;
+//						start_led = 1'b0;
+//						servo_anim = servo_anim_clk;
+//						motor_anim = motor_anim_clk;
+//						mled = mled_clk;
+//						mtne_servo1 = mtne_servo1_clk;
+//						mtne_servo2 = mtne_servo2_clk;
+//						mtne_servo3 = mtne_servo3_clk;
+//						mtne_servo4 = mtne_servo4_clk;
+//						mtne_servo5 = mtne_servo5_clk;
+//					   end
 //			s_wt_aservos: begin
 //						verb =verb_clk;
 //						arg1 =arg1_clk;
@@ -912,7 +1010,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						trans_word=8'd0;
 //						start_disp=1'b0;
 //						start_led = 1'b0;
-//						start_servo = 1'b0;
+//						servo_anim = 1'b0;
 //						mled = mled_clk;
 //						mtne_servo1 = mtne_servo1_clk;
 //						mtne_servo2 = mtne_servo2_clk;
@@ -929,7 +1027,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=r_ack;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -946,7 +1045,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=r_ack;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = 1'b0;
 						mtne_servo1 = 1'b0;
 						mtne_servo2 = 1'b0;
@@ -963,7 +1063,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=verb;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = 1'b1;
 						mtne_servo2 = mtne_servo2_clk;
@@ -980,7 +1081,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=verb;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = 1'b1;
@@ -997,7 +1099,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=verb;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1014,7 +1117,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=verb;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1031,7 +1135,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=verb;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1049,7 +1154,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1067,7 +1173,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=verb;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1085,7 +1192,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						trans_word=8'd0;
 //						start_disp=1'b0;
 //						start_led = 1'b0;
-//						start_servo = 1'b0;
+//						servo_anim = 1'b0;
 //						mled = mled_clk;
 //						mtne_servo1 = mtne_servo1_clk;
 //						mtne_servo2 = mtne_servo2_clk;
@@ -1102,7 +1209,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						start_disp=1'b0;
 						trans_word=8'd0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = arg2_clk[0];
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1120,7 +1228,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1138,7 +1247,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=verb;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1156,7 +1266,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 //						trans_word=8'd0;
 //						start_disp=1'b0;
 //						start_led = 1'b0;
-//						start_servo = 1'b0;
+//						servo_anim = 1'b0;
 //						mled = mled_clk;
 //						mtne_servo1 = mtne_servo1_clk;
 //						mtne_servo2 = mtne_servo2_clk;
@@ -1173,7 +1283,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1190,7 +1301,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=r_done;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1207,7 +1319,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						trans_word=r_error;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						start_servo = 1'b0;
+						servo_anim = 1'b0;
+						motor_anim = 1'b0;
 						mled = 1'b0;
 						mtne_servo1 = 1'b0;
 						mtne_servo2 = 1'b0;
@@ -1238,80 +1351,60 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			servo_pos3 = 8'd0;
 			servo_pos4 = 8'd0;
 			servo_pos5 = 8'd0;
-		end else if (start_servo===1'b0) begin		//maintenance
-			if (mtne_servo1===1'b1) begin
-				servo_pos1 = arg2_clk;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-			end else if (mtne_servo2===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = arg2_clk;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-			end else if (mtne_servo3===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = arg2_clk;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-			end else if (mtne_servo4===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = arg2_clk;
-				servo_pos5 = servo_pos5;
-			end else if (mtne_servo5===1'b1) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = arg2_clk;
-			end else begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-			end
-		end else if (start_servo===1'b1) begin		//animatronics
-			if (mtne_servo4) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				//if (arg2_clk[0] === 1'b1) 
-				servo_pos4 = 8'hff;					//may need to be zero
-				//else servo_pos4 = servo_pos4;
-				servo_pos5 = servo_pos5;
-			end else begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = 8'd0;					//may need to be 8'hff
-				servo_pos5 = servo_pos5;		
-			end if (mtne_servo5) begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				//if (arg2_clk[0] === 1'b1) 
-				servo_pos5 = 8'd1;					//may need to be zero
-				//else servo_pos5 = servo_pos5;
-			end else begin
-				servo_pos1 = servo_pos1;
-				servo_pos2 = servo_pos2;
-				servo_pos3 = servo_pos3;
-				servo_pos4 = servo_pos4;
-				servo_pos5 = 8'd0;					//may need to be 8'hff
-			end
-//		end else begin
+		//end else if (servo_anim===1'b0) begin		//maintenance
+		end else if (mtne_servo1===1'b1) begin
+			servo_pos1 = arg2_clk;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = servo_pos5;
+		end else if (mtne_servo2===1'b1) begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = arg2_clk;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = servo_pos5;
+		end else if (mtne_servo3===1'b1) begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = arg2_clk;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = servo_pos5;
+		end else if (mtne_servo4===1'b1) begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = arg2_clk;
+			servo_pos5 = servo_pos5;
+		end else if (mtne_servo5===1'b1) begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			servo_pos4 = servo_pos4;
+			servo_pos5 = arg2_clk;
+//		end else if (servo_anim===1'b1) begin		//animatronics
+//			//if (mtne_servo4) begin
 //			servo_pos1 = servo_pos1;
 //			servo_pos2 = servo_pos2;
 //			servo_pos3 = servo_pos3;
-//			servo_pos4 = servo_pos4;
+//			//if (arg2_clk[0] === 1'b1) 
+//			servo_pos4 = 8'hff;					//may need to be zero
+//			//else servo_pos4 = servo_pos4;
 //			servo_pos5 = servo_pos5;
+		end else begin
+			servo_pos1 = servo_pos1;
+			servo_pos2 = servo_pos2;
+			servo_pos3 = servo_pos3;
+			if (servo_anim===1'b1) begin
+				servo_pos4 = 8'hff;
+			end else begin
+				servo_pos4 = 8'd0;
+			end
+			if (motor_anim===1'b1) begin
+				servo_pos5 = 8'h01;			//set the motor to up
+			end else begin
+				servo_pos5 = 8'h00;			//set the motor to down
+			end
 		end
 	end
 	
@@ -1325,6 +1418,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			trans_word_clk=8'd0;
 			start_disp_clk=1'd0;
 			led_out = 6'd0;
+			servo_anim_clk = 1'd0;
+			motor_anim_clk = 1'd0;
 			mled_clk = 6'd0;
 			mtne_servo1_clk = 1'b0;
 			mtne_servo2_clk = 1'b0;
@@ -1340,6 +1435,8 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			trans_word_clk=trans_word;
 			start_disp_clk=start_disp;
 			led_out = w_led_out;
+			servo_anim_clk = servo_anim;
+			motor_anim_clk = motor_anim;
 			mled_clk = mled;
 			mtne_servo1_clk = mtne_servo1;
 			mtne_servo2_clk = mtne_servo2;
