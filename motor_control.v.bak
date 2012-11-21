@@ -88,8 +88,7 @@ module motor_control (
 			s_reset:	begin
 							counter_en = 1'b0;		//set counter enable to be 0
 							motor_pos = m_down; 		//set motor pulse to be halt position
-							last_direct = down;						
-						end
+							last_direct = down;						end
 			s_init: 	begin
 							counter_en = 1'b0;		//set counter enable to be 0
 							motor_pos = m_halt; 		//set motor pulse to be halt position

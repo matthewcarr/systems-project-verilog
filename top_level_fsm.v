@@ -66,6 +66,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg mtne_servo3_clk;
 	reg mtne_servo4_clk;
 	reg mtne_servo5_clk;
+	reg servo_lid_en;
 	
 	wire [7:0]w_serial_data; //wire to connect to the reciver
 	wire w_data_ready;
@@ -162,7 +163,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	
 	//instantiate the transmitter/reciver
 	async_receiver #(.ClkFrequency(50000000), .Baud(115200)) rec1 (.clk(clk50m), .RxD(serial_raw), .RxD_data_ready(w_data_ready), .RxD_data(w_serial_data));
-	//async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word_clk), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
+	
 	async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word_clk), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
 	//instatiate the led_controller
 	led_control		led	(.led_enable(led_en), .reset(reset), .clock(clk50m), .mtne_mode(mled), .led_output(w_led_out));
@@ -227,7 +228,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		(
 		.clock(clk50m) ,	// input  clock_sig
 		.reset(reset) ,	// input  reset_sig
-		.mtne_mode(mtne_servo4) ,	// input  mtne_mode_sig
+		.mtne_mode(servo_lid_en) ,	// input  mtne_mode_sig
 		.mtne_pos(servo_pos4) ,	// input [7:0] mtne_pos_sig
 		.pwm_out(w_pwm_servo4)
 		);
@@ -1067,10 +1068,10 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
 						mtne_servo1 = 1'b1;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
+						mtne_servo2 = 1'b0;
+						mtne_servo3 = 1'b0;
+						mtne_servo4 = 1'b0;
+						mtne_servo5 = 1'b0;
 						end
 			s_mservo2:	begin 
 						tran_trig=1'b1;
@@ -1084,11 +1085,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo1 = 1'b0;
 						mtne_servo2 = 1'b1;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
+						mtne_servo3 = 1'b0;
+						mtne_servo4 = 1'b0;
+						mtne_servo5 = 1'b0;
 						end
 			s_mservo3:	begin 
 						tran_trig=1'b1;
@@ -1102,11 +1103,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo1 = 1'b0;
+						mtne_servo2 = 1'b0;
 						mtne_servo3 = 1'b1;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
+						mtne_servo4 = 1'b0;
+						mtne_servo5 = 1'b0;
 						end
 			s_mservo4:	begin 
 						tran_trig=1'b1;
@@ -1120,11 +1121,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo1 = 1'b0;
+						mtne_servo2 = 1'b0;
+						mtne_servo3 = 1'b0;
 						mtne_servo4 = 1'b1;
-						mtne_servo5 = mtne_servo5_clk;
+						mtne_servo5 = 1'b0;
 						end
 			s_mservo5:	begin 
 						tran_trig=1'b1;
@@ -1138,10 +1139,10 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
+						mtne_servo1 = 1'b0;
+						mtne_servo2 = 1'b0;
+						mtne_servo3 = 1'b0;
+						mtne_servo4 = 1'b0;
 						mtne_servo5 = 1'b1;
 						end
 			s_mservo_tran: begin
@@ -1351,6 +1352,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			servo_pos3 = 8'd0;
 			servo_pos4 = 8'd0;
 			servo_pos5 = 8'd0;
+			servo_lid_en = 1'b1;
 		//end else if (servo_anim===1'b0) begin		//maintenance
 		end else if (mtne_servo1===1'b1) begin
 			servo_pos1 = arg2_clk;
@@ -1358,30 +1360,35 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			servo_pos3 = servo_pos3;
 			servo_pos4 = servo_pos4;
 			servo_pos5 = servo_pos5;
+			servo_lid_en = 1'b0;
 		end else if (mtne_servo2===1'b1) begin
 			servo_pos1 = servo_pos1;
 			servo_pos2 = arg2_clk;
 			servo_pos3 = servo_pos3;
 			servo_pos4 = servo_pos4;
 			servo_pos5 = servo_pos5;
+			servo_lid_en = 1'b0;
 		end else if (mtne_servo3===1'b1) begin
 			servo_pos1 = servo_pos1;
 			servo_pos2 = servo_pos2;
 			servo_pos3 = arg2_clk;
 			servo_pos4 = servo_pos4;
 			servo_pos5 = servo_pos5;
+			servo_lid_en = 1'b0;
 		end else if (mtne_servo4===1'b1) begin
 			servo_pos1 = servo_pos1;
 			servo_pos2 = servo_pos2;
 			servo_pos3 = servo_pos3;
 			servo_pos4 = arg2_clk;
 			servo_pos5 = servo_pos5;
+			servo_lid_en = 1'b1;
 		end else if (mtne_servo5===1'b1) begin
 			servo_pos1 = servo_pos1;
 			servo_pos2 = servo_pos2;
 			servo_pos3 = servo_pos3;
 			servo_pos4 = servo_pos4;
-			servo_pos5 = arg2_clk;
+			servo_pos5 = arg2_clk;			//only first bit does anything, 1 for up, 0 for down
+			servo_lid_en = 1'b0;
 //		end else if (servo_anim===1'b1) begin		//animatronics
 //			//if (mtne_servo4) begin
 //			servo_pos1 = servo_pos1;
@@ -1396,9 +1403,11 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			servo_pos2 = servo_pos2;
 			servo_pos3 = servo_pos3;
 			if (servo_anim===1'b1) begin
-				servo_pos4 = 8'hff;
+				servo_pos4 = 8'hf8;
+				servo_lid_en = 1'b1;
 			end else begin
 				servo_pos4 = 8'd0;
+				servo_lid_en = 1'b1;
 			end
 			if (motor_anim===1'b1) begin
 				servo_pos5 = 8'h01;			//set the motor to up
