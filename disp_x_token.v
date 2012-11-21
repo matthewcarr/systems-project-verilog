@@ -86,7 +86,7 @@ module disp_x_token(
 	always@(nxt_state) begin
 		case(nxt_state)
 			s_reset:begin
-						servo_pos=8'h0f; //push servo to half way on a reset, this means if using the push from both side then it wont dispense
+						servo_pos=servo_in; //push servo to half way on a reset, this means if using the push from both side then it wont dispense
 						pulsecount_clear='d1;  //but will be in a known position
 					end
 			s_init: begin
@@ -147,8 +147,12 @@ module disp_x_token(
 	end
 	
 	//register to clock the vaule of the desired servo postion
-	always@(posedge clock) begin
-		servo_pos_clked=servo_pos;
+	always@(posedge clock or negedge reset) begin
+		if (reset===1'b0)begin
+			servo_pos_clked=servo_in;
+		end else begin
+			servo_pos_clked=servo_pos;
+		end
 	end
 		
 
