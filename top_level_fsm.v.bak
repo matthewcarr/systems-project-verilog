@@ -1,7 +1,7 @@
-module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servopwms,leds
+module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outputs of dataout, servopwms, LEDs
 	input clk50m,				//pin l1, main clock
 	input reset,				//pin b14, hard reset
-	input serial_receive,			//pin b13, incoming serial data from mbed
+	input serial_receive,		//pin b13, incoming serial data from mbed
 	output serial_return,		//pin a13, outgoing serial data to mbed
 	input [7:0]data,			//input 8 bit data, used for debugging
 	input data_trig,			//manual trigger for data, used for debugging
@@ -12,15 +12,16 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	output [6:0] HEX3,
 	output txbusy,				//transmitter is busy
 	output [4:0] pwm,			//pwm signals for servos and motor
-	output reg [5:0] led_out,	//led outputs
+	output reg [5:0] led_out,	//LED outputs
 	output reg [3:0] sound_ID
 	);
 
-	reg [7:0]serial_in; //register to store the value of the most recent valid command from the RS232
-	reg [7:0]trans_word; //register to store the value to send to the Mbed controller over rs232
+	reg [7:0]serial_in; 	//register to store the value of the most recent valid command from the RS232
+	reg [7:0]trans_word; 	//register to store the value to send to the Mbed controller over rs232
 	reg [5:0]state;
 	reg [5:0]nxt_state;
-	//verb and arguments and clocked versions
+	
+	//verb and arguments with clocked versions
 	reg [7:0]verb;
 	reg [7:0]verb_clk;
 	reg [7:0]arg1;
@@ -29,171 +30,191 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 	reg [7:0]arg2_clk;
 	reg [7:0]arg3;
 	reg [7:0]arg3_clk;
-	//servo positions and maintenance
+	
+	//servo and motor positions
 	reg [7:0]servo_pos1;
 	reg [7:0]servo_pos2;
 	reg [7:0]servo_pos3;
 	reg [7:0]servo_pos_lid;
 	reg [7:0]motor_pos;
-	reg	servo1_mtne_up;		//update maintenance
+	
+	//update servo and motor maintenance
+	reg	servo1_mtne_up;		
 	reg servo2_mtne_up;
 	reg servo3_mtne_up;
 	reg servo_lid_mtne_up;
 	reg motor_mtne_up;
-	reg mtne_servo1;		//set maintenance mode for servo
+	
+	//set maintenance mode for servos and motor
+	reg mtne_servo1;		
 	reg mtne_servo2;
 	reg mtne_servo3;
 	reg mtne_servo_lid;
 	reg mtne_motor;
-	reg mled;				//led maintenance, sets all leds high
-	reg tran_trig_clk;		
-	reg tran_trig;			//allow transmission
-	reg start_disp;			//start dispensing
-	reg [7:0]trans_word_clk;
-	reg start_disp_clk;		//start dispensing (clocked)
-	reg [5:0] led_en;		//led enables
-	reg start_led;			
-	reg servo_anim;
-	reg servo_anim_clk;
-	reg motor_anim;
-	reg motor_anim_clk;
+	reg mled;				//LED maintenance, sets all LEDs high
 	reg mled_clk;
+	reg tran_trig;			//allow transmission
+	reg tran_trig_clk;		
+	reg [7:0]trans_word_clk;
+	reg start_disp;			//start dispensing
+	reg start_disp_clk;		//start dispensing (clocked)
+	reg start_led;
+	reg [5:0] led_en;		//LED enables
+	reg start_sound;		//start playing the buffered sound file
+	reg set_sound;			//set the sound file to be buffered
+	reg servo_anim;			//lid animatronics enable
+	reg servo_anim_clk;
+	reg motor_anim;			//motor (mouth) enable
+	reg motor_anim_clk;
 	reg mtne_servo1_clk;
 	reg mtne_servo2_clk;
 	reg mtne_servo3_clk;
 	reg mtne_servo_lid_clk;
 	reg mtne_motor_clk;
-	//reg [3:0] sound_ID;
-	reg set_sound;
-	reg start_sound;
-
+	
+	//wires for module instantiations
 	wire [7:0]w_serial_data; 	//wire to connect to the reciver
-	wire w_data_ready;
-	wire w_serial_out;
-	wire w_trans_busy;
-	wire w_all_done;			
-	wire w_red_done;			//done from servo controls
-	wire w_blue_done;
-	wire w_green_done;
-	wire w_pwm_red;
-	wire w_pwm_blue;
-	wire w_pwm_green;
-	wire w_pwm_servo_lid;
-	wire w_pwm_motor;
-	wire [5:0] w_led_out;		//output from led control
-	wire w_mled;				
+	wire w_data_ready;			//data is ready to be read
+	wire w_serial_out;			//serial data to be transmitted
+	wire w_trans_busy;			//transmission busy
+	wire w_all_done;			//all dispensing done
+	wire w_red_done;			//done from red dispense
+	wire w_green_done;			//done from green dispense
+	wire w_blue_done;			//done from blue dispense
+	wire w_pwm_red;				//pwm signal for red dispense servo
+	wire w_pwm_green;			//pwm signal for green dispense servo
+	wire w_pwm_blue;			//pwm signal for blue dispense servo
+	wire w_pwm_servo_lid;		//pwm signal for lid servo
+	wire w_pwm_motor;			//pwm signal for motor
+	wire [5:0] w_led_out;		//output from LED control
+	wire w_mled;				//LED maintenance
 
-	assign  w_data_ready 	= 	data_trig;		//overrides the receiver, used for debugging
-	assign  w_serial_data 	= 	data;		//overrides the receiver, used for debugging
-	assign  serial_return 	= 	w_serial_out;
-	assign  txbusy 			= 	0;//w_trans_busy;
-	assign	state_out 		= 	state;
+	//assignments for wires
+	assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
+	assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
+	assign  serial_return 	= 	w_serial_out;		//serial data out
+	assign  txbusy 			= 	0;//w_trans_busy;	//transmission busy
+	assign	state_out 		= 	state;				//output current state, used for debugging
 	assign  w_all_done 		= 	(w_red_done && w_blue_done && w_green_done);		//all servo modules are done processing
-	assign  pwm[0] 			= 	w_pwm_red;		//
-	assign  pwm[1] 			= 	w_pwm_blue;		//
-	assign  pwm[2] 			= 	w_pwm_green;	//pin k20
-	assign 	pwm[3]			=	w_pwm_servo_lid;	//
-	assign	pwm[4]			=	w_pwm_motor;	//
+	assign  pwm[0] 			= 	w_pwm_red;			//pin l18, pwm for red dispense servo
+	assign  pwm[1] 			= 	w_pwm_green;		//pin l19, pwm for green dispense servo
+	assign  pwm[2] 			= 	w_pwm_blue;			//pin k20, pwm for blue dispense servo
+	assign 	pwm[3]			=	w_pwm_servo_lid;	//pin j18, pwm for lid servo
+	assign	pwm[4]			=	w_pwm_motor;		//pin j20, pwm for mouth motor
 
 	//list of states
-	localparam  s_reset 	=	6'd0,
-				s_init 		= 	6'd1,
-				s_annow 	= 	6'd2,
-				s_wt_ftran 	= 	6'd3,
-				s_wt_verb 	= 	6'd4,
-				s_wt_arg1 	= 	6'd5,
-				s_wt_arg2 	= 	6'd6,
-				s_wt_arg3 	= 	6'd7,
-				s_decode 	= 	6'd8,
-				s_ping 		= 	6'd9,
-				s_disp 		= 	6'd10,
-				s_disp_tran = 	6'd11,
-				s_disp_txvb =	6'd12,
-				s_wt_disp 	= 	6'd13,
-				s_mtne 		= 	6'd14,
-				s_mservo1 	= 	6'd15,
-				s_mservo2 	= 	6'd16,
-				s_mservo3 	= 	6'd17,
-				s_mservo_lid 	= 	6'd18,
-				s_mmotor 	= 	6'd19,
-				s_mservo_tran = 6'd20,
-				s_mservo_txvb = 6'd21,
-				s_mled 		= 	6'd22,
-				s_mled_tran = 	6'd23,
-				s_mled_txvb = 	6'd24,
-				s_anim 		= 	6'd25,
-				s_anim_tran = 	6'd26,
-				s_anim_txvb = 	6'd27,
-				s_sound 	= 	6'd28,
-				s_wt_fresp 	= 	6'd29,
-				s_confirm 	= 	6'd30,
-				s_mclear	=	6'd31,
-				s_sound_tran =	6'd32,
-				s_sound_txvb =	6'd33,
-				s_sound_buffer =6'd34;
+	localparam  s_reset 	=	6'd0,		//reset state, clears everything
+				s_init 		= 	6'd1,		//init state
+				s_annow 	= 	6'd2,		//announce state, responds with r_init
+				s_wt_ftran 	= 	6'd3,		//wait for transmission to finish
+				s_wt_verb 	= 	6'd4,		//wait for verb data
+				s_wt_arg1 	= 	6'd5,		//wait for first argument
+				s_wt_arg2 	= 	6'd6,		//wait for second argument
+				s_wt_arg3 	= 	6'd7,		//wait for third argument
+				s_decode 	= 	6'd8,		//decode verb
+				s_ping 		= 	6'd9,		//respond with pong
+				s_disp 		= 	6'd10,		//start dispense branch
+				s_disp_tran = 	6'd11,		//wait for acknowledge to finish transmitting
+				s_disp_txvb =	6'd12,		//transmit verb
+				s_wt_disp 	= 	6'd13,		//wait for dispensing modules to finish
+				s_mtne 		= 	6'd14,		//start maintenance branch
+				s_mclear	=	6'd15,		//clear maintenance
+				s_mservo1 	= 	6'd16,		//start maintenance for servo 1 
+				s_mservo2 	= 	6'd17,		//start maintenance for servo 2
+				s_mservo3 	= 	6'd18,		//start maintenance for servo 3
+				s_mservo_lid = 	6'd19,		//start maintenance for servo 4, the lid
+				s_m_motor 	= 	6'd20,		//start maintenance for motor
+				s_mservo_tran = 6'd21,		//wait for acknowledge to finish transmitting
+				s_mservo_txvb = 6'd22,		//transmit verb
+				s_mled 		= 	6'd23,		//start maintenance of LEDs
+				s_mled_tran = 	6'd24,		//wait for acknowledge to finish transmitting
+				s_mled_txvb = 	6'd25,		//transmit verb
+				s_anim 		= 	6'd26,		//start animatronics branch
+				s_anim_tran = 	6'd27,		//wait for acknowledge to finish transmitting
+				s_anim_txvb = 	6'd28,		//transmit verb
+				s_sound 	= 	6'd29,		//start sound branch
+				s_sound_tran =	6'd30,		//wait for acknowledge to finish transmitting
+				s_sound_txvb =	6'd31,		//transmit verb
+				s_sound_buffer =6'd32,		//extra state to buffer sound for longer
+				s_wt_fresp 	= 	6'd33,		//wait for transmission to finish
+				s_confirm 	= 	6'd34;		//respond with dispense done
+				
 
 	//verb list
-	localparam  v_ping 	= 	8'd2,
-				v_go 	= 	8'd6,
-				v_mtne 	= 	8'd3,
-				v_sound = 	8'd4,
-				v_anim 	= 	8'd5;
+	localparam  v_ping 	= 	8'd2,		//ping verb, will respond with pong
+				v_mtne 	= 	8'd3,		//start maintenance, allows direct hardware control
+				v_sound = 	8'd4,		//start sound, will play sound files
+				v_anim 	= 	8'd5,		//start animatronics, moves lid, mouth and flashes LEDs
+				v_go 	= 	8'd6;		//start dispense, dispenses tokens
 
 	//response list
-	localparam  r_pong 	= 	8'd5,
-				r_ack 	= 	8'd4,
-				r_done 	= 	8'd3,
-				r_error = 	8'd2,
-				r_init 	= 	8'd1;
+	localparam  r_init 	= 	8'd1,		//response of init, sent when FPGA is reset
+				r_error = 	8'd2,		//response of error, sent when unknown state is encountered
+				r_done 	= 	8'd3,		//response of done, sent when all selected tokens are dispensed
+				r_ack 	= 	8'd4,		//response of ack, sent to acknowledge a command has been received, verb is sent after
+				r_pong 	= 	8'd5;		//response of pong, sent to confirm connectivity to mbed
 
-	//maintenance argument list
-	localparam 	m_clear		=	8'd0,
-				m_servo1 	= 	8'd1,
-				m_servo2 	= 	8'd2,
-				m_servo3 	= 	8'd3,		
-				m_servo_lid 	= 	8'd4,
-				m_motor 	= 	8'd5,
-				m_leds 		= 	8'd6;		
+	//maintenance argument list, used in 'mtne' decode state
+	localparam 	m_clear		=	8'd0,	//clear maintenance
+				m_servo1 	= 	8'd1,	//maintenance of servo 1 (red)
+				m_servo2 	= 	8'd2,	//maintenance of servo 2 (green)
+				m_servo3 	= 	8'd3,	//maintenance of servo 3 (blue)	
+				m_servo_lid = 	8'd4,	//maintenance of lid servo
+				m_motor 	= 	8'd5,	//maintenance of motor
+				m_leds 		= 	8'd6;	//maintenance of LEDs
 
 
 	//instantiate the transmitter/reciver
-	//async_receiver #(.ClkFrequency(50000000), .Baud(115200)) rec1 (.clk(clk50m), .RxD(serial_receive), .RxD_data_ready(w_data_ready), .RxD_data(w_serial_data));
-	//async_transmitter #(.ClkFrequency(50000000), .Baud(115200)) tran1 (.clk(clk50m), .TxD_start(tran_trig_clk), .TxD_data(trans_word_clk), .TxD(w_serial_out), .TxD_busy(w_trans_busy));
-	//instatiate the led_controller
-	led_control		led	(.led_enable(led_en), .reset(reset), .clock(clk50m), .mtne_mode(mled), .led_output(w_led_out));
-	//instatiate the 3 token dispensors
-	disp_x_token  #(
-		.wait_cyles(12'h040),
-		.servo_out(8'h00),
-		.servo_in(8'he8)
-		)
-	red_tokens
-		(
-		.num_token(arg1_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp_clk) ,	// input  start_sig
-		.clock(clk50m) ,	// input  clock_sig
-		.reset(reset) ,	// input  reset_sig
-		.mtne_mode(mtne_servo1) ,	// input  mtne_mode_sig
-		.mtne_pos(servo_pos1) ,	// input [7:0] mtne_pos_sig
-		.pwm_out(w_pwm_red) ,	// output  pwm_out_sig
-		.done(w_red_done)	// output  done_sig
+	/*
+	async_receiver #(
+		.ClkFrequency(50000000), 		//clock frequency
+		.Baud(115200)					//baud rate of receiver (must be same as mbed transmitter)
+		) 
+	rec1 (
+		.clk(clk50m), 					//input clock
+		.RxD(serial_receive), 			//input serial data
+		.RxD_data_ready(w_data_ready), 	//data ready to be read
+		.RxD_data(w_serial_data)		//8 bit data to be read
 		);
-
+	*/
+	/*
+	async_transmitter #(
+		.ClkFrequency(50000000), 		//clock frequency
+		.Baud(115200)					//baud rate of transmitter (must be same as mbed receiver)
+		) 
+	tran1 (
+		.clk(clk50m), 					//input clock
+		.TxD_start(tran_trig_clk), 		//start transmission
+		.TxD_data(trans_word_clk), 		//8 bit data to be transmitted
+		.TxD(w_serial_out), 			//serial data being transmitted
+		.TxD_busy(w_trans_busy)			//transmission is busy
+		);
+	*/
+		
+	//instatiate the led_controller
+	led_control		led	(
+		.led_enable(led_en), 	//LED enables
+		.reset(reset), 			//reset signal
+		.clock(clk50m), 		//input clock
+		.mtne_mode(mled), 		//maintenance enable, switches all LEDs on
+		.led_output(w_led_out)	//LED outputs
+		);
+	
+	//instatiate the 3 token dispensers
 	disp_x_token  #(
 		.wait_cyles(12'h040),
 		.servo_out(8'h00),
 		.servo_in(8'he8)
 		)
-	blue_tokens
-		(
-		.num_token(arg2_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp_clk) ,	// input  start_sig
-		.clock(clk50m) ,	// input  clock_sig
-		.reset(reset) ,	// input  reset_sig
-		.mtne_mode(mtne_servo2) ,	// input  mtne_mode_sig
-		.mtne_pos(servo_pos2) ,	// input [7:0] mtne_pos_sig
-		.pwm_out(w_pwm_blue) ,	// output  pwm_out_sig
-		.done(w_blue_done)	// output  done_sig
+	red_tokens (
+		.num_token(arg1_clk) ,		//input [3:0] num_token_sig
+		.start(start_disp_clk) ,	//input start_sig
+		.clock(clk50m) ,			//input clock_sig
+		.reset(reset) ,				//input reset_sig
+		.mtne_mode(mtne_servo1) ,	//input mtne_mode_sig
+		.mtne_pos(servo_pos1) ,		//input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_red) ,		//output pwm_out_sig
+		.done(w_red_done)			//output done_sig
 		);
 
 	disp_x_token  #(
@@ -203,73 +224,89 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 		)
 	green_tokens
 		(
-		.num_token(arg3_clk) ,	// input [3:0] num_token_sig
-		.start(start_disp_clk) ,	// input  start_sig
-		.clock(clk50m) ,	// input  clock_sig
-		.reset(reset) ,	// input  reset_sig
-		.mtne_mode(mtne_servo3) ,	// input  mtne_mode_sig
-		.mtne_pos(servo_pos3) ,	// input [7:0] mtne_pos_sig
-		.pwm_out(w_pwm_green) ,	// output  pwm_out_sig
-		.done(w_green_done)	// output  done_sig
+		.num_token(arg2_clk) ,		//input [3:0] num_token_sig
+		.start(start_disp_clk) ,	//input start_sig
+		.clock(clk50m) ,			//input clock_sig
+		.reset(reset) ,				//input reset_sig
+		.mtne_mode(mtne_servo2) ,	//input mtne_mode_sig
+		.mtne_pos(servo_pos2) ,		//input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_green) ,		//output pwm_out_sig
+		.done(w_green_done)			//output done_sig
+		);
+
+	disp_x_token  #(
+		.wait_cyles(12'h040),
+		.servo_out(8'h00),
+		.servo_in(8'he8)
+		)
+	blue_tokens
+		(
+		.num_token(arg3_clk) ,		//input [3:0] num_token_sig
+		.start(start_disp_clk) ,	//input start_sig
+		.clock(clk50m) ,			//input clock_sig
+		.reset(reset) ,				//input reset_sig
+		.mtne_mode(mtne_servo3) ,	//input mtne_mode_sig
+		.mtne_pos(servo_pos3) ,		//input [7:0] mtne_pos_sig
+		.pwm_out(w_pwm_blue) ,		//output pwm_out_sig
+		.done(w_blue_done)			//output done_sig
 		);
 
 	//instantiate lid servo control
-	RCServo lid_servo
-		(
-		.clk(clk50m),
-		.RxD_data(servo_pos_lid),
-		.RCServo_pulse_out(w_pwm_servo_lid)
+	RCServo lid_servo (
+		.clk(clk50m),							//input clock
+		.RxD_data(servo_pos_lid),				//data to set position of lid
+		.RCServo_pulse_out(w_pwm_servo_lid)		//pwm signal for lid
 		);
 
 	//instantiate motor control
 	motor_control	#(
-		.wait_time	(12'd900),
-		.m_up		(8'hff),
-		.m_down		(8'h0f),
-		.m_halt		(8'h50)
+		.wait_time	(12'd900),		//time to wait while driving motor
+		.m_up		(8'hff),		//drive the motor 'up'
+		.m_down		(8'h0f),		//drive the motor 'down'
+		.m_halt		(8'h50)			//stop the motor
 		)
 	motor1	(
-		.reset		(reset),
-		.pwm		(w_pwm_motor),
-		.clk_50		(clk50m),
-		.direct		(motor_pos[0])
+		.reset		(reset),		//reset signal
+		.pwm		(w_pwm_motor),	//pwm signal for motor
+		.clk_50		(clk50m),		//input clock
+		.direct		(motor_pos[0])	//set direction of motor
 		);
 
 	//whenever there is valid data avalible from the reciver
 	//update the register serial in. if no new data is ready hold
 	//value
 
-	always @(posedge clk50m or negedge reset) begin			 
+	always @(posedge clk50m or negedge reset) begin		//set input serial data
 		if (reset===1'b0)begin
-			serial_in <=8'd0;
+			serial_in <=8'd0;							//clear serial data in when reset
 		end else if (w_data_ready===1'b1) begin
-			serial_in <=w_serial_data;
+			serial_in <=w_serial_data;					//if there is data ready set the serial data to input data
 		end else begin
-			serial_in<=serial_in;
+			serial_in<=serial_in;						//if neither reset of new data, hold old value
 		end
 	end
 
-	always @(posedge clk50m or negedge reset) begin
+	always @(posedge clk50m or negedge reset) begin		//set the state
 		if (reset===1'b0) begin
-			state<=s_reset;
+			state<=s_reset;								//set state to reset
 		end else begin
-			state<=nxt_state;
+			state<=nxt_state;							//set the state to the next state
 		end
 	end
 
-	always @ (*) begin							//state changes
+	always @ (*) begin							//state transitions
 		case(state) 
 			s_reset: 	begin
-							nxt_state <=s_init;	//once in reset state move to initalise
+							nxt_state <=s_init;		//once in reset state move to initalise
 						end
 			s_init:   	begin
-							nxt_state <=s_annow;
+							nxt_state <=s_annow;	//move to announce state to respond with r_init
 						end
 			s_annow:	begin
-							nxt_state <=s_wt_ftran;
+							nxt_state <=s_wt_ftran;	//move to wait for transmission to respond with r_ack
 						end					
 			s_wt_ftran: begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//check if busy transmitting
 								nxt_state <=s_wt_ftran;
 							end else begin
 								nxt_state <=s_wt_verb;
@@ -388,7 +425,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 										nxt_state <= s_mservo_lid;
 										end
 							m_motor:	begin
-										nxt_state <= s_mmotor;
+										nxt_state <= s_m_motor;
 										end
 							m_leds: 	begin
 										nxt_state <= s_mled;
@@ -413,7 +450,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 			s_mservo_lid:	begin
 							nxt_state <= s_mservo_tran;
 						end
-			s_mmotor:	begin
+			s_m_motor:	begin
 							nxt_state <= s_mservo_tran;
 						end
 			s_mservo_tran:begin
@@ -866,13 +903,13 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
 						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo4 = mtne_servo4_clk;
-						mtne_servo5 = mtne_servo5_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
 						servo1_mtne_up = 1'b0;
 						servo2_mtne_up = 1'b0;
 						servo3_mtne_up = 1'b0;
-						servo4_mtne_up = 1'b0;
-						servo5_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
 						end
 			s_disp:	begin
 						verb =verb_clk;
@@ -1204,7 +1241,7 @@ module top_level_fsm ( //will need inputs of a clock,reset,datain,dataout,servop
 						servo_lid_mtne_up = 1'b1;
 						motor_mtne_up = 1'b0;
 						end
-			s_mmotor:	begin 
+			s_m_motor:	begin 
 						tran_trig=1'b1;
 						verb =verb_clk;
 						arg1 =arg1_clk;
