@@ -1,18 +1,18 @@
 module motor_control (
-	input reset,
-	input clk_50,
-	input direct,
-	output pwm
+	input reset,			//reset, held high when not reset
+	input clk_50,			//clock
+	input direct,			//direction to move motor
+	output pwm				//pwm signal to drive motor
 	);
 
 	reg [2:0] state /* synthesis keep */;   //registers for the state and next state
 	reg [2:0] nxt_state;
-	reg last_direct;  //register to store the last direction sent before current 1
+	reg last_direct;  						//register to store the last direction sent before current 1
 	reg last_direct_clk/*synthesis keep*/;
-	reg [7:0]motor_pos;    //registers for the motor potion and the clked version to be passed
+	reg [7:0]motor_pos;    					//registers for the motor potion and the clked version to be passed
 	reg [7:0]motor_pos_clk/*synthesis keep*/;
-	reg [11:0]counter;		// this is the counter to store the current timer
-	reg counter_en;
+	reg [11:0]counter;						//this is the counter to store the current timer
+	reg counter_en;							//counter enable
 	reg counter_en_clk/*synthesis keep*/;
 
 	wire slow_clock;		//wire to move the slow clock to the counter
@@ -20,23 +20,38 @@ module motor_control (
 
 	assign pwm = w_pwm;
 
-	localparam s_reset 		= 3'd0; //parameters for the state for the state machine
+	//parameters for the state for the state machine
+	localparam s_reset 		= 3'd0; 
 	localparam s_init  		= 3'd1;
 	localparam s_wt_go 		= 3'd2;
 	localparam s_set_up 	= 3'd3;
 	localparam s_set_down 	= 3'd4;
 	localparam s_wt_time 	= 3'd5;
+	
+	//parameters for motor direction
 	localparam up			= 1'b1;
 	localparam down			= 1'b0;
 
-	parameter wait_time = 12'h004;   //the parameter that describes the wait time in milisecond
-	parameter m_up= 8'hff;			//postion that cause servo to drive up
-	parameter m_halt = 8'h50;		//postion that halts the motor from turning
-	parameter m_down = 8'h0f;		//postion that drivers motor down
+	//parameters for motor position and timing
+	parameter wait_time = 12'h004;  //the parameter that describes the wait time in milisecond
+	parameter m_up		= 8'hff;	//postion that cause servo to drive up
+	parameter m_halt 	= 8'h50;	//postion that halts the motor from turning
+	parameter m_down 	= 8'h0f;	//postion that drivers motor down
 
-	clk_div #(.clock_div(50000)) ms (.old_clock(clk_50),.reset(reset),.new_clock(slow_clock)); 
+	clk_div #(
+		.clock_div(50000)
+		) 
+	ms (
+		.old_clock(clk_50),
+		.reset(reset),
+		.new_clock(slow_clock)
+		); 
 
-	RCServo servo_m(.clk(clk_50),.RxD_data(motor_pos_clk),.RCServo_pulse_out(w_pwm));
+	RCServo servo_m	(
+		.clk(clk_50),
+		.RxD_data(motor_pos_clk),
+		.RCServo_pulse_out(w_pwm)
+		);
 
 	always@(posedge clk_50 or negedge reset) begin
 		if (reset===1'b0) begin
@@ -86,32 +101,33 @@ module motor_control (
 		always@(*) begin
 			case(state)
 			s_reset:	begin
-							counter_en = 1'b0;		//set counter enable to be 0
+							counter_en = 1'b0;			//set counter enable to be 0
 							motor_pos = m_down; 		//set motor pulse to be halt position
-							last_direct = down;						end
+							last_direct = down;						
+						end
 			s_init: 	begin
-							counter_en = 1'b0;		//set counter enable to be 0
+							counter_en = 1'b0;			//set counter enable to be 0
 							motor_pos = m_halt; 		//set motor pulse to be halt position
 							last_direct = last_direct_clk;
 						end
 			s_wt_go: 	begin
-							counter_en = 1'b0;		//set counter enable to be 0
+							counter_en = 1'b0;			//set counter enable to be 0
 							motor_pos = m_halt; 		//set motor pulse to be up
 							last_direct = last_direct_clk;
 						end
-			s_set_up:	begin // once motor set move to the timer state
-							counter_en = 1'b1;		//set counter enable to be 1
-							motor_pos = m_up; 		//set motor pulse to be down
+			s_set_up:	begin 							//once motor set move to the timer state
+							counter_en = 1'b1;			//set counter enable to be 1
+							motor_pos = m_up; 			//set motor pulse to be down
 							last_direct = up;
 						end
-			s_set_down:	begin //once motor set move to the timer state
-							counter_en = 1'b1;		//set counter enable to be 1
+			s_set_down:	begin 							//once motor set move to the timer state
+							counter_en = 1'b1;			//set counter enable to be 1
 							motor_pos = m_down; 		//set motor pulse to be halt position
 							last_direct = down;
 						end
-			s_wt_time:  begin //this is a time state will hold here untill the allocated time has passed
-							counter_en = 1'b1;		//set counter enable to be 1
-							motor_pos = motor_pos_clk; 		//set motor pulse to be the last set vaule
+			s_wt_time:  begin 							//this is a time state will hold here untill the allocated time has passed
+							counter_en = 1'b1;			//set counter enable to be 1
+							motor_pos = motor_pos_clk; 	//set motor pulse to be the last set vaule
 							last_direct = last_direct_clk;
 						end
 			default: 	begin

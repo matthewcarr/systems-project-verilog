@@ -36,5 +36,3 @@ module hexdisplay (value, display);
 	end
 	
 endmodule
-	
-
