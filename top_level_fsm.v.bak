@@ -3,8 +3,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	input reset,				//pin b14, hard reset
 	input serial_receive,		//pin b13, incoming serial data from mbed
 	output serial_return,		//pin a13, outgoing serial data to mbed
-	input [7:0]data,			//input 8 bit data, used for debugging
-	input data_trig,			//manual trigger for data, used for debugging
+	//input [7:0]data,			//input 8 bit data, used for debugging
+	//input data_trig,			//manual trigger for data, used for debugging
 	output [4:0] state_out,		//output the current state, used for debugging
 	output [6:0] HEX0,			//seven segment display outputs
 	output [6:0] HEX1,
@@ -13,7 +13,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	output txbusy,				//transmitter is busy
 	output [4:0] pwm,			//pwm signals for servos and motor
 	output reg [5:0] led_out,	//LED outputs
-	output reg [3:0] sound_ID
+	output [2:0] sound_ID_out,
+	output start_sound_out
 	);
 
 	reg [7:0]serial_in; 	//register to store the value of the most recent valid command from the RS232
@@ -61,6 +62,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg start_led;
 	reg [5:0] led_en;		//LED enables
 	reg start_sound;		//start playing the buffered sound file
+	reg start_sound_clk;
 	reg set_sound;			//set the sound file to be buffered
 	reg servo_anim;			//lid animatronics enable
 	reg servo_anim_clk;
@@ -71,6 +73,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg mtne_servo3_clk;
 	reg mtne_servo_lid_clk;
 	reg mtne_motor_clk;
+	reg [2:0]sound_ID_clk;
 	
 	//wires for module instantiations
 	wire [7:0]w_serial_data; 	//wire to connect to the reciver
@@ -90,10 +93,10 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	wire w_mled;				//LED maintenance
 
 	//assignments for wires
-	assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
-	assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
+	//assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
+	//assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
 	assign  serial_return 	= 	w_serial_out;		//serial data out
-	assign  txbusy 			= 	0;//w_trans_busy;	//transmission busy
+	assign  txbusy 			= 	w_trans_busy;	//transmission busy
 	assign	state_out 		= 	state;				//output current state, used for debugging
 	assign  w_all_done 		= 	(w_red_done && w_blue_done && w_green_done);		//all servo modules are done processing
 	assign  pwm[0] 			= 	w_pwm_red;			//pin l18, pwm for red dispense servo
@@ -101,6 +104,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	assign  pwm[2] 			= 	w_pwm_blue;			//pin k20, pwm for blue dispense servo
 	assign 	pwm[3]			=	w_pwm_servo_lid;	//pin j18, pwm for lid servo
 	assign	pwm[4]			=	w_pwm_motor;		//pin j20, pwm for mouth motor
+	assign  start_sound_out = 	start_sound_clk;
+	assign	sound_ID_out	=	sound_ID_clk;
 
 	//list of states
 	localparam  s_reset 	=	6'd0,		//reset state, clears everything
@@ -137,7 +142,15 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 				s_sound_txvb =	6'd31,		//transmit verb
 				s_sound_buffer =6'd32,		//extra state to buffer sound for longer
 				s_wt_fresp 	= 	6'd33,		//wait for transmission to finish
-				s_confirm 	= 	6'd34;		//respond with dispense done
+				s_confirm 	= 	6'd34,
+				s_sound_buffer2 =6'd35,
+				s_sound_buffer3 =6'd36,
+				s_sound_buffer4 =6'd37,
+				s_sound_buffer5 =6'd38,
+				s_sound_buffer6 =6'd39,
+				s_sound_buffer7 =6'd40,
+				s_sound_buffer8 =6'd41,
+				s_sound_buffer9 =6'd42;		//respond with dispense done
 				
 
 	//verb list
@@ -165,7 +178,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 
 	//instantiate the transmitter/reciver
-	/*
+	
 	async_receiver #(
 		.ClkFrequency(50000000), 		//clock frequency
 		.Baud(115200)					//baud rate of receiver (must be same as mbed transmitter)
@@ -176,8 +189,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.RxD_data_ready(w_data_ready), 	//data ready to be read
 		.RxD_data(w_serial_data)		//8 bit data to be read
 		);
-	*/
-	/*
+	
+	
 	async_transmitter #(
 		.ClkFrequency(50000000), 		//clock frequency
 		.Baud(115200)					//baud rate of transmitter (must be same as mbed receiver)
@@ -189,7 +202,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.TxD(w_serial_out), 			//serial data being transmitted
 		.TxD_busy(w_trans_busy)			//transmission is busy
 		);
-	*/
+	
 		
 	//instatiate the led_controller
 	led_control		led	(
@@ -203,8 +216,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	//instatiate the 3 token dispensers
 	disp_x_token  #(
 		.wait_cyles(12'h040),
-		.servo_out(8'h00),
-		.servo_in(8'he8)
+		.servo_out(8'h50),
+		.servo_in(8'hff)
 		)
 	red_tokens (
 		.num_token(arg1_clk) ,		//input [3:0] num_token_sig
@@ -219,8 +232,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	disp_x_token  #(
 		.wait_cyles(12'h040),
-		.servo_out(8'h00),
-		.servo_in(8'he8)
+		.servo_out(8'h68),
+		.servo_in(8'hff)
 		)
 	green_tokens
 		(
@@ -236,8 +249,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	disp_x_token  #(
 		.wait_cyles(12'h040),
-		.servo_out(8'h00),
-		.servo_in(8'he8)
+		.servo_out(8'h50),
+		.servo_in(8'hf9)
 		)
 	blue_tokens
 		(
@@ -307,9 +320,9 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						end					
 			s_wt_ftran: begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//check if busy transmitting
-								nxt_state <=s_wt_ftran;
+								nxt_state <=s_wt_ftran;								//if so, stay in state
 							end else begin
-								nxt_state <=s_wt_verb;
+								nxt_state <=s_wt_verb;								//go to 
 							end
 						end
 			s_wt_verb: 	begin
@@ -392,8 +405,21 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							end
 						end
 			s_sound:	begin
+							nxt_state <= s_sound_buffer;
+						end
+		s_sound_buffer:	begin
+							nxt_state <= s_sound_buffer2;
+						end
+		s_sound_buffer2:	begin
+							nxt_state <= s_sound_buffer3;
+						end
+		s_sound_buffer3:	begin
+							nxt_state <= s_sound_buffer4;
+						end
+		s_sound_buffer4:	begin
 							nxt_state <= s_sound_tran;
 						end
+
 			s_sound_tran:	begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
 									nxt_state <=s_sound_tran;
@@ -402,11 +428,9 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 								end	
 							end
 			s_sound_txvb: 	begin
-								nxt_state <= s_sound_buffer;
+								nxt_state <= s_wt_ftran;
 							end
-			s_sound_buffer:	begin
-								nxt_state <= s_wt_verb;
-							end
+
 			s_mtne:		begin
 							case(arg1_clk)
 							m_clear:	begin
@@ -667,7 +691,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						trans_word=8'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						set_sound = 1'b0;
+						set_sound = 1'b1;
 						start_sound = 1'b0;
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
@@ -814,10 +838,114 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg2 =arg2_clk;
 						arg3 =arg3_clk;
 						trans_word=r_ack;
-						tran_trig=1'b1;
+						tran_trig=1'b0;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b1;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b1;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer2: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b1;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer3: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b1;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer4: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b1;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
 						start_sound = 1'b0;
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
@@ -843,8 +971,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						trans_word=8'd0;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						set_sound = 1'b1;
-						start_sound = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b1;
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
@@ -869,7 +997,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						trans_word=verb;
 						start_disp=1'b0;
 						start_led = 1'b0;
-						set_sound = 1'b1;
+						set_sound = 1'b0;
 						start_sound = 1'b1;
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
@@ -885,32 +1013,32 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 					   end
-			s_sound_buffer: begin
-						verb =verb_clk;
-						arg1 =arg1_clk;
-						arg2 =arg2_clk;
-						arg3 =arg3_clk; 
-						start_disp=1'b0;
-						tran_trig=1'b0;
-						trans_word=8'd0;
-						start_disp=1'b0;
-						start_led = 1'b0;
-						set_sound = 1'b1;
-						start_sound = 1'b1;
-						servo_anim = servo_anim_clk;
-						motor_anim = motor_anim_clk;
-						mled = mled_clk;
-						mtne_servo1 = mtne_servo1_clk;
-						mtne_servo2 = mtne_servo2_clk;
-						mtne_servo3 = mtne_servo3_clk;
-						mtne_servo_lid = mtne_servo_lid_clk;
-						mtne_motor = mtne_motor_clk;
-						servo1_mtne_up = 1'b0;
-						servo2_mtne_up = 1'b0;
-						servo3_mtne_up = 1'b0;
-						servo_lid_mtne_up = 1'b0;
-						motor_mtne_up = 1'b0;
-						end
+//			s_sound_buffer: begin
+//						verb =verb_clk;
+//						arg1 =arg1_clk;
+//						arg2 =arg2_clk;
+//						arg3 =arg3_clk; 
+//						start_disp=1'b0;
+//						tran_trig=1'b0;
+//						trans_word=8'd0;
+//						start_disp=1'b0;
+//						start_led = 1'b0;
+//						set_sound = 1'b0;
+//						start_sound = 1'b1;
+//						servo_anim = servo_anim_clk;
+//						motor_anim = motor_anim_clk;
+//						mled = mled_clk;
+//						mtne_servo1 = mtne_servo1_clk;
+//						mtne_servo2 = mtne_servo2_clk;
+//						mtne_servo3 = mtne_servo3_clk;
+//						mtne_servo_lid = mtne_servo_lid_clk;
+//						mtne_motor = mtne_motor_clk;
+//						servo1_mtne_up = 1'b0;
+//						servo2_mtne_up = 1'b0;
+//						servo3_mtne_up = 1'b0;
+//						servo_lid_mtne_up = 1'b0;
+//						motor_mtne_up = 1'b0;
+//						end
 			s_disp:	begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
@@ -1486,12 +1614,12 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	always @(posedge clk50m or negedge reset) begin
 		if (reset ===1'b0) begin
-			sound_ID = 6'd0;
+			sound_ID_clk = 6'd0;
 		end else if (set_sound===1'b1) begin
-			sound_ID = 6'd0;
-			sound_ID = arg1_clk[3:0];
+			sound_ID_clk = 6'd0;
+			sound_ID_clk = arg1_clk[2:0];
 		end else begin
-			sound_ID = sound_ID;
+			sound_ID_clk = sound_ID_clk;
 			end
 		end
 
@@ -1577,6 +1705,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			mtne_servo3_clk = 1'b0;
 			mtne_servo_lid_clk = 1'b0;
 			mtne_motor_clk = 1'b0;
+			start_sound_clk = 1'b0;
 		end else begin
 			verb_clk=verb;
 			arg1_clk=arg1;
@@ -1594,6 +1723,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			mtne_servo3_clk = mtne_servo3;
 			mtne_servo_lid_clk = mtne_servo_lid;
 			mtne_motor_clk = mtne_motor;
+			start_sound_clk = start_sound;
 		end
 	end
 
