@@ -1,0 +1,1986 @@
+Archive member included because of file (symbol)
+
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                              obj/hello_world.o (__divsi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+                              obj/hello_world.o (__mulsi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+                              obj/hello_world.o (malloc)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o) (_malloc_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+                              obj/hello_world.o (printf)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o) (_sbrk_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o) (__vfprintf_internal)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (_wcrtomb_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (_wcsrtombs_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o) (_wctomb_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__swsetup)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (_dtoa_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (fflush)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__sinit)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o) (_free_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__sfvwrite)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o) (_fwalk)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o) (_impure_ptr)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o) (errno)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o) (__lc_ctype)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o) (__smakebuf)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (memchr)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (memcpy)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o) (memmove)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (memset)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__mprec_bigtens)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o) (_realloc_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (isinf)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (isnan)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o) (__sread)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o) (strcmp)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (strlen)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o) (_write_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o) (_calloc_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o) (_close_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o) (_fstat_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o) (_lseek_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o) (_read_r)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__negdi2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__udivdi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__umoddi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__adddf3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__muldf3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__divdf3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__eqdf2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__nedf2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__gtdf2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__gedf2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o) (__ltdf2)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__floatsidf)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o) (__fixdfsi)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o) (__thenan_df)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o) (__muldi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o) (__lshrdi3)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o) (__clz_tab)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o) (__pack_d)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o) (__unpack_d)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o) (__fpcmp_parts_d)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o) (__ashldi3)
+../Audio_bsp/libhal_bsp.a(alt_close.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o) (close)
+../Audio_bsp/libhal_bsp.a(alt_dev.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_close.o) (alt_fd_list)
+../Audio_bsp/libhal_bsp.a(alt_errno.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_close.o) (alt_errno)
+../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o) (fstat)
+../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o) (isatty)
+../Audio_bsp/libhal_bsp.a(alt_load.o)
+                              ../Audio_bsp/obj/HAL/src/crt0.o (alt_load)
+../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o) (lseek)
+../Audio_bsp/libhal_bsp.a(alt_main.o)
+                              ../Audio_bsp/obj/HAL/src/crt0.o (alt_main)
+../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o) (__malloc_lock)
+../Audio_bsp/libhal_bsp.a(alt_read.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o) (read)
+../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_close.o) (alt_release_fd)
+../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o) (sbrk)
+../Audio_bsp/libhal_bsp.a(alt_write.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o) (write)
+../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (alt_irq_init)
+../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+                              obj/hello_world.o (alt_up_audio_open_dev)
+../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+                              obj/hello_world.o (alt_up_sd_card_is_Present)
+../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (_do_ctors)
+../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (_do_dtors)
+../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o) (alt_find_dev)
+../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_irq_register)
+../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_irq_register.o) (alt_irq_active)
+../Audio_bsp/libhal_bsp.a(alt_open.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o) (open)
+../Audio_bsp/libhal_bsp.a(alt_tick.o)
+                              ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_sys_init.o) (altera_nios2_irq_init)
+../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_open.o) (alt_find_file)
+../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_open.o) (alt_get_fd)
+../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_irq_register.o) (alt_irq_entry)
+../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_irq_register.o) (alt_irq_handler)
+../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (atexit)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_main.o) (exit)
+/cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+                              ../Audio_bsp/libhal_bsp.a(alt_find_dev.o) (memcmp)
+../Audio_bsp/libhal_bsp.a(alt_exit.o)
+                              /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+size_array          0x20              obj/hello_world.o
+search_data         0x14              ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+boot_sector_data    0x54              ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+_atexit0            0x10c             /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+active_files        0x500             ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+fileNames           0x20              obj/hello_world.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sdram_0          0x00800000         0x00800000
+reset            0x01080000         0x00000020
+sram_0           0x01080020         0x0007ffe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../Audio_bsp/obj/HAL/src/crt0.o
+LOAD obj/hello_world.o
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libstdc++.a
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libm.a
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a
+START GROUP
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a
+LOAD ../Audio_bsp/libhal_bsp.a
+END GROUP
+LOAD /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a
+                0x00800000                __alt_mem_sdram_0 = 0x800000
+                0x01080000                __alt_mem_sram_0 = 0x1080000
+
+.entry          0x01080000       0x20
+ *(.entry)
+ .entry         0x01080000       0x20 ../Audio_bsp/obj/HAL/src/crt0.o
+                0x01080000                __reset
+
+.exceptions     0x01080020      0x1a8 load address 0x00800000
+                0x01080020                PROVIDE (__ram_exceptions_start, <code 336> (.))
+                0x01080020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x01080020       0x54 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x01080074       0x10 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x01080084        0x4 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x01080088        0x4 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0108008c        0x8 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x01080094        0x4 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x01080098       0x54 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x010800ec       0xdc ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+                0x010800ec                alt_irq_handler
+                0x010801c8                PROVIDE (__ram_exceptions_end, <code 336> (.))
+                0x00800000                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x008001a8     0xfeac load address 0x008001a8
+                0x008001a8                PROVIDE (stext, <code 336> (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x008001a8       0x3c ../Audio_bsp/obj/HAL/src/crt0.o
+                0x008001a8                _start
+ .text          0x008001e4      0x3ec obj/hello_world.o
+                0x008004bc                playSound
+                0x008001e4                main
+ .text          0x008005d0      0x11c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                0x008006cc                __udivsi3
+                0x008006dc                __umodsi3
+                0x00800630                __divsi3
+                0x00800680                __modsi3
+ .text          0x008006ec       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+                0x008006ec                __mulsi3
+ .text          0x00800714       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+                0x00800714                malloc
+                0x00800728                free
+ .text          0x0080073c      0x6b8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+                0x0080073c                _malloc_r
+ .text          0x00800df4       0x34 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+                0x00800df4                printf
+ .text          0x00800e28       0x4c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+                0x00800e28                _sbrk_r
+ .text          0x00800e74     0x1d3c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+                0x00800ecc                ___vfprintf_internal_r
+                0x00802b44                __vfprintf_internal
+ .text          0x00802bb0       0x88 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+                0x00802bb0                _wcrtomb_r
+                0x00802c14                wcrtomb
+ .text          0x00802c38      0x17c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+                0x00802c38                _wcsrtombs_r
+                0x00802d78                wcsrtombs
+ .text          0x00802db4      0x454 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+                0x00802db4                _wctomb_r
+ .text          0x00803208      0x10c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+                0x00803208                __swsetup
+ .text          0x00803314     0x1618 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+                0x00803540                _dtoa_r
+ .text          0x0080492c       0xe8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+                0x0080492c                fflush
+ .text          0x00804a14      0x118 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+                0x00804a90                __sinit
+                0x00804a80                _cleanup
+                0x00804a6c                _cleanup_r
+ .text          0x00804b2c      0x3dc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+                0x00804c50                _free_r
+                0x00804b2c                _malloc_trim_r
+ .text          0x00804f08      0x384 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+                0x00804f08                __sfvwrite
+ .text          0x0080528c       0xd4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+                0x0080528c                _fwalk
+ .text          0x00805360       0xc8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                0x00805360                _setlocale_r
+                0x008053e8                __locale_charset
+                0x008053f0                _localeconv_r
+                0x008053fc                setlocale
+                0x00805418                localeconv
+ .text          0x00805428      0x148 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+                0x00805428                __smakebuf
+ .text          0x00805570       0xcc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+                0x00805570                memchr
+ .text          0x0080563c       0xbc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+                0x0080563c                memcpy
+ .text          0x008056f8      0x108 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+                0x008056f8                memmove
+ .text          0x00805800       0x9c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+                0x00805800                memset
+ .text          0x0080589c      0xf6c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+                0x00806758                _mprec_log10
+                0x00805b90                _hi0bits
+                0x0080589c                _Balloc
+                0x00806530                _d2b
+                0x00805ce4                _multiply
+                0x008066ac                _ratio
+                0x00805a94                _s2b
+                0x00805ca8                _i2b
+                0x00805bf4                _lo0bits
+                0x0080619c                __mcmp
+                0x00805f38                _pow5mult
+                0x00806384                _ulp
+                0x0080640c                _b2d
+                0x00805970                _multadd
+                0x00806200                __mdiff
+                0x00806064                _lshift
+                0x0080594c                _Bfree
+ .text          0x00806808      0x550 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+                0x00806808                _realloc_r
+ .text          0x00806d58       0x44 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+                0x00806d58                isinf
+ .text          0x00806d9c       0x34 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+                0x00806d9c                isnan
+ .text          0x00806dd0      0x17c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+                0x00806ec0                __sseek
+                0x00806dd0                __sread
+                0x00806f38                __sclose
+                0x00806e40                __swrite
+ .text          0x00806f4c       0xb8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+                0x00806f4c                strcmp
+ .text          0x00807004       0x5c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+                0x00807004                strlen
+ .text          0x00807060       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+                0x00807060                _write_r
+ .text          0x008070c4       0xc4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+                0x008070c4                _calloc_r
+ .text          0x00807188       0x5c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+                0x00807188                _close_r
+ .text          0x008071e4       0x60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+                0x008071e4                _fstat_r
+ .text          0x00807244       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+                0x00807244                _lseek_r
+ .text          0x008072a8       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+                0x008072a8                _read_r
+ .text          0x0080730c       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+                0x0080730c                __negdi2
+ .text          0x0080732c      0x5f0 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+                0x0080732c                __udivdi3
+ .text          0x0080791c      0x650 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+                0x0080791c                __umoddi3
+ .text          0x00807f6c      0x400 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+                0x00808288                __adddf3
+                0x008082f4                __subdf3
+ .text          0x0080836c      0x400 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+                0x0080836c                __muldf3
+ .text          0x0080876c      0x250 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+                0x0080876c                __divdf3
+ .text          0x008089bc       0x8c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+                0x008089bc                __eqdf2
+ .text          0x00808a48       0x8c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+                0x00808a48                __nedf2
+ .text          0x00808ad4       0x8c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+                0x00808ad4                __gtdf2
+ .text          0x00808b60       0x8c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+                0x00808b60                __gedf2
+ .text          0x00808bec       0x8c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+                0x00808bec                __ltdf2
+ .text          0x00808c78       0xd0 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+                0x00808c78                __floatsidf
+ .text          0x00808d48       0xb0 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+                0x00808d48                __fixdfsi
+ .text          0x00808df8      0x10c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+                0x00808df8                __muldi3
+ .text          0x00808f04       0x50 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+                0x00808f04                __lshrdi3
+ .text          0x00808f54      0x290 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+                0x00808f54                __pack_d
+ .text          0x008091e4      0x128 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+                0x008091e4                __unpack_d
+ .text          0x0080930c      0x114 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+                0x0080930c                __fpcmp_parts_d
+ .text          0x00809420       0x50 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+                0x00809420                __ashldi3
+ .text          0x00809470      0x144 ../Audio_bsp/libhal_bsp.a(alt_close.o)
+                0x00809470                close
+ .text          0x008095b4       0x28 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .text          0x008095dc      0x11c ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+                0x008095dc                fstat
+ .text          0x008096f8      0x108 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+                0x008096f8                isatty
+ .text          0x00809800       0xe4 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+                0x00809800                alt_load
+ .text          0x008098e4      0x138 ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+                0x008098e4                lseek
+ .text          0x00809a1c       0x70 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+                0x00809a1c                alt_main
+ .text          0x00809a8c       0x38 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+                0x00809aa8                __malloc_unlock
+                0x00809a8c                __malloc_lock
+ .text          0x00809ac4      0x168 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+                0x00809ac4                read
+ .text          0x00809c2c       0x74 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+                0x00809c2c                alt_release_fd
+ .text          0x00809ca0       0xc0 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+                0x00809ca0                sbrk
+ .text          0x00809d60      0x168 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+                0x00809d60                write
+ .text          0x00809ec8       0xc4 ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+                0x00809ef8                alt_sys_init
+                0x00809ec8                alt_irq_init
+ .text          0x00809f8c      0x138 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00809f8c                altera_avalon_jtag_uart_read_fd
+                0x0080a034                altera_avalon_jtag_uart_close_fd
+                0x0080a078                altera_avalon_jtag_uart_ioctl_fd
+                0x00809fe0                altera_avalon_jtag_uart_write_fd
+ .text          0x0080a0c4      0x404 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0080a0c4                altera_avalon_jtag_uart_init
+                0x0080a45c                altera_avalon_jtag_uart_close
+ .text          0x0080a4c8       0xf8 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0080a4c8                altera_avalon_jtag_uart_ioctl
+ .text          0x0080a5c0      0x234 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0080a5c0                altera_avalon_jtag_uart_read
+ .text          0x0080a7f4      0x254 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0080a7f4                altera_avalon_jtag_uart_write
+ .text          0x0080aa48      0x7e0 ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+                0x0080ac9c                alt_up_audio_read_fifo_avail
+                0x0080ad10                alt_up_audio_record_r
+                0x0080ac18                alt_up_audio_reset_audio_core
+                0x0080abe0                alt_up_audio_write_interrupt_pending
+                0x0080b168                alt_up_audio_read_fifo_head
+                0x0080b1c4                alt_up_audio_write_fifo_head
+                0x0080aa48                alt_up_audio_open_dev
+                0x0080ae68                alt_up_audio_play_r
+                0x0080b040                alt_up_audio_write_fifo
+                0x0080af40                alt_up_audio_read_fifo
+                0x0080ab5c                alt_up_audio_disable_write_interrupt
+                0x0080ab14                alt_up_audio_enable_write_interrupt
+                0x0080aac8                alt_up_audio_disable_read_interrupt
+                0x0080ade8                alt_up_audio_write_fifo_space
+                0x0080ad7c                alt_up_audio_record_l
+                0x0080aed4                alt_up_audio_play_l
+                0x0080aa80                alt_up_audio_enable_read_interrupt
+                0x0080aba8                alt_up_audio_read_interrupt_pending
+ .text          0x0080b228     0x3f24 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+                0x0080b59c                Check_for_Master_Boot_Record
+                0x0080ef90                alt_up_sd_card_fclose
+                0x0080dbb8                alt_up_sd_card_is_Present
+                0x0080b2dc                Save_Modified_Sector
+                0x0080e100                alt_up_sd_card_fopen
+                0x0080dcec                alt_up_sd_card_find_first
+                0x0080d45c                find_first_empty_record_in_root_directory
+                0x0080d08c                find_first_empty_cluster
+                0x0080dafc                alt_up_sd_card_open_dev
+                0x0080c500                get_dir_divider_location
+                0x0080c26c                filename_to_upper_case
+                0x0080e478                alt_up_sd_card_set_attributes
+                0x0080b738                Read_File_Record_At_Offset
+                0x0080cc98                find_file_in_directory
+                0x0080dc7c                alt_up_sd_card_is_FAT16
+                0x0080c7f4                get_home_directory_cluster_for_file
+                0x0080b4b8                mark_cluster
+                0x0080d574                convert_filename_to_name_extension
+                0x0080d22c                find_first_empty_record_in_a_subdirectory
+                0x0080e580                alt_up_sd_card_get_size
+                0x0080e4fc                alt_up_sd_card_get_attributes
+                0x0080b228                Write_Sector_Data
+                0x0080e990                alt_up_sd_card_write
+                0x0080b408                get_cluster_flag
+                0x0080b964                Write_File_Record_At_Offset
+                0x0080bbc8                Check_for_DOS_FAT
+                0x0080d6d0                create_file
+                0x0080c310                check_file_name_for_FAT16_compliance
+                0x0080d9c8                copy_file_record_name_to_string
+                0x0080c18c                Look_for_FAT16
+                0x0080ddb4                alt_up_sd_card_find_next
+                0x0080b324                Read_Sector_Data
+                0x0080e604                alt_up_sd_card_read
+                0x0080c59c                match_file_record_to_name_ext
+ .text          0x0080f14c      0x154 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+                0x0080f14c                alt_alarm_start
+ .text          0x0080f2a0       0x18 ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0080f2a0                alt_dcache_flush_all
+ .text          0x0080f2b8       0xf8 ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0080f2b8                alt_dev_llist_insert
+ .text          0x0080f3b0       0x58 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+                0x0080f3b0                _do_ctors
+ .text          0x0080f408       0x58 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+                0x0080f408                _do_dtors
+ .text          0x0080f460       0x90 ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+                0x0080f460                alt_find_dev
+ .text          0x0080f4f0       0x18 ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+                0x0080f4f0                alt_icache_flush_all
+ .text          0x0080f508      0x150 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+                0x0080f5e4                alt_io_redirect
+ .text          0x0080f658      0x1a4 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+                0x0080f658                alt_irq_register
+ .text          0x0080f7fc      0x2b8 ../Audio_bsp/libhal_bsp.a(alt_open.o)
+                0x0080f8e4                open
+ .text          0x0080fab4      0x19c ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+                0x0080fb50                alt_tick
+                0x0080fab4                alt_alarm_stop
+ .text          0x0080fc50       0x1c ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+                0x0080fc50                altera_nios2_irq_init
+ .text          0x0080fc6c       0xe4 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+                0x0080fc6c                alt_find_file
+ .text          0x0080fd50       0xc4 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+                0x0080fd50                alt_get_fd
+ .text          0x0080fe14       0x9c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+                0x0080fe14                atexit
+ .text          0x0080feb0       0xe4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+                0x0080feb0                exit
+ .text          0x0080ff94       0x70 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+                0x0080ff94                memcmp
+ .text          0x00810004       0x50 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+                0x00810034                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00810054                PROVIDE (__etext, <code 336> (.))
+                0x00810054                PROVIDE (_etext, <code 336> (.))
+                0x00810054                PROVIDE (etext, <code 336> (.))
+ *(.eh_frame_hdr)
+                0x00810054                . = ALIGN (0x4)
+                0x00810054                PROVIDE (__preinit_array_start, <code 336> (.))
+ *(.preinit_array)
+                0x00810054                PROVIDE (__preinit_array_end, <code 336> (.))
+                0x00810054                PROVIDE (__init_array_start, <code 336> (.))
+ *(.init_array)
+                0x00810054                PROVIDE (__init_array_end, <code 336> (.))
+                0x00810054                PROVIDE (__fini_array_start, <code 336> (.))
+ *(.fini_array)
+                0x00810054                PROVIDE (__fini_array_end, <code 336> (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x00810054                PROVIDE (__CTOR_LIST__, <code 336> (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00810054                PROVIDE (__CTOR_END__, <code 336> (.))
+                0x00810054                PROVIDE (__DTOR_LIST__, <code 336> (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00810054                PROVIDE (__DTOR_END__, <code 336> (.))
+ *(.jcr)
+                0x00810054                . = ALIGN (0x4)
+
+.rodata         0x00810054      0x5cc load address 0x00810054
+                0x00810054                PROVIDE (__ram_rodata_start, <code 336> (.))
+                0x00810054                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00810054       0xb8 obj/hello_world.o
+ .rodata        0x0081010c      0x184 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .rodata.str1.4
+                0x00810290       0x5b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+                                 0x5c (size before relaxing)
+ *fill*         0x008102eb        0x1 00
+ .rodata.str1.4
+                0x008102ec       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+                                 0x20 (size before relaxing)
+ *fill*         0x0081030a        0x2 00
+ .rodata.str1.4
+                0x0081030c        0x9 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+                                 0x14 (size before relaxing)
+ *fill*         0x00810315        0x3 00
+ .rodata        0x00810318       0x18 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .rodata.str1.4
+                0x00810330        0x2 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x00810332        0x2 00
+ .rodata.str1.4
+                0x00810334        0xb /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                                 0x18 (size before relaxing)
+ *fill*         0x0081033f        0x1 00
+ .rodata        0x00810340       0x30 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .rodata        0x00810370      0x124 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+                0x00810370                __mprec_tinytens
+                0x008103c0                __mprec_tens
+                0x00810398                __mprec_bigtens
+ .rodata        0x00810494       0x14 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+                0x00810494                __thenan_df
+ .rodata        0x008104a8      0x100 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+                0x008104a8                __clz_tab
+ .rodata        0x008105a8        0xc ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .rodata        0x008105b4       0x14 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .rodata        0x008105c8       0x4c ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x00810614        0xb ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ *(.rodata1)
+                0x00810620                . = ALIGN (0x4)
+ *fill*         0x0081061f        0x1 00
+                0x00810620                PROVIDE (__ram_rodata_end, <code 336> (.))
+                0x00810054                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00810620     0x1b00 load address 0x00810620
+                0x00810620                PROVIDE (__ram_rwdata_start, <code 336> (.))
+                0x00810620                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00810620      0x430 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+                0x00810620                __malloc_current_mallinfo
+                0x00810648                __malloc_av_
+ .data          0x00810a50      0x37c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .data          0x00810dcc        0xc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                0x00810dcc                __lc_ctype
+ .data          0x00810dd8      0x1a8 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+                0x00810e00                alt_fd_list
+                0x00810dd8                alt_dev_null
+ .data          0x00810f80     0x10ec ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+                0x0081a06c                _gp = <code 336> ((. + 0x8000))
+                0x0081a06c                PROVIDE (gp, _gp)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0081206c       0x14 obj/hello_world.o
+                0x0081207c                audio_ptr
+                0x00812070                audio_dev_reference
+                0x00812078                sound
+                0x0081206c                device_reference
+                0x00812074                buffer_index
+ .sdata         0x00812080       0x14 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+                0x0081208c                __malloc_top_pad
+                0x00812084                __malloc_max_sbrked_mem
+                0x00812088                __malloc_sbrk_base
+                0x00812080                __malloc_max_total_mem
+                0x00812090                __malloc_trim_threshold
+ .sdata         0x00812094        0x4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+                0x00812094                _impure_ptr
+ .sdata         0x00812098       0x14 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                0x008120a4                __mb_cur_max
+                0x008120a0                __nlocale_changed
+                0x0081209c                __mlocale_changed
+                0x00812098                _PathLocale
+ .sdata         0x008120ac       0x14 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+                0x008120bc                alt_max_fd
+                0x008120b4                alt_dev_list
+                0x008120ac                alt_fs_list
+ .sdata         0x008120c0        0x4 ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+                0x008120c0                alt_errno
+ .sdata         0x008120c4        0xc ../Audio_bsp/libhal_bsp.a(alt_main.o)
+                0x008120c8                alt_argv
+                0x008120cc                alt_envp
+                0x008120c4                alt_argc
+ .sdata         0x008120d0        0x4 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .sdata         0x008120d4       0x34 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+                0x008120dc                aux_status_register
+                0x00812100                current_sector_modified
+                0x008120f8                fat_partition_size_in_512_byte_sectors
+                0x008120ec                command_argument_register
+                0x00812104                current_sector_index
+                0x008120d8                is_sd_card_formated_as_FAT16
+                0x008120fc                device_pointer
+                0x008120d4                initialized
+                0x008120e0                status_register
+                0x008120e8                command_register
+                0x008120e4                CSD_register_w0
+                0x008120f0                buffer_memory
+                0x008120f4                fat_partition_offset_in_512_byte_sectors
+ .sdata         0x00812108        0x8 ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+                0x00812108                alt_irq_active
+                0x0081210c                alt_priority_mask
+ .sdata         0x00812110       0x10 ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+                0x00812110                _alt_tick_rate
+                0x00812114                _alt_nticks
+                0x00812118                alt_alarm_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00812120                . = ALIGN (0x4)
+                0x00812120                _edata = <code 336> (.)
+                0x00812120                PROVIDE (edata, <code 336> (.))
+                0x00812120                PROVIDE (__ram_rwdata_end, <code 336> (.))
+                0x00810620                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00812120      0x7c8 load address 0x00812120
+                0x00812120                __bss_start = <code 336> (.)
+                0x00812120                PROVIDE (__sbss_start, <code 336> (.))
+                0x00812120                PROVIDE (___sbss_start, <code 336> (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00812120        0xc obj/hello_world.o
+                0x00812124                buffers
+                0x00812120                left_buffer
+                0x00812128                fifospace
+ .sbss          0x0081212c        0x4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+                0x0081212c                errno
+ .sbss          0x00812130        0x4 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00812134                PROVIDE (__sbss_end, <code 336> (.))
+                0x00812134                PROVIDE (___sbss_end, <code 336> (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x00812134       0x40 obj/hello_world.o
+                                  0x0 (size before relaxing)
+                0x00812134                size_array
+                0x00812154                fileNames
+ COMMON         0x00812174      0x568 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+                                  0x0 (size before relaxing)
+                0x00812174                search_data
+                0x00812188                boot_sector_data
+                0x008121dc                active_files
+ COMMON         0x008126dc      0x100 ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+                                  0x0 (size before relaxing)
+                0x008126dc                alt_irq
+ COMMON         0x008127dc      0x10c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+                                  0x0 (size before relaxing)
+                0x008127dc                _atexit0
+                0x008128e8                . = ALIGN (0x4)
+                0x008128e8                __bss_end = <code 336> (.)
+
+.sdram_0        0x008128e8        0x0 load address 0x008128e8
+                0x008128e8                PROVIDE (_alt_partition_sdram_0_start, <code 336> (.))
+ *(.sdram_0. sdram_0.*)
+                0x008128e8                . = ALIGN (0x4)
+                0x008128e8                PROVIDE (_alt_partition_sdram_0_end, <code 336> (.))
+                0x008128e8                _end = <code 336> (.)
+                0x008128e8                end = <code 336> (.)
+                0x008128e8                __alt_stack_base = <code 336> (.)
+                0x008128e8                PROVIDE (_alt_partition_sdram_0_load_addr, LOADADDR (.sdram_0))
+
+.sram_0         0x010801c8        0x0 load address 0x008128e8
+                0x010801c8                PROVIDE (_alt_partition_sram_0_start, <code 336> (.))
+ *(.sram_0. sram_0.*)
+                0x010801c8                . = ALIGN (0x4)
+                0x010801c8                PROVIDE (_alt_partition_sram_0_end, <code 336> (.))
+                0x008128e8                PROVIDE (_alt_partition_sram_0_load_addr, LOADADDR (.sram_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000     0x115c
+ *(.comment)
+ .comment       0x00000000       0x2c obj/hello_world.o
+ .comment       0x0000002c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .comment       0x00000058       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .comment       0x00000084       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .comment       0x000000b0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .comment       0x000000dc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .comment       0x00000108       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .comment       0x00000134       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .comment       0x00000160       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .comment       0x0000018c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .comment       0x000001b8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .comment       0x000001e4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .comment       0x00000210       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .comment       0x0000023c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .comment       0x00000268       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .comment       0x00000294       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .comment       0x000002c0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .comment       0x000002ec       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .comment       0x00000318       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .comment       0x00000344       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+ .comment       0x00000370       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .comment       0x0000039c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .comment       0x000003c8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .comment       0x000003f4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .comment       0x00000420       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .comment       0x0000044c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .comment       0x00000478       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .comment       0x000004a4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .comment       0x000004d0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .comment       0x000004fc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .comment       0x00000528       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .comment       0x00000554       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .comment       0x00000580       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .comment       0x000005ac       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .comment       0x000005d8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .comment       0x00000604       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .comment       0x00000630       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .comment       0x0000065c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .comment       0x00000688       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .comment       0x000006b4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .comment       0x000006e0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .comment       0x0000070c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .comment       0x00000738       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .comment       0x00000764       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .comment       0x00000790       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .comment       0x000007bc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .comment       0x000007e8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .comment       0x00000814       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .comment       0x00000840       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .comment       0x0000086c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .comment       0x00000898       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .comment       0x000008c4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .comment       0x000008f0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+ .comment       0x0000091c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .comment       0x00000948       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .comment       0x00000974       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+ .comment       0x000009a0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .comment       0x000009cc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .comment       0x000009f8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .comment       0x00000a24       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .comment       0x00000a50       0x2c ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .comment       0x00000a7c       0x2c ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .comment       0x00000aa8       0x2c ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .comment       0x00000ad4       0x2c ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .comment       0x00000b00       0x2c ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .comment       0x00000b2c       0x2c ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .comment       0x00000b58       0x2c ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .comment       0x00000b84       0x2c ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .comment       0x00000bb0       0x2c ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .comment       0x00000bdc       0x2c ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .comment       0x00000c08       0x2c ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000c34       0x2c ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .comment       0x00000c60       0x2c ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .comment       0x00000c8c       0x2c ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000cb8       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000ce4       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x00000d10       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x00000d3c       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000d68       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000d94       0x2c ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .comment       0x00000dc0       0x2c ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .comment       0x00000dec       0x2c ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x00000e18       0x2c ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000e44       0x2c ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000e70       0x2c ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x00000e9c       0x2c ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x00000ec8       0x2c ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000ef4       0x2c ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000f20       0x2c ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000f4c       0x2c ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .comment       0x00000f78       0x2c ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000fa4       0x2c ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .comment       0x00000fd0       0x2c ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .comment       0x00000ffc       0x2c ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .comment       0x00001028       0x2c ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .comment       0x00001054       0x2c ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00001080       0x2c ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000010ac       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .comment       0x000010d8       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .comment       0x00001104       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .comment       0x00001130       0x2c ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xc78
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../Audio_bsp/obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/hello_world.o
+ .debug_aranges
+                0x00000048       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x00000068       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x00000088       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_aranges
+                0x000000a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_aranges
+                0x000000c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_aranges
+                0x000000e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_aranges
+                0x00000108       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_aranges
+                0x00000128       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_aranges
+                0x00000148       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_aranges
+                0x00000168       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_aranges
+                0x00000188       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_aranges
+                0x000001a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_aranges
+                0x000001c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_aranges
+                0x000001e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_aranges
+                0x00000208       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_aranges
+                0x00000228       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_aranges
+                0x00000248       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_aranges
+                0x00000268       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_aranges
+                0x00000288       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_aranges
+                0x000002a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_aranges
+                0x000002c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_aranges
+                0x000002e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_aranges
+                0x00000308       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_aranges
+                0x00000328       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_aranges
+                0x00000348       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_aranges
+                0x00000368       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_aranges
+                0x00000388       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_aranges
+                0x000003a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_aranges
+                0x000003c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_aranges
+                0x000003e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_aranges
+                0x00000408       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_aranges
+                0x00000428       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_aranges
+                0x00000448       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_aranges
+                0x00000468       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_aranges
+                0x00000488       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_aranges
+                0x000004a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_aranges
+                0x000004c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_aranges
+                0x000004e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000508       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_aranges
+                0x00000528       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_aranges
+                0x00000548       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_aranges
+                0x00000568       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_aranges
+                0x00000588       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_aranges
+                0x000005a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_aranges
+                0x000005c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_aranges
+                0x000005e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_aranges
+                0x00000608       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_aranges
+                0x00000628       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_aranges
+                0x00000648       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_aranges
+                0x00000668       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_aranges
+                0x00000688       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x000006a8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_aranges
+                0x000006c8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_aranges
+                0x000006e8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_aranges
+                0x00000708       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x00000728       0x20 ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000748       0x20 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000768       0x20 ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_aranges
+                0x00000788       0x20 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_aranges
+                0x000007a8       0x20 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000007c8       0x20 ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_aranges
+                0x000007e8       0x20 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000808       0x20 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_aranges
+                0x00000828       0x20 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_aranges
+                0x00000848       0x20 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000868       0x20 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_aranges
+                0x00000888       0x20 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x000008a8       0x20 ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x000008c8       0x20 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x000008e8       0x20 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000908       0x20 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x00000928       0x20 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x00000948       0x20 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000968       0x20 ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_aranges
+                0x00000988       0x20 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_aranges
+                0x000009a8       0x20 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x000009c8       0x20 ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x000009e8       0x20 ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000a08       0x20 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000a28       0x20 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x00000a48       0x20 ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000a68       0x20 ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000a88       0x20 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000aa8       0x20 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_aranges
+                0x00000ac8       0x20 ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000ae8       0x20 ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000b08       0x20 ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_aranges
+                0x00000b28       0x20 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000b48       0x20 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000b68       0x30 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000b98       0x28 ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000bc0       0x38 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000bf8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_aranges
+                0x00000c18       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_aranges
+                0x00000c38       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_aranges
+                0x00000c58       0x20 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+                0x00000000     0x19ea
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xc6 obj/hello_world.o
+ .debug_pubnames
+                0x000000c6       0x48 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_pubnames
+                0x0000010e       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_pubnames
+                0x0000012d       0x26 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_pubnames
+                0x00000153       0xce /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_pubnames
+                0x00000221       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_pubnames
+                0x0000023e       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_pubnames
+                0x0000025c       0x45 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_pubnames
+                0x000002a1       0x2d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_pubnames
+                0x000002ce       0x31 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_pubnames
+                0x000002ff       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_pubnames
+                0x0000031f       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_pubnames
+                0x0000033f       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_pubnames
+                0x0000035d       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_pubnames
+                0x0000037a       0x3a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_pubnames
+                0x000003b4       0x31 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_pubnames
+                0x000003e5       0x21 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_pubnames
+                0x00000406       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_pubnames
+                0x00000423       0x22 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .debug_pubnames
+                0x00000445       0x1c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+ .debug_pubnames
+                0x00000461       0xc3 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_pubnames
+                0x00000524       0x21 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_pubnames
+                0x00000545       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_pubnames
+                0x00000562       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_pubnames
+                0x0000057f       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_pubnames
+                0x0000059d       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_pubnames
+                0x000005ba      0x112 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_pubnames
+                0x000006cc       0x21 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_pubnames
+                0x000006ed       0x1c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_pubnames
+                0x00000709       0x1c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_pubnames
+                0x00000725       0x44 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_pubnames
+                0x00000769       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_pubnames
+                0x00000786       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_pubnames
+                0x000007a3       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_pubnames
+                0x000007c2       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_pubnames
+                0x000007e2       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_pubnames
+                0x00000801       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_pubnames
+                0x00000820       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_pubnames
+                0x0000083f       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_pubnames
+                0x0000085d       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_pubnames
+                0x0000087c       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_pubnames
+                0x0000089c       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_pubnames
+                0x000008bc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_pubnames
+                0x000008e8       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_pubnames
+                0x00000907       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_pubnames
+                0x00000926       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_pubnames
+                0x00000944       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_pubnames
+                0x00000962       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_pubnames
+                0x00000980       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_pubnames
+                0x0000099e       0x1e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_pubnames
+                0x000009bc       0x22 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_pubnames
+                0x000009de       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_pubnames
+                0x000009fe       0x22 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+ .debug_pubnames
+                0x00000a20       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_pubnames
+                0x00000a3f       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_pubnames
+                0x00000a5f       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+ .debug_pubnames
+                0x00000a7f       0x1f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_pubnames
+                0x00000a9e       0x21 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_pubnames
+                0x00000abf       0x26 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_pubnames
+                0x00000ae5       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_pubnames
+                0x00000b05       0x1c ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_pubnames
+                0x00000b21       0x63 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_pubnames
+                0x00000b84       0x20 ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .debug_pubnames
+                0x00000ba4       0x1c ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_pubnames
+                0x00000bc0       0x1d ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_pubnames
+                0x00000bdd       0x1f ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x00000bfc       0x1c ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_pubnames
+                0x00000c18       0x46 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x00000c5e       0x38 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_pubnames
+                0x00000c96       0x1b ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_pubnames
+                0x00000cb1       0x25 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_pubnames
+                0x00000cd6       0x1b ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_pubnames
+                0x00000cf1       0x1c ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_pubnames
+                0x00000d0d       0x34 ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x00000d41       0xa5 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_pubnames
+                0x00000de6       0x55 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_pubnames
+                0x00000e3b       0x34 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_pubnames
+                0x00000e6f       0x33 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_pubnames
+                0x00000ea2       0x34 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_pubnames
+                0x00000ed6      0x25e ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_pubnames
+                0x00001134      0x580 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_pubnames
+                0x000016b4       0x26 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_pubnames
+                0x000016da       0x2b ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x00001705       0x2b ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_pubnames
+                0x00001730       0x20 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_pubnames
+                0x00001750       0x20 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_pubnames
+                0x00001770       0x23 ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_pubnames
+                0x00001793       0x2b ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x000017be       0x26 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_pubnames
+                0x000017e4       0x27 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_pubnames
+                0x0000180b       0x3b ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x00001846       0x1b ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_pubnames
+                0x00001861       0x68 ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_pubnames
+                0x000018c9       0x2c ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_pubnames
+                0x000018f5       0x24 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_pubnames
+                0x00001919       0x21 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_pubnames
+                0x0000193a       0x32 ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x0000196c       0x2a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_pubnames
+                0x00001996       0x1b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_pubnames
+                0x000019b1       0x1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_pubnames
+                0x000019ce       0x1c ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_info     0x00000000    0x25649
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0xc8 ../Audio_bsp/obj/HAL/src/crt0.o
+ .debug_info    0x000000c8      0x66b obj/hello_world.o
+ .debug_info    0x00000733      0x1f2 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000925       0xdb /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_info    0x00000a00      0x921 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_info    0x00001321      0xc62 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_info    0x00001f83      0x91f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_info    0x000028a2      0x929 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_info    0x000031cb     0x10a7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_info    0x00004272      0x9a6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_info    0x00004c18      0xa2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_info    0x00005644      0x9b1 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_info    0x00005ff5      0x901 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_info    0x000068f6      0xcfa /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_info    0x000075f0      0x922 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_info    0x00007f12      0x97d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_info    0x0000888f      0xb60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_info    0x000093ef      0xa1c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_info    0x00009e0b      0x94f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_info    0x0000a75a      0x8dd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .debug_info    0x0000b037       0x81 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+ .debug_info    0x0000b0b8      0xb3d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_info    0x0000bbf5      0xa9d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_info    0x0000c692      0x11f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_info    0x0000c7b1       0xf8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_info    0x0000c8a9      0x129 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_info    0x0000c9d2       0xfe /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_info    0x0000cad0     0x123a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_info    0x0000dd0a      0xb40 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_info    0x0000e84a       0xc6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_info    0x0000e910       0xc6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_info    0x0000e9d6      0xa1d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_info    0x0000f3f3       0xcc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_info    0x0000f4bf       0xce /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_info    0x0000f58d      0x940 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_info    0x0000fecd      0x9ca /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_info    0x00010897      0x909 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_info    0x000111a0      0xa7f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_info    0x00011c1f      0x92e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_info    0x0001254d      0x939 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_info    0x00012e86      0x13c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_info    0x00012fc2      0x6bf /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_info    0x00013681      0x6fd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_info    0x00013d7e      0x44f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_info    0x000141cd      0x47d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_info    0x0001464a      0x38c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_info    0x000149d6      0x2c6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_info    0x00014c9c      0x2c6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_info    0x00014f62      0x2c6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_info    0x00015228      0x2c6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_info    0x000154ee      0x2c6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_info    0x000157b4      0x1b5 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_info    0x00015969      0x28d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_info    0x00015bf6      0x160 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+ .debug_info    0x00015d56      0x1f3 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_info    0x00015f49      0x18d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_info    0x000160d6       0xbc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+ .debug_info    0x00016192      0x2c1 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_info    0x00016453      0x267 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_info    0x000166ba      0x1db /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_info    0x00016895      0x18d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_info    0x00016a22      0x4ce ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_info    0x00016ef0      0x6ee ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_info    0x000175de      0x1cf ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .debug_info    0x000177ad      0x6cd ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_info    0x00017e7a      0x6d4 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_info    0x0001854e      0x2f4 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_info    0x00018842      0x4f3 ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_info    0x00018d35      0x2dc ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_info    0x00019011      0xc18 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_info    0x00019c29      0x6f7 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_info    0x0001a320      0x45b ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0001a77b      0x343 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_info    0x0001aabe      0x700 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_info    0x0001b1be      0x91d ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0001badb      0x82b ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0001c306      0x69b ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x0001c9a1      0x49b ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0001ce3c      0x5b6 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0001d3f2      0x5b2 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0001d9a4      0xb1b ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_info    0x0001e4bf     0x2206 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_info    0x000206c5      0x4c7 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00020b8c      0x1c5 ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00020d51      0x32d ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0002107e      0x183 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x00021201      0x182 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x00021383      0x481 ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00021804      0x1c5 ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x000219c9      0x702 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x000220cb      0x4b2 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0002257d      0x1d2 ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0002274f      0x58a ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_info    0x00022cd9      0x47d ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_info    0x00023156      0x1c2 ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_info    0x00023318      0x488 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x000237a0      0x4e3 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00023c83       0xd1 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00023d54      0x2ef ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x00024043       0xd7 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0002411a      0x91e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_info    0x00024a38      0x921 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_info    0x00025359       0xfc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_info    0x00025455      0x1f4 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x00000000     0x7729
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x10 ../Audio_bsp/obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000010      0x122 obj/hello_world.o
+ .debug_abbrev  0x00000132       0xa9 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x000001db       0x6a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x00000245      0x185 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_abbrev  0x000003ca      0x212 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_abbrev  0x000005dc      0x180 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_abbrev  0x0000075c      0x19f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_abbrev  0x000008fb      0x2d7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_abbrev  0x00000bd2      0x18c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_abbrev  0x00000d5e      0x193 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_abbrev  0x00000ef1      0x1b8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_abbrev  0x000010a9      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_abbrev  0x00001217      0x1fa /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_abbrev  0x00001411      0x17d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_abbrev  0x0000158e      0x1a1 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_abbrev  0x0000172f      0x1d7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_abbrev  0x00001906      0x1a7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_abbrev  0x00001aad      0x19a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_abbrev  0x00001c47      0x155 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .debug_abbrev  0x00001d9c       0x39 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+ .debug_abbrev  0x00001dd5      0x1dc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_abbrev  0x00001fb1      0x18a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_abbrev  0x0000213b       0xa6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_abbrev  0x000021e1       0x97 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_abbrev  0x00002278       0x97 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_abbrev  0x0000230f       0x98 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_abbrev  0x000023a7      0x21f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_abbrev  0x000025c6      0x1ce /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_abbrev  0x00002794       0x77 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_abbrev  0x0000280b       0x77 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_abbrev  0x00002882      0x199 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_abbrev  0x00002a1b       0x6f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_abbrev  0x00002a8a       0x7c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_abbrev  0x00002b06      0x182 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_abbrev  0x00002c88      0x1b8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_abbrev  0x00002e40      0x17d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_abbrev  0x00002fbd      0x18c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_abbrev  0x00003149      0x18c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_abbrev  0x000032d5      0x17d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_abbrev  0x00003452       0xc7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_abbrev  0x00003519      0x163 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000367c      0x186 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_abbrev  0x00003802      0x1ca /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_abbrev  0x000039cc      0x1de /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_abbrev  0x00003baa      0x1df /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_abbrev  0x00003d89      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_abbrev  0x00003ef7      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_abbrev  0x00004065      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_abbrev  0x000041d3      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_abbrev  0x00004341      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_abbrev  0x000044af       0xef /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_abbrev  0x0000459e      0x16e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_abbrev  0x0000470c       0xb8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+ .debug_abbrev  0x000047c4       0xea /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_abbrev  0x000048ae       0xdd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x0000498b       0x5f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+ .debug_abbrev  0x000049ea      0x191 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_abbrev  0x00004b7b      0x13c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_abbrev  0x00004cb7      0x128 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_abbrev  0x00004ddf       0xdd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x00004ebc       0xfb ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00004fb7       0xdf ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00005096       0x5e ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x000050f4      0x102 ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_abbrev  0x000051f6      0x102 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_abbrev  0x000052f8       0x88 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00005380       0xfb ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_abbrev  0x0000547b       0xc9 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00005544      0x181 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_abbrev  0x000056c5      0x102 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_abbrev  0x000057c7       0xc1 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00005888      0x116 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_abbrev  0x0000599e      0x107 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x00005aa5      0x170 ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00005c15       0xf7 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x00005d0c      0x178 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00005e84       0xf0 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x00005f74      0x19d ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00006111      0x18e ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000629f      0x164 ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_abbrev  0x00006403      0x1f9 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_abbrev  0x000065fc      0x17e ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x0000677a       0x3f ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000067b9       0xfb ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x000068b4       0x76 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x0000692a       0x76 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x000069a0       0xcf ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00006a6f       0x3f ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00006aae       0xf7 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00006ba5      0x192 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x00006d37       0x44 ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00006d7b      0x112 ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00006e8d      0x151 ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x00006fde       0x3f ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_abbrev  0x0000701d       0xcf ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x000070ec      0x106 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x000071f2       0x10 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00007202      0x104 ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00007306       0x10 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00007316      0x19d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_abbrev  0x000074b3      0x18a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_abbrev  0x0000763d       0x7a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_abbrev  0x000076b7       0x72 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x00000000    0x153d7
+ *(.debug_line)
+ .debug_line    0x00000000       0xac ../Audio_bsp/obj/HAL/src/crt0.o
+ .debug_line    0x000000ac      0x43a obj/hello_world.o
+ .debug_line    0x000004e6      0x2bc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_line    0x000007a2      0x169 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_line    0x0000090b      0x1f2 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_line    0x00000afd      0x75f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_line    0x0000125c      0x1fe /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_line    0x0000145a      0x234 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_line    0x0000168e     0x11b6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_line    0x00002844      0x26d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_line    0x00002ab1      0x33b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_line    0x00002dec      0x6af /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_line    0x0000349b      0x2d7 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_line    0x00003772     0x12ce /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_line    0x00004a40      0x28b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_line    0x00004ccb      0x339 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_line    0x00005004      0x517 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_line    0x0000551b      0x549 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_line    0x00005a64      0x29d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_line    0x00005d01      0x1e8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+ .debug_line    0x00005ee9      0x1a6 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+ .debug_line    0x0000608f      0x291 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_line    0x00006320      0x32a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_line    0x0000664a      0x28f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_line    0x000068d9      0x1e5 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_line    0x00006abe      0x2a0 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_line    0x00006d5e      0x24b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_line    0x00006fa9     0x1178 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_line    0x00008121      0x52b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_line    0x0000864c      0x208 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_line    0x00008854      0x200 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_line    0x00008a54      0x335 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_line    0x00008d89      0x1f5 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_line    0x00008f7e      0x1bb /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_line    0x00009139      0x23d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_line    0x00009376      0x236 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_line    0x000095ac      0x23d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_line    0x000097e9      0x213 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_line    0x000099fc      0x23d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_line    0x00009c39      0x23c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_line    0x00009e75      0x12b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_line    0x00009fa0      0x355 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000a2f5      0x46e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_line    0x0000a763      0x4bd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_line    0x0000ac20      0x483 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_line    0x0000b0a3      0x30f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_line    0x0000b3b2      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_line    0x0000b525      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_line    0x0000b698      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_line    0x0000b80b      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_line    0x0000b97e      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_line    0x0000baf1      0x17b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_line    0x0000bc6c      0x16f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_line    0x0000bddb       0xbc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_thenan_df.o)
+ .debug_line    0x0000be97      0x186 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_line    0x0000c01d      0x190 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_line    0x0000c1ad      0x109 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_clz.o)
+ .debug_line    0x0000c2b6      0x263 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_line    0x0000c519      0x239 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_line    0x0000c752      0x1ab /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_line    0x0000c8fd      0x190 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_line    0x0000ca8d      0x2d7 ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000cd64      0x2b0 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000d014      0x1e8 ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .debug_line    0x0000d1fc      0x300 ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_line    0x0000d4fc      0x301 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_line    0x0000d7fd      0x24d ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000da4a      0x2df ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_line    0x0000dd29      0x32b ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000e054      0x26a ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_line    0x0000e2be      0x31e ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_line    0x0000e5dc      0x133 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000e70f      0x2a4 ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_line    0x0000e9b3      0x320 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000ecd3      0x36d ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000f040      0x26e ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000f2ae      0x527 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x0000f7d5      0x34c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x0000fb21      0x457 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000ff78      0x465 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000103dd      0x59f ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_line    0x0001097c     0x1a5e ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_line    0x000123da      0x316 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x000126f0      0x1f3 ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000128e3      0x298 ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00012b7b       0xc9 ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00012c44       0xc9 ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00012d0d      0x29f ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00012fac      0x1f3 ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0001319f      0x30e ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x000134ad      0x351 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x000137fe       0xb8 ../Audio_bsp/libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x000138b6      0x33d ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_line    0x00013bf3      0x30c ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_line    0x00013eff      0x207 ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_line    0x00014106      0x2b0 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000143b6      0x2ef ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x000146a5       0xb1 ../Audio_bsp/libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00014756      0x27e ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x000149d4       0xf1 ../Audio_bsp/libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00014ac5      0x260 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_line    0x00014d25      0x273 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_line    0x00014f98      0x20d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_line    0x000151a5      0x232 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x00000000     0x1bf8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x4c obj/hello_world.o
+ .debug_frame   0x0000004c       0x70 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_frame   0x000000bc       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_frame   0x000000dc       0x30 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+ .debug_frame   0x0000010c       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_frame   0x00000144       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+ .debug_frame   0x0000016c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+ .debug_frame   0x00000198       0x70 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_frame   0x00000208       0x3c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+ .debug_frame   0x00000244       0x50 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_frame   0x00000294       0x30 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_frame   0x000002c4       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+ .debug_frame   0x000002ec       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+ .debug_frame   0x00000350       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+ .debug_frame   0x0000037c       0x5c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+ .debug_frame   0x000003d8       0x4c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+ .debug_frame   0x00000424       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+ .debug_frame   0x0000045c       0x30 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+ .debug_frame   0x0000048c       0x70 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+ .debug_frame   0x000004fc       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+ .debug_frame   0x00000528       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+ .debug_frame   0x00000548       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+ .debug_frame   0x00000568       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+ .debug_frame   0x00000588       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+ .debug_frame   0x000005a8      0x1f8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+ .debug_frame   0x000007a0       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_frame   0x000007d8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+ .debug_frame   0x000007f8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+ .debug_frame   0x00000818       0x6c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+ .debug_frame   0x00000884       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+ .debug_frame   0x000008a4       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+ .debug_frame   0x000008c4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+ .debug_frame   0x000008f0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_frame   0x0000091c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+ .debug_frame   0x00000948       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+ .debug_frame   0x00000974       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+ .debug_frame   0x000009a0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+ .debug_frame   0x000009cc       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+ .debug_frame   0x000009ec       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000a24       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_frame   0x00000a5c       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_frame   0x00000ac0       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_frame   0x00000af8       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_frame   0x00000b30       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+ .debug_frame   0x00000b5c       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+ .debug_frame   0x00000b88       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+ .debug_frame   0x00000bb4       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+ .debug_frame   0x00000be0       0x2c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+ .debug_frame   0x00000c0c       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+ .debug_frame   0x00000c34       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+ .debug_frame   0x00000c5c       0x34 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_frame   0x00000c90       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_frame   0x00000cb0       0x38 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_frame   0x00000ce8       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+ .debug_frame   0x00000d08       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+ .debug_frame   0x00000d28       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+ .debug_frame   0x00000d48       0x48 ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000d90       0x2c ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000dbc       0x48 ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_frame   0x00000e04       0x48 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_frame   0x00000e4c       0x48 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000e94       0x48 ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_frame   0x00000edc       0x2c ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000f08       0x48 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_frame   0x00000f50       0x48 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_frame   0x00000f98       0x30 ../Audio_bsp/libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00000fc8       0x2c ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_frame   0x00000ff4       0x48 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000103c       0x64 ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000010a0       0x80 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00001120       0x80 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x000011a0       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x000011cc       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x000011f8       0x2c ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00001224      0x208 ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_frame   0x0000142c      0x3dc ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_frame   0x00001808       0x2c ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x00001834       0x2c ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00001860       0x48 ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x000018a8       0x2c ../Audio_bsp/libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x000018d4       0x2c ../Audio_bsp/libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x00001900       0x2c ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x0000192c       0x2c ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00001958       0x4c ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x000019a4       0x2c ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_frame   0x000019d0       0x68 ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_frame   0x00001a38       0x48 ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x00001a80       0x2c ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_frame   0x00001aac       0x2c ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x00001ad8       0x30 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x00001b08       0x2c ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00001b34       0x28 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+ .debug_frame   0x00001b5c       0x34 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+ .debug_frame   0x00001b90       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+ .debug_frame   0x00001bb0       0x48 ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x00000000     0x242c
+ *(.debug_str)
+ .debug_str     0x00000000       0x36 obj/hello_world.o
+ .debug_str     0x00000036      0x12d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                                0x16d (size before relaxing)
+ .debug_str     0x00000163       0x63 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(lib2-mul.o)
+                                0x12e (size before relaxing)
+ .debug_str     0x000001c6      0x3bd /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(malloc.o)
+                                0x49a (size before relaxing)
+ .debug_str     0x00000583      0x22a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+                                0x66f (size before relaxing)
+ .debug_str     0x000007ad       0x6b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(printf.o)
+                                0x498 (size before relaxing)
+ .debug_str     0x00000818       0x77 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(sbrkr.o)
+                                0x48f (size before relaxing)
+ .debug_str     0x0000088f      0x1e3 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+                                0x681 (size before relaxing)
+ .debug_str     0x00000a72       0x78 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcrtomb.o)
+                                0x4af (size before relaxing)
+ .debug_str     0x00000aea       0x81 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+                                0x4c4 (size before relaxing)
+ .debug_str     0x00000b6b       0x86 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+                                0x4b0 (size before relaxing)
+ .debug_str     0x00000bf1       0x66 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wsetup.o)
+                                0x489 (size before relaxing)
+ .debug_str     0x00000c57      0x124 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(dtoa.o)
+                                0x573 (size before relaxing)
+ .debug_str     0x00000d7b       0x63 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fflush.o)
+                                0x486 (size before relaxing)
+ .debug_str     0x00000dde       0x6f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(findfp.o)
+                                0x4ab (size before relaxing)
+ .debug_str     0x00000e4d       0x3c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(freer.o)
+                                0x5c1 (size before relaxing)
+ .debug_str     0x00000e89       0x7e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fvwrite.o)
+                                0x4e4 (size before relaxing)
+ .debug_str     0x00000f07       0x6b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fwalk.o)
+                                0x48e (size before relaxing)
+ .debug_str     0x00000f72       0x68 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(impure.o)
+                                0x486 (size before relaxing)
+ .debug_str     0x00000fda       0x5f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(int_errno.o)
+                                0x108 (size before relaxing)
+ .debug_str     0x00001039      0x1b0 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(locale.o)
+                                0x627 (size before relaxing)
+ .debug_str     0x000011e9      0x136 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(makebuf.o)
+                                0x570 (size before relaxing)
+ .debug_str     0x0000131f       0x7e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memchr.o)
+                                0x12f (size before relaxing)
+ .debug_str     0x0000139d       0x8b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcpy.o)
+                                 0xd8 (size before relaxing)
+ .debug_str     0x00001428       0x6f /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memmove.o)
+                                0x141 (size before relaxing)
+ .debug_str     0x00001497       0x71 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memset.o)
+                                0x122 (size before relaxing)
+ .debug_str     0x00001508       0xf5 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mprec.o)
+                                0x55b (size before relaxing)
+ .debug_str     0x000015fd       0x61 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+                                0x541 (size before relaxing)
+ .debug_str     0x0000165e       0x6c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isinf.o)
+                                0x11c (size before relaxing)
+ .debug_str     0x000016ca       0x62 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(s_isnan.o)
+                                0x11c (size before relaxing)
+ .debug_str     0x0000172c       0x8b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(stdio.o)
+                                0x4bc (size before relaxing)
+ .debug_str     0x000017b7       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strcmp.o)
+                                0x107 (size before relaxing)
+ .debug_str     0x0000181b       0x6a /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(strlen.o)
+                                0x121 (size before relaxing)
+ .debug_str     0x00001885       0x6e /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(writer.o)
+                                0x48d (size before relaxing)
+ .debug_str     0x000018f3       0x19 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+                                0x4c0 (size before relaxing)
+ .debug_str     0x0000190c       0x65 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(closer.o)
+                                0x47d (size before relaxing)
+ .debug_str     0x00001971       0x6b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(fstatr.o)
+                                0x551 (size before relaxing)
+ .debug_str     0x000019dc       0x65 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(lseekr.o)
+                                0x48b (size before relaxing)
+ .debug_str     0x00001a41       0x63 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(readr.o)
+                                0x48b (size before relaxing)
+ .debug_str     0x00001aa4       0x6b /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_negdi2.o)
+                                0x135 (size before relaxing)
+ .debug_str     0x00001b0f       0x7c /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+                                0x1b0 (size before relaxing)
+ .debug_str     0x00001b8b        0xa /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+                                0x1b0 (size before relaxing)
+ .debug_str     0x00001b95      0x173 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+                                0x25b (size before relaxing)
+ .debug_str     0x00001d08       0x40 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+                                0x233 (size before relaxing)
+ .debug_str     0x00001d48       0x35 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+                                0x223 (size before relaxing)
+ .debug_str     0x00001d7d        0x8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_eq_df.o)
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001d85        0x8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ne_df.o)
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001d8d        0x8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_gt_df.o)
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001d95        0x8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ge_df.o)
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001d9d        0x8 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lt_df.o)
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001da5        0xc /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_si_to_df.o)
+                                0x1cb (size before relaxing)
+ .debug_str     0x00001db1       0x11 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_df_to_si.o)
+                                0x1fa (size before relaxing)
+ .debug_str     0x00001dc2        0x9 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x00001dcb       0x12 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+                                0x150 (size before relaxing)
+ .debug_str     0x00001ddd       0x10 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+                                0x1f8 (size before relaxing)
+ .debug_str     0x00001ded        0xb /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_unpack_df.o)
+                                0x1e7 (size before relaxing)
+ .debug_str     0x00001df8       0x10 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_fpcmp_parts_df.o)
+                                0x1b8 (size before relaxing)
+ .debug_str     0x00001e08        0xa /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)
+                                0x150 (size before relaxing)
+ .debug_str     0x00001e12       0x12 ../Audio_bsp/libhal_bsp.a(alt_close.o)
+ .debug_str     0x00001e24       0x12 ../Audio_bsp/libhal_bsp.a(alt_dev.o)
+ .debug_str     0x00001e36       0x12 ../Audio_bsp/libhal_bsp.a(alt_errno.o)
+ .debug_str     0x00001e48       0x12 ../Audio_bsp/libhal_bsp.a(alt_fstat.o)
+ .debug_str     0x00001e5a       0x12 ../Audio_bsp/libhal_bsp.a(alt_isatty.o)
+ .debug_str     0x00001e6c       0x12 ../Audio_bsp/libhal_bsp.a(alt_load.o)
+ .debug_str     0x00001e7e       0x12 ../Audio_bsp/libhal_bsp.a(alt_lseek.o)
+ .debug_str     0x00001e90       0x12 ../Audio_bsp/libhal_bsp.a(alt_main.o)
+ .debug_str     0x00001ea2       0x20 ../Audio_bsp/libhal_bsp.a(alt_malloc_lock.o)
+ .debug_str     0x00001ec2       0x12 ../Audio_bsp/libhal_bsp.a(alt_read.o)
+ .debug_str     0x00001ed4       0x1a ../Audio_bsp/libhal_bsp.a(alt_sbrk.o)
+ .debug_str     0x00001eee       0x12 ../Audio_bsp/libhal_bsp.a(alt_write.o)
+ .debug_str     0x00001f00       0x4b ../Audio_bsp/libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x00001f4b       0x12 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_str     0x00001f5d       0x1a ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_str     0x00001f77       0x12 ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_str     0x00001f89       0x1a ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_str     0x00001fa3       0x1a ../Audio_bsp/libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_str     0x00001fbd       0x4f ../Audio_bsp/libhal_bsp.a(altera_up_avalon_audio.o)
+ .debug_str     0x0000200c      0x1c2 ../Audio_bsp/libhal_bsp.a(altera_up_sd_card_avalon_interface.o)
+ .debug_str     0x000021ce       0x23 ../Audio_bsp/libhal_bsp.a(alt_alarm_start.o)
+ .debug_str     0x000021f1       0x12 ../Audio_bsp/libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x00002203       0x12 ../Audio_bsp/libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_str     0x00002215       0x12 ../Audio_bsp/libhal_bsp.a(alt_find_dev.o)
+ .debug_str     0x00002227       0x12 ../Audio_bsp/libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x00002239       0x12 ../Audio_bsp/libhal_bsp.a(alt_io_redirect.o)
+ .debug_str     0x0000224b       0x30 ../Audio_bsp/libhal_bsp.a(alt_irq_register.o)
+ .debug_str     0x0000227b       0x12 ../Audio_bsp/libhal_bsp.a(alt_open.o)
+ .debug_str     0x0000228d       0x1a ../Audio_bsp/libhal_bsp.a(alt_tick.o)
+ .debug_str     0x000022a7       0x12 ../Audio_bsp/libhal_bsp.a(altera_nios2_irq.o)
+ .debug_str     0x000022b9       0x12 ../Audio_bsp/libhal_bsp.a(alt_find_file.o)
+ .debug_str     0x000022cb       0x12 ../Audio_bsp/libhal_bsp.a(alt_get_fd.o)
+ .debug_str     0x000022dd       0x12 ../Audio_bsp/libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x000022ef       0x5d /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(atexit.o)
+                                0x487 (size before relaxing)
+ .debug_str     0x0000234c       0x60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(exit.o)
+                                0x488 (size before relaxing)
+ .debug_str     0x000023ac       0x64 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(memcmp.o)
+                                0x10e (size before relaxing)
+ .debug_str     0x00002410       0x1c ../Audio_bsp/libhal_bsp.a(alt_exit.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 ../Audio_bsp/obj/HAL/src/crt0.o
+                0x01000000                __alt_data_end = 0x1000000
+                0x01000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x008128e8                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x008128e8                PROVIDE (__alt_heap_start, end)
+                0x01000000                PROVIDE (__alt_heap_limit, 0x1000000)
+OUTPUT(Audio.elf elf32-littlenios2)
+
+.debug_ranges   0x00000010      0x5a0
+ .debug_ranges  0x00000010       0x30 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(mallocr.o)
+ .debug_ranges  0x00000040       0x80 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(vfprintf1.o)
+ .debug_ranges  0x000000c0       0x18 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wcsrtombs.o)
+ .debug_ranges  0x000000d8       0x60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(wctomb_r.o)
+ .debug_ranges  0x00000138       0x60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(reallocr.o)
+ .debug_ranges  0x00000198       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/../../../../nios2-elf/lib/mno-hw-mul/libc.a(callocr.o)
+ .debug_ranges  0x000001b8      0x130 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_udivdi3.o)
+ .debug_ranges  0x000002e8      0x168 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_ranges  0x00000450       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_addsub_df.o)
+ .debug_ranges  0x00000470       0x60 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_mul_df.o)
+ .debug_ranges  0x000004d0       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_div_df.o)
+ .debug_ranges  0x000004f0       0x70 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_ranges  0x00000560       0x20 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_lshrdi3.o)
+ .debug_ranges  0x00000580       0x18 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_pack_df.o)
+ .debug_ranges  0x00000598       0x18 /cygdrive/d/altera/91/nios2eds/bin/nios2-gnutools/H-i686-pc-cygwin/bin/../lib/gcc/nios2-elf/3.4.6/mno-hw-mul/libgcc.a(_ashldi3.o)

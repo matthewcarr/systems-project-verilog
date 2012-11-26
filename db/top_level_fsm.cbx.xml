@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="top_level_fsm">
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|SDCARD:the_SDCARD|Altera_UP_SD_Card_Avalon_Interface:sdcard|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Buffer:data_line|Altera_UP_SD_Card_Memory_Block:packet_memory|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7n92.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_e502.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_c572.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|cpu_0:the_cpu_0|cpu_0_rf_module:cpu_0_rf|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_1l22.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|audio:the_audio|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|audio:the_audio|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|audio:the_audio|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wrapper|AUDIO_SOPC:sopc_inst|audio:the_audio|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

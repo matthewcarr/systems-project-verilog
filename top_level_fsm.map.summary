@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 26 15:52:53 2012
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : top_level_fsm
+Top-level Entity Name : wrapper
+Family : Cyclone II
+Total logic elements : 5,501
+    Total combinational functions : 4,690
+    Dedicated logic registers : 3,059
+Total registers : 3059
+Total pins : 146
+Total virtual pins : 0
+Total memory bits : 30,720
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

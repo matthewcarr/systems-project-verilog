@@ -1,0 +1,3704 @@
+!SESSION 2012-11-25 18:54:04.411 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 18:54:44.800
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 18:54:45.767
+!MESSAGE Exception thrown for cable: USB-Blaster [USB-0], some devices may be missing: SLD_NO_DEVICE
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 18:54:45.767
+!MESSAGE Exception thrown for cable: USB-Blaster [USB-0], some devices may be missing: SLD_NO_DEVICE
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 18:54:45.783
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-11-25 18:55:39.025
+!MESSAGE Indexed 'Audio_code_bsp' (0 sources, 5 headers) in 0.53 sec: 0 declarations; 0 references; 5 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-11-25 18:55:48.276
+!MESSAGE Indexed 'Audio_code' (0 sources, 6 headers) in 0.02 sec: 0 declarations; 0 references; 6 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2012-11-25 19:01:39.921 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\Docs\documents\docs\GitHub\systems-project-verilog -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:02:01.508
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:02:02.553
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.341
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.357
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:41.372
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.589
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.605
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.714
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.823
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:42.932
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.042
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.151
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.260
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.369
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.478
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.588
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.697
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:43.697
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:45.148
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.002
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.002
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.002
+!MESSAGE Select one of the available target Nios II byte stream device paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.065
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.065
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.065
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.080
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.080
+!MESSAGE The expected Stdout device name does not match the selected target byte stream device name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.096
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.096
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.112
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.112
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:48.112
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.112
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.346
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:48.392
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:49.625
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:49.687
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:49.703
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:49.765
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.765
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.765
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.765
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.765
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.765
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.859
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:49.859
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:51.715
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:51.715
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.398
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.398
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.398
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.508
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.508
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.508
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.508
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.508
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.523
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.554
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.554
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.632
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.632
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.632
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.648
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.710
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.726
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.788
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.788
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.788
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.804
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.866
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.882
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.944
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:54.944
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.944
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:54.944
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.007
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.022
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.116
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.116
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.116
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.116
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.178
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.178
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.178
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.178
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.256
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.256
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.256
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.256
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.334
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.334
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.334
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:08:55.334
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.381
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.381
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.381
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.397
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.397
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.444
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.444
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.506
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.506
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.506
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.506
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.568
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:08:55.568
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.802
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.802
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:05.802
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.880
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.880
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:05.880
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.896
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:05.896
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:05.896
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:05.942
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:05.942
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.036
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.036
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.036
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.052
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.098
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.098
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.145
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.145
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.161
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.161
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.208
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.208
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.270
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.270
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.270
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.270
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.332
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.332
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.379
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.379
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.379
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.395
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.442
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.442
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.442
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.442
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.520
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.520
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.520
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.520
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.582
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.582
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.582
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.582
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.644
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.644
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:09:06.707
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.754
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.754
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.754
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.754
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.754
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.832
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:09:06.832
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-11-25 19:09:48.515
+!MESSAGE Indexed 'Audio_bsp' (0 sources, 6 headers) in 0.06 sec: 0 declarations; 0 references; 6 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-11-25 19:09:56.970
+!MESSAGE Indexed 'Audio' (0 sources, 6 headers) in 0.03 sec: 0 declarations; 0 references; 6 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:51.032
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:51.032
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:51.032
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:51.126
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.372
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.372
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.372
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.419
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.419
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.419
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.419
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.482
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.482
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.482
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.482
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.528
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.544
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.544
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.544
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.591
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.606
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.606
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.606
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.653
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.653
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.669
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.669
+!MESSAGE System timestamp mismatch - actual: "1353869243", expected: "1353685877".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.716
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.716
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.716
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.716
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.716
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.762
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.762
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.762
+!MESSAGE System ID mismatch - actual: "0xbeabd95", expected: "0x4e616111". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.840
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.840
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.840
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.887
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.887
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.887
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.950
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.950
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.996
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.996
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:53.996
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.090
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.090
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.137
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.137
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.152
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.184
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.199
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.246
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.246
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.324
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.324
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.386
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.386
+!MESSAGE A project name must be selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:16:54.449
+!MESSAGE A project name must be selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.450
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.465
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.465
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.465
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.465
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.465
+!MESSAGE Select one of the available target Nios II byte stream device paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.746
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.746
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.871
+!MESSAGE A project name must be selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:13.949
+!MESSAGE A project name must be selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:15.868
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:15.946
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:15.946
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:15.992
+!MESSAGE No ELF file path has been selected.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.568
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.693
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.693
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.693
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.693
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.693
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.693
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.755
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.755
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.818
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.818
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.818
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.818
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.880
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.880
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.942
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:17.942
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.942
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:17.942
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.005
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.005
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.052
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.067
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.130
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:18.145
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.145
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.535
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.582
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.582
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:18.660
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:18.660
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.608
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.671
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:21.671
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.671
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.671
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:21.718
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.718
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.733
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:21.749
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.749
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.749
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.796
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.796
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.842
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:21.842
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.842
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.842
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.889
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.889
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.936
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:21.936
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.936
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.936
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.983
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:21.998
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.045
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.045
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.045
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.045
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.092
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.092
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.139
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.139
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.139
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.139
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.186
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.201
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.232
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.232
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.232
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.248
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.279
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.295
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.342
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.342
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.342
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.357
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.404
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.404
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.466
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.466
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.466
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.466
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.498
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.513
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.513
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:17:22.513
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.544
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.576
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.654
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.700
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.747
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.794
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.825
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.872
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:22.919
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:17:27.958
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:17:30.828
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:27:24.935
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:27:28.820
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:27:31.331
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:27:38.978
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:32:29.416
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:32:31.927
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:32:39.652
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:44:22.836
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:44:25.488
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:44:54.397
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.560
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.716
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:44:59.716
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.732
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.732
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:44:59.763
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.763
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.950
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:44:59.950
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.950
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:44:59.950
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.091
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.106
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.247
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:00.247
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.247
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.247
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.418
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.418
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.559
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:00.559
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.559
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.574
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.699
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.699
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.808
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.808
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.949
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:00.949
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.949
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:00.949
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:01.074
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.074
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.074
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.074
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.245
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.245
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.245
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.417
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.417
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.432
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.432
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.557
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.557
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.557
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.557
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.557
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:01.557
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:01.604
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:01.604
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:01.838
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:01.838
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.010
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.010
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.010
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.025
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.166
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.166
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.337
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.337
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.337
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:02.353
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.415
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.415
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.415
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.493
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.493
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.556
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.727
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.727
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.836
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.836
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.852
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:02.868
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.008
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.008
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.008
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.164
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.164
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.164
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.164
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.164
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.211
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.211
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.414
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.429
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.585
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.585
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.585
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.601
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.741
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.757
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.757
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.757
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.913
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:03.913
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.913
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:03.913
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.069
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.069
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.069
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.084
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.084
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.147
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.147
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.147
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.147
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.147
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.287
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.287
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.287
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.287
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.396
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.396
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.396
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.396
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.396
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.412
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.412
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.537
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.537
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.537
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.537
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.537
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.552
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.552
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.662
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.802
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.927
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:04.942
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.067
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.192
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.317
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.317
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.317
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.317
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.317
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.332
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.332
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.442
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.442
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.442
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.442
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.442
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.457
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.457
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.598
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.598
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.613
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.613
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.738
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:05.738
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:06.721
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:06.736
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:06.736
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:06.736
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:06.736
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:06.908
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:06.908
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:15.223
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.223
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.223
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.223
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.223
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.441
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:15.441
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:45:21.510
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:21.510
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:45:21.510
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:45:24.177
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:59:03.100
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:03.100
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 19:59:07.296
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:07.296
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 19:59:07.296
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 19:59:10.120
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:07:44.822
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:44.822
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:44.822
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 20:07:47.568
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:07:52.701
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x1101428, --id=0xbeabd95, --timestamp=1353869243, /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf] return code: 512
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:07:52.748
+!MESSAGE Downloading Elf Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:07:58.224
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.239
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.239
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.427
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.427
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.473
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:07:58.473
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:00.314
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:00.314
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:01.703
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:01.703
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:01.703
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:01.718
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:01.718
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:01.890
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:01.890
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.124
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.124
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.139
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.139
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.139
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.280
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:02.280
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:05.993
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:05.993
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:05.993
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.180
+!MESSAGE System ID mismatch - actual: "0x4e616111", expected: "0xbeabd95". 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.180
+!MESSAGE System timestamp mismatch - actual: "1353685877", expected: "1353869243".
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.180
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.211
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.211
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.227
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.258
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.258
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.492
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.492
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.492
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.492
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.663
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.663
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.804
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:06.804
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.819
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.819
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.975
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:06.975
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.131
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.131
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.131
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.131
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.256
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.256
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.365
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.381
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:07.506
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.506
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.506
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.506
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.693
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.693
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.693
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.709
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.818
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.818
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:07.958
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:08.145
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.145
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.145
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:08.192
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.192
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.379
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.395
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.535
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:08.535
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.535
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.551
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.691
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.691
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.879
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:08.894
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.894
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:08.894
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.066
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.066
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.097
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.097
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.191
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.237
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.237
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.237
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.362
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.378
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.503
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.721
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.721
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:09.768
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.768
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.908
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:09.924
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.064
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:10.064
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.064
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.064
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.205
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.220
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.392
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:10.392
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.392
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.392
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.563
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:08:10.579
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:10.626
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:10.735
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:10.985
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.141
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.250
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.390
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.515
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.671
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:11.921
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.030
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.155
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.264
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.404
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.529
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.669
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:12.794
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:08:34.026
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 20:08:36.725
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:01.787
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.310
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.512
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:07.528
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.528
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.528
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:07.559
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.559
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.731
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:07.731
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.731
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.731
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.887
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:07.887
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.027
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.043
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.043
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.043
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.183
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.183
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.355
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.355
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.355
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:08.355
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.433
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.558
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.714
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.729
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.838
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.854
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.854
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.870
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:08.979
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:09.197
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.197
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:09.244
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.244
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.431
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.431
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.587
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:09.587
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.587
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.587
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.743
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.743
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.899
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:09.899
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.899
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:09.899
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.040
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.055
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.086
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.086
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.164
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.227
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.227
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.227
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.352
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.352
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.476
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.679
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.679
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:10.726
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.726
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.882
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:10.882
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.038
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.038
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.038
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.038
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.194
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.194
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.350
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.366
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.366
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.381
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.537
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:11.537
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.568
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.568
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.662
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.709
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.709
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.724
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.849
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.849
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:11.990
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:12.177
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.177
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.192
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:12.224
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.224
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.380
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.380
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.551
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:12.551
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.551
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.551
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.723
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:12.723
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.723
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.723
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.863
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:12.863
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.863
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:12.879
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:13.019
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.019
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:13.019
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-25 20:10:13.035
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.050
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.206
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.456
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.581
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.706
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.846
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:13.955
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.096
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.220
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.345
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.454
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.595
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.720
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.829
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:14.954
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:15.094
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:10:25.593
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 20:10:28.323
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:44:07.869
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 20:44:13.641
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 20:44:16.277
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 21:18:04.430
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 21:18:08.237
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 21:18:10.779
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 21:52:22.259
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 21:52:26.237
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 21:52:28.748
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 22:05:00.555
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 22:05:04.471
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 22:05:07.060
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-25 22:44:29.137
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-25 22:44:31.821
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 00:56:46.448
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 00:56:51.347
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 00:56:53.858
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:06:08.129
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:06:12.387
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 02:06:15.039
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:22:54.486
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:22:58.261
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 02:23:00.991
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+!SESSION 2012-11-26 02:32:48.906 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-11-26 02:32:56.597
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 0 2012-11-26 02:33:03.680
+!MESSAGE Unable to create editor ID org.eclipse.cdt.ui.editor.CEditor: The file does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The file does not exist.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:233)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:557)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.createFileInfo(CDocumentProvider.java:843)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:476)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.connect(CDocumentProvider.java:769)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:3991)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:190)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1325)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:165)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.internalDoSetInput(CEditor.java:1320)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.doSetInput(CEditor.java:1292)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3026)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:458)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:366)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:758)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:755)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2487)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3044)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3071)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:799)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:643)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:428)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:594)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:263)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1410)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:944)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3800)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3425)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$27.runWithException(Workbench.java:1361)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3800)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3425)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2293)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:386)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1212)
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2012-11-26 02:33:03.680
+!MESSAGE The file does not exist.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 02:33:11.807
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 02:33:12.977
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.028
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.044
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.044
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.044
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.169
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.184
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.184
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.184
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.184
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.184
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.200
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.886
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.886
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:34.949
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:34.949
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:34.996
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.105
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.214
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.323
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.432
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.542
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 02:40:35.651
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:35.744
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:39.738
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 02:40:42.016
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 02:40:43.435
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 03:07:21.322
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 03:07:23.912
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 03:31:38.920
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 03:31:41.448
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 03:47:39.205
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 03:47:42.996
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 03:47:45.492
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:06:39.244
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 04:06:41.834
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:30:15.892
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 04:30:18.528
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:37:34.038
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:37:38.109
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 04:37:40.668
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:42:20.176
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 04:42:24.013
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 04:42:26.728
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:07:38.094
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:07:41.823
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:07:42.478
+!MESSAGE Exception: Unable to open jtag uart
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:07:42.494
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+!SESSION 2012-11-26 05:08:20.277 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 05:08:48.684
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 05:08:49.714
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.320
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.320
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.320
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.320
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.414
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.430
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.445
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.445
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.445
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.445
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.445
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.554
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:01.554
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.554
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.664
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.773
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.882
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:01.991
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:02.100
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:02.210
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 05:09:02.319
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:02.350
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:06.936
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 05:09:09.136
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 05:09:10.056
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:32:54.064
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:32:58.168
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 13:33:00.695
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:02.483
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:03.154
+!MESSAGE Exception: Unable to open jtag uart
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 13:36:03.887
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:10.224
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster [USB-0]', --device=1, --instance=0, --go, --sidp=0x1101428, --id=0xbeabd95, --timestamp=1353869243, /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:10.240
+!MESSAGE Downloading Elf Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:26.388
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:27.028
+!MESSAGE Exception: Unable to open jtag uart
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:36:27.028
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:37:32.262
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:37:32.948
+!MESSAGE Exception: Unable to open jtag uart
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:37:32.948
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+!SESSION 2012-11-26 13:37:54.449 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 13:38:28.089
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:38:29.072
+!MESSAGE Exception thrown for Device EP2C15/20, no SLD nodes will be added for this device: SLD_HUB_NOT_PRESENT
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:38:29.072
+!MESSAGE Exception thrown for Device EP2C15/20, no SLD nodes will be added for this device: SLD_HUB_NOT_PRESENT
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 13:38:29.087
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.609
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.780
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.796
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:46.905
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.014
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.124
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.233
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.342
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.451
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.561
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.670
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.779
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.888
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:47.888
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:49.246
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:51.773
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:51.773
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:51.773
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:51.960
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:51.960
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:52.007
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:52.023
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:53.770
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:53.770
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.345
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.345
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.423
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.423
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.423
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.423
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.423
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.438
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.438
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.485
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.485
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.485
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.485
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.532
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:56.548
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.122
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.122
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.184
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.184
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.184
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.200
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.200
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.200
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.200
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.247
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.247
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.247
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.247
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.294
+!MESSAGE No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:38:59.294
+!MESSAGE No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.607
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.607
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.607
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.669
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.669
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.669
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.685
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.685
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.685
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.716
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.716
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.716
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.716
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.732
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.732
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.763
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.763
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.763
+!MESSAGE The expected CPU name does not match the selected target CPU name.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.778
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.778
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.778
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.794
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.825
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.825
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.888
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:25.888
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.903
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.903
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.966
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:25.966
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.012
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.012
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.028
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.028
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.075
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.090
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.137
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.137
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.137
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.153
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.200
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.215
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.262
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.262
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.262
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.262
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.325
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.325
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.325
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.325
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.371
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.387
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.387
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.387
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.434
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.434
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.434
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.434
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.496
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.496
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.559
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.683
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.730
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.730
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 13:47:26.777
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:26.777
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 13:47:31.848
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 13:47:34.843
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+!SESSION 2012-11-26 14:19:32.348 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 14:19:53.877
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 14:19:54.907
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.448
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.464
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.464
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.464
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.573
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.573
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.573
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.589
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.589
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.589
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.604
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:08.713
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:08.729
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:08.729
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:08.823
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:08.932
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.041
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.150
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.259
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.369
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.478
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 14:20:09.587
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:09.587
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:13.706
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 14:20:16.498
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 14:20:17.465
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+!SESSION 2012-11-26 18:09:24.630 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 18:09:38.873
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 18:09:39.887
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.174
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.174
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.174
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.174
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.236
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:56.314
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.314
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.345
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.454
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.564
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.673
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.782
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:56.891
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 18:09:57.000
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:57.063
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:09:59.574
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 18:10:01.836
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 18:10:02.601
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
