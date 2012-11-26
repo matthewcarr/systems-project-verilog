@@ -102,7 +102,7 @@ module motor_control (
 			case(state)
 			s_reset:	begin
 							counter_en = 1'b0;			//set counter enable to be 0
-							motor_pos = m_down; 		//set motor pulse to be halt position
+							motor_pos = m_down; 		//set motor pulse to be down position
 							last_direct = down;						
 						end
 			s_init: 	begin

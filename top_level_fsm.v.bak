@@ -3,8 +3,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	input reset,				//pin b14, hard reset to be held high when not reset
 	input serial_receive,		//pin b13, incoming serial data from mbed
 	output serial_return,		//pin a13, outgoing serial data to mbed
-	input [7:0]data,			//input 8 bit data, used for debugging
-	input data_trig,			//manual trigger for data, used for debugging
+	//input [7:0]data,			//input 8 bit data, used for debugging
+	//input data_trig,			//manual trigger for data, used for debugging
 	output [4:0] state_out,		//output the current state, used for debugging
 	output [6:0] HEX0,			//seven segment display outputs
 	output [6:0] HEX1,
@@ -61,7 +61,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg start_disp_clk;		//start dispensing (clocked)
 	reg start_led;
 	reg [5:0] led_en;		//LED enables
-	//reg start_sound;		//start playing the buffered sound file
 	reg set_sound;			//set the sound file to be buffered
 	reg servo_anim;			//lid animatronics enable
 	reg servo_anim_clk;
@@ -91,8 +90,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	wire w_mled;				//LED maintenance
 
 	//assignments for wires
-	assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
-	assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
+	//assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
+	//assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
 	assign  serial_return 	= 	w_serial_out;		//serial data out
 	assign  txbusy 			= 	0;//w_trans_busy;	//transmission busy
 	assign	state_out 		= 	state;				//output current state, used for debugging
@@ -106,7 +105,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	//list of states
 	localparam  s_reset 	=	6'd0,		//reset state, clears everything
 				s_init 		= 	6'd1,		//init state
-				s_init_tran 	= 	6'd2,		//announce state, responds with r_init
+				s_init_tran = 	6'd2,		//announce state, responds with r_init
 				s_wt_ftran 	= 	6'd3,		//wait for transmission to finish
 				s_wt_verb 	= 	6'd4,		//wait for verb data
 				s_wt_arg1 	= 	6'd5,		//wait for first argument
@@ -166,7 +165,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 
 	//instantiate the transmitter/reciver
-	/*
+	
 	async_receiver #(
 		.ClkFrequency(50000000), 		//clock frequency
 		.Baud(115200)					//baud rate of receiver (must be same as mbed transmitter)
@@ -177,8 +176,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.RxD_data_ready(w_data_ready), 	//data ready to be read
 		.RxD_data(w_serial_data)		//8 bit data to be read
 		);
-	*/
-	/*
+	
 	async_transmitter #(
 		.ClkFrequency(50000000), 		//clock frequency
 		.Baud(115200)					//baud rate of transmitter (must be same as mbed receiver)
@@ -190,7 +188,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.TxD(w_serial_out), 			//serial data being transmitted
 		.TxD_busy(w_trans_busy)			//transmission is busy
 		);
-	*/
 		
 	//instatiate the led_controller
 	led_control		led	(

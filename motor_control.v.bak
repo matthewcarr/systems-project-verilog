@@ -152,10 +152,6 @@ module motor_control (
 		end
 	end
 
-
-
-
-
 	//counter tht will count up when reset is asserted and an enble held high else 
 	//it clears
 	always@(posedge slow_clock or negedge reset or negedge counter_en_clk) begin
@@ -167,8 +163,5 @@ module motor_control (
 			counter = counter + 12'd1;
 		end
 	end
-
-
-
 
 endmodule

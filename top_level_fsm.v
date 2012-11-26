@@ -1383,7 +1383,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						set_sound = 1'b0;
 						start_sound = 1'b0;
 						servo_anim = servo_anim_clk;
-						motor_anim = motor_anim_clk;
+						motor_anim = 1'b0;					//open mouth once dispense finished
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
