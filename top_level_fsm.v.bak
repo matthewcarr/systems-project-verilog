@@ -408,7 +408,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							nxt_state <= s_sound_buffer;
 						end
 		s_sound_buffer:	begin
-							nxt_state <= s_sound_buffer2;
+							nxt_state <= s_sound_tran;
 						end
 		s_sound_buffer2:	begin
 							nxt_state <= s_sound_buffer3;
@@ -417,6 +417,21 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							nxt_state <= s_sound_buffer4;
 						end
 		s_sound_buffer4:	begin
+							nxt_state <= s_sound_buffer5;
+						end
+		s_sound_buffer5:	begin
+							nxt_state <= s_sound_buffer6;
+						end
+		s_sound_buffer6:	begin
+							nxt_state <= s_sound_buffer7;
+						end
+		s_sound_buffer7:	begin
+							nxt_state <= s_sound_buffer8;
+						end
+		s_sound_buffer8:	begin
+							nxt_state <= s_sound_buffer9;
+						end
+		s_sound_buffer9:	begin
 							nxt_state <= s_sound_tran;
 						end
 
@@ -455,7 +470,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 										nxt_state <= s_mled;
 										end
 							default:	begin
-										nxt_state <= s_reset;
+										nxt_state <= s_wt_verb;
 										end
 							endcase
 						end
@@ -889,7 +904,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
-						tran_trig=1'b1;
+						tran_trig=1'b0;
 						trans_word=r_ack;;
 						start_disp=1'b0;
 						start_led = 1'b0;
@@ -915,7 +930,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
-						tran_trig=1'b1;
+						tran_trig=1'b0;
 						trans_word=r_ack;;
 						start_disp=1'b0;
 						start_led = 1'b0;
@@ -936,6 +951,136 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						motor_mtne_up = 1'b0;
 						end
 			s_sound_buffer4: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer5: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b1;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer6: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer7: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer8: begin
+						verb =verb_clk;
+						arg1 =arg1_clk;
+						arg2 =arg2_clk;
+						arg3 =arg3_clk; 
+						start_disp=1'b0;
+						tran_trig=1'b0;
+						trans_word=r_ack;;
+						start_disp=1'b0;
+						start_led = 1'b0;
+						set_sound = 1'b0;
+						start_sound = 1'b0;
+						servo_anim = servo_anim_clk;
+						motor_anim = motor_anim_clk;
+						mled = mled_clk;
+						mtne_servo1 = mtne_servo1_clk;
+						mtne_servo2 = mtne_servo2_clk;
+						mtne_servo3 = mtne_servo3_clk;
+						mtne_servo_lid = mtne_servo_lid_clk;
+						mtne_motor = mtne_motor_clk;
+						servo1_mtne_up = 1'b0;
+						servo2_mtne_up = 1'b0;
+						servo3_mtne_up = 1'b0;
+						servo_lid_mtne_up = 1'b0;
+						motor_mtne_up = 1'b0;
+						end
+			s_sound_buffer9: begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
 						arg2 =arg2_clk;
@@ -1614,12 +1759,12 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	always @(posedge clk50m or negedge reset) begin
 		if (reset ===1'b0) begin
-			sound_ID_clk = 6'd0;
+			sound_ID_clk <= 6'd0;
 		end else if (set_sound===1'b1) begin
-			sound_ID_clk = 6'd0;
-			sound_ID_clk = arg1_clk[2:0];
+			//sound_ID_clk = 6'd0;
+			sound_ID_clk <= arg1_clk[2:0];
 		end else begin
-			sound_ID_clk = sound_ID_clk;
+			sound_ID_clk <= sound_ID_clk;
 			end
 		end
 

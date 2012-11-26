@@ -470,7 +470,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 										nxt_state <= s_mled;
 										end
 							default:	begin
-										nxt_state <= s_reset;
+										nxt_state <= s_wt_verb;
 										end
 							endcase
 						end

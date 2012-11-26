@@ -255,7 +255,7 @@ set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS4
 set_instance_assignment -name TCO_REQUIREMENT "8 ns" -from * -to *
 set_instance_assignment -name TSU_REQUIREMENT "8 ns" -from * -to *
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to led_out
+set_instance_assignment -name CURRENT_STRENGTH_NEW 24MA -to led_out
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to *
 set_instance_assignment -name FAST_INPUT_REGISTER ON -to *
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to *
