@@ -180,7 +180,7 @@ GND*                         : C18       :        :                   :         
 GND*                         : C19       :        :                   :         : 5         :                
 GND*                         : C20       :        :                   :         : 5         :                
 GND*                         : C21       :        :                   :         : 5         :                
-GND*                         : C22       :        :                   :         : 5         :                
+LEDG[7]                      : C22       : output : 3.3-V LVTTL       :         : 5         : N              
 HEX1[6]                      : D1        : output : 3.3-V LVTTL       :         : 2         : Y              
 HEX1[5]                      : D2        : output : 3.3-V LVTTL       :         : 2         : Y              
 HEX2[6]                      : D3        : output : 3.3-V LVTTL       :         : 2         : Y              
@@ -439,10 +439,10 @@ GND*                         : R13       :        :                   :         
 GND*                         : R14       :        :                   :         : 7         :                
 GND*                         : R15       :        :                   :         : 7         :                
 GND*                         : R16       :        :                   :         : 7         :                
-GND*                         : R17       :        :                   :         : 6         :                
-GND*                         : R18       :        :                   :         : 6         :                
+mtne_flags[4]                : R17       : output : 3.3-V LVTTL       :         : 6         : Y              
+mtne_flags[3]                : R18       : output : 3.3-V LVTTL       :         : 6         : Y              
 led_out[1]                   : R19       : output : 3.3-V LVTTL       :         : 6         : Y              
-GND*                         : R20       :        :                   :         : 6         :                
+mtne_flags[0]                : R20       : output : 3.3-V LVTTL       :         : 6         : Y              
 KEY[1]                       : R21       : input  : 3.3-V LVTTL       :         : 6         : Y              
 KEY[0]                       : R22       : input  : 3.3-V LVTTL       :         : 6         : Y              
 DRAM_DQ[14]                  : T1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
@@ -484,7 +484,7 @@ GND*                         : U14       :        :                   :         
 GND*                         : U15       :        :                   :         : 7         :                
 VCCA_PLL4                    : U16       : power  :                   : 1.2V    :           :                
 VCCD_PLL4                    : U17       : power  :                   : 1.2V    :           :                
-GND*                         : U18       :        :                   :         : 6         :                
+mtne_flags[2]                : U18       : output : 3.3-V LVTTL       :         : 6         : Y              
 led_out[2]                   : U19       : output : 3.3-V LVTTL       :         : 6         : Y              
 SD_DAT3                      : U20       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 LEDG[1]                      : U21       : output : 3.3-V LVTTL       :         : 6         : Y              
@@ -550,8 +550,8 @@ GND*                         : Y14       :        :                   :         
 GND                          : Y15       : gnd    :                   :         :           :                
 GND*                         : Y16       :        :                   :         : 7         :                
 GND*                         : Y17       :        :                   :         : 7         :                
-GND*                         : Y18       :        :                   :         : 6         :                
+mtne_flags[1]                : Y18       : output : 3.3-V LVTTL       :         : 6         : Y              
 led_out[3]                   : Y19       : output : 3.3-V LVTTL       :         : 6         : Y              
 SD_CMD                       : Y20       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
-LEDG[7]                      : Y21       : output : 3.3-V LVTTL       :         : 6         : Y              
+mtne_flags[5]                : Y21       : output : 3.3-V LVTTL       :         : 6         : Y              
 LEDG[6]                      : Y22       : output : 3.3-V LVTTL       :         : 6         : Y              

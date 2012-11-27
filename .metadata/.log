@@ -3702,3 +3702,278 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.s
 
 !ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 18:10:02.601
 !MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+!SESSION 2012-11-26 21:59:29.875 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 21:59:40.352
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 21:59:41.351
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.243
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.243
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.243
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.243
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.415
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.431
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:45.509
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.509
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.540
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.649
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.758
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.867
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:45.977
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:46.086
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-26 22:02:46.195
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:46.257
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:48.925
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 22:02:51.203
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 22:02:51.951
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-26 23:52:57.892
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-26 23:53:00.544
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 00:05:33.726
+!MESSAGE Shutting down System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 00:05:33.726
+!MESSAGE Done shutting down System Console Model
+!SESSION 2012-11-27 11:27:49.627 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 11:28:04.066
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 11:28:05.236
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:40.461
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:40.461
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:40.461
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:40.461
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE Actual system ID not found on target at base address
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.256
+!MESSAGE Actual system timestamp value has not been initialized yet.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:41.412
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-27 11:28:41.412
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:42.114
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-27 11:28:42.114
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:42.114
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-27 11:28:42.114
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:42.114
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 2 0 2012-11-27 11:28:42.114
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:42.161
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:28:44.298
+!MESSAGE ClassNotFoundException: sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 11:28:45.063
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:39:06.167
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 11:39:08.476
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 11:40:33.181
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 11:40:35.661
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 12:18:16.794
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 12:18:19.227
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 13:25:26.582
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 13:25:28.985
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 15:05:21.461
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 15:05:23.879
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 15:10:13.671
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 15:10:16.105
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 16:09:12.157
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 16:09:14.544
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 16:21:07.389
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 16:21:09.807
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 18:03:46.310
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 18:03:48.697
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 18:03:51.224
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 18:16:05.309
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 18:16:07.727
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 18:16:10.145
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-11-27 18:24:46.907
+!MESSAGE No Nios II CPU was specified for the SOPC Design
+
+!ENTRY com.altera.sbtgui.launch 1 0 2012-11-27 18:24:49.325
+!MESSAGE Executing: [C:\Windows\system32\cmd.exe, /C, d:\altera\91sp2\quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster [USB-0]' --device=1 --instance=0 --go --sidp=0x1101428 --id=0xbeabd95 --timestamp=1353869243 /cygdrive/d/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/Audio.elf]

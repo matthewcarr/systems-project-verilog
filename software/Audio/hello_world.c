@@ -10,7 +10,7 @@
 
 
 #define BUF_THRESHOLD 96		// 75% of 128 word buffer
-#define NUM_OF_FILES 8			//Total number of files present to be played
+#define NUM_OF_FILES 16			//Total number of files present to be played
 
 const char *fileNames[NUM_OF_FILES]; //creates an array of sound names
 
@@ -50,6 +50,14 @@ int main() {
 	fileNames[5]="outofsrv.raw";
 	fileNames[6]="thnkyou.raw";
 	fileNames[7]="wait.raw";
+	fileNames[8]="wait.raw";
+	fileNames[9]="COLLECT.raw";
+	fileNames[10]="error.raw";
+	fileNames[11]="collect.raw";
+	fileNames[12]="wait.raw";
+	fileNames[13]="wait.raw";
+	fileNames[14]="wait.raw";
+	fileNames[15]="wait.raw";
 	//printf("hi there sexy.\n");
 
 	//set up the device references to the audio and the sdcard names as defined in the SOPC
@@ -81,6 +89,7 @@ int main() {
 						left_buffer[buffer_index] = file_data; 			//puts this data in the buffer location
 						buffer_index++;
 					}
+					alt_up_sd_card_fclose(file_handle);
 				}
 			}
 			else {
@@ -95,8 +104,8 @@ int main() {
 	{
 		//sound = (*sound_id_ptr&0x07);	//get the input from the input port and bitmask to get number
 		if ((*(sound_start_ptr)&0x01) ==1)			//if the start is high play the file
-		{	sound = (*sound_id_ptr&0x07);
-//			printf("sound is %d\n", sound);
+		{	sound = (*sound_id_ptr&0x0f);
+			printf("sound is %d\n", sound);
 			if (sound >=0 && sound < NUM_OF_FILES) //if the id is a valid number then you can play
 			{
 				playSound(sound);					//call the play functions

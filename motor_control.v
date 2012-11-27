@@ -34,7 +34,7 @@ module motor_control (
 	parameter m_halt = 8'h50;		//postion that halts the motor from turning
 	parameter m_down = 8'h0f;		//postion that drivers motor down
 
-	clk_div #(.clock_div(50000)) ms (.old_clock(clk_50),.reset(reset),.new_clock(slow_clock)); 
+	clk_div #(.clock_div(50000000)) s (.old_clock(clk_50),.reset(reset),.new_clock(slow_clock)); 
 
 	RCServo servo_m(.clk(clk_50),.RxD_data(motor_pos_clk),.RCServo_pulse_out(w_pwm));
 

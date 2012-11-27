@@ -39,16 +39,19 @@ module wrapper (
 	input reset,				//pin b14, hard reset
 	input serial_receive,		//pin b13, incoming serial data from mbed
 	output serial_return,		//pin a13, outgoing serial data to mbed
+	//input  [7:0] data,
+	//input  data_trig,	
 	output [6:0] HEX0,			//seven segment display outputs
 	output [6:0] HEX1,
 	output [6:0] HEX2,
 	output [6:0] HEX3,
 	output [4:0] pwm,			//pwm signals for servos and motor
-	output [5:0] led_out
+	output [5:0] led_out,
+	output [5:0] mtne_flags
 );
 
 
-	wire [2:0]sound_id;
+	wire [3:0]sound_id;
 	wire sound_start;
 
   AUDIO_SOPC sopc_inst
@@ -70,7 +73,7 @@ module wrapper (
       .SRAM_UB_N_from_the_sram_0                         (SRAM_UB_N),
       .SRAM_WE_N_from_the_sram_0                         (SRAM_WE_N),
       .b_SD_cmd_to_and_from_the_SDCARD                   (SD_CMD),
-      .in_port_to_the_sounds_ids                          (sound_id),
+      .in_port_to_the_sounds_ids                         (sound_id),
       .in_port_to_the_start_sound                        (sound_start),
       .b_SD_dat3_to_and_from_the_SDCARD                  (SD_DAT3),
       .b_SD_dat_to_and_from_the_SDCARD                   (SD_DATA),
@@ -105,7 +108,8 @@ module wrapper (
 	.pwm(pwm),			//pwm signals for servos and motor
 	.led_out(led_out),	//LED outputs
 	.sound_ID_out(sound_id),
-	.start_sound_out(sound_start)
+	.start_sound_out(sound_start),
+	.mtne_flags(mtne_flags)
 	);
     
 

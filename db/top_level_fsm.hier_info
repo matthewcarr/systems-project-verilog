@@ -145,6 +145,12 @@ led_out[2] <= top_level_fsm:fsm.led_out
 led_out[3] <= top_level_fsm:fsm.led_out
 led_out[4] <= top_level_fsm:fsm.led_out
 led_out[5] <= top_level_fsm:fsm.led_out
+mtne_flags[0] <= top_level_fsm:fsm.mtne_flags
+mtne_flags[1] <= top_level_fsm:fsm.mtne_flags
+mtne_flags[2] <= top_level_fsm:fsm.mtne_flags
+mtne_flags[3] <= top_level_fsm:fsm.mtne_flags
+mtne_flags[4] <= top_level_fsm:fsm.mtne_flags
+mtne_flags[5] <= top_level_fsm:fsm.mtne_flags
 
 
 |wrapper|AUDIO_SOPC:sopc_inst
@@ -25145,6 +25151,7 @@ state_out[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
 state_out[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
 state_out[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
 state_out[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+state_out[5] <= state[5].DB_MAX_OUTPUT_PORT_TYPE
 HEX0[0] <= hexdisplay:h4.port1
 HEX0[1] <= hexdisplay:h4.port1
 HEX0[2] <= hexdisplay:h4.port1
@@ -25188,7 +25195,14 @@ led_out[5] <= led_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sound_ID_out[0] <= sound_ID_clk[0].DB_MAX_OUTPUT_PORT_TYPE
 sound_ID_out[1] <= sound_ID_clk[1].DB_MAX_OUTPUT_PORT_TYPE
 sound_ID_out[2] <= sound_ID_clk[2].DB_MAX_OUTPUT_PORT_TYPE
+sound_ID_out[3] <= sound_ID_clk[3].DB_MAX_OUTPUT_PORT_TYPE
 start_sound_out <= start_sound_clk.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[0] <= mtne_servo1.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[1] <= mtne_servo2.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[2] <= mtne_servo3.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[3] <= Selector43.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[4] <= Selector44.DB_MAX_OUTPUT_PORT_TYPE
+mtne_flags[5] <= mled.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |wrapper|top_level_fsm:fsm|async_receiver:rec1
@@ -25300,9 +25314,9 @@ TxD_busy <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |wrapper|top_level_fsm:fsm|led_control:led
-led_enable[0] => led_output.OUTPUTSELECT
+led_enable[0] => led_output.DATAA
 led_enable[1] => led_output.OUTPUTSELECT
-led_enable[2] => led_output.OUTPUTSELECT
+led_enable[2] => led_output.DATAA
 led_enable[3] => led_output.OUTPUTSELECT
 led_enable[4] => led_output.OUTPUTSELECT
 led_enable[5] => led_output.OUTPUTSELECT
@@ -25687,7 +25701,7 @@ direct => always1.IN1
 pwm <= RCServo:servo_m.RCServo_pulse_out
 
 
-|wrapper|top_level_fsm:fsm|motor_control:motor1|clk_div:ms
+|wrapper|top_level_fsm:fsm|motor_control:motor1|clk_div:s
 old_clock => r_new_clock.CLK
 old_clock => counter[0].CLK
 old_clock => counter[1].CLK

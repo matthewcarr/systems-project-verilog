@@ -5,7 +5,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	output serial_return,		//pin a13, outgoing serial data to mbed
 	//input [7:0]data,			//input 8 bit data, used for debugging
 	//input data_trig,			//manual trigger for data, used for debugging
-	output [4:0] state_out,		//output the current state, used for debugging
+	output [5:0] state_out,		//output the current state, used for debugging
 	output [6:0] HEX0,			//seven segment display outputs
 	output [6:0] HEX1,
 	output [6:0] HEX2,
@@ -13,8 +13,9 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	output txbusy,				//transmitter is busy
 	output [4:0] pwm,			//pwm signals for servos and motor
 	output reg [5:0] led_out,	//LED outputs
-	output [2:0] sound_ID_out,
-	output start_sound_out
+	output [3:0] sound_ID_out,
+	output start_sound_out,
+	output [5:0] mtne_flags 
 	);
 
 	reg [7:0]serial_in; 	//register to store the value of the most recent valid command from the RS232
@@ -73,7 +74,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg mtne_servo3_clk;
 	reg mtne_servo_lid_clk;
 	reg mtne_motor_clk;
-	reg [2:0]sound_ID_clk;
+	reg [3:0]sound_ID_clk;
 	
 	//wires for module instantiations
 	wire [7:0]w_serial_data; 	//wire to connect to the reciver
@@ -106,6 +107,12 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	assign	pwm[4]			=	w_pwm_motor;		//pin j20, pwm for mouth motor
 	assign  start_sound_out = 	start_sound_clk;
 	assign	sound_ID_out	=	sound_ID_clk;
+	assign  mtne_flags[0]	=	mtne_servo1;
+	assign  mtne_flags[1]	=	mtne_servo2;
+	assign  mtne_flags[2]	=	mtne_servo3;
+	assign  mtne_flags[3]	=	mtne_servo_lid;
+	assign  mtne_flags[4]	=	mtne_motor;
+	assign  mtne_flags[5]	=	mled;
 
 	//list of states
 	localparam  s_reset 	=	6'd0,		//reset state, clears everything
@@ -276,7 +283,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	//instantiate motor control
 	motor_control	#(
-		.wait_time	(12'd900),		//time to wait while driving motor
+		.wait_time	(12'd4),		//time to wait while driving motor
 		.m_up		(8'hff),		//drive the motor 'up'
 		.m_down		(8'h0f),		//drive the motor 'down'
 		.m_halt		(8'h50)			//stop the motor
@@ -941,8 +948,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
-						tran_trig=1'b1;
-						trans_word=r_ack;;
+						tran_trig=1'b0;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -968,7 +975,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -994,7 +1001,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1020,7 +1027,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1045,8 +1052,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg2 =arg2_clk;
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
-						tran_trig=1'b1;
-						trans_word=r_ack;;
+						tran_trig=1'b0;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1072,7 +1079,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1098,7 +1105,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1124,7 +1131,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b0;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1150,7 +1157,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						arg3 =arg3_clk; 
 						start_disp=1'b0;
 						tran_trig=1'b1;
-						trans_word=r_ack;;
+						trans_word=r_ack;
 						start_disp=1'b0;
 						start_led = 1'b0;
 						set_sound = 1'b0;
@@ -1768,7 +1775,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						set_sound = 1'b0;
 						start_sound = 1'b0;
 						servo_anim = servo_anim_clk;
-						motor_anim = motor_anim_clk;
+						motor_anim = 1'b0;
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1825,7 +1832,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			sound_ID_clk <= 6'd0;
 		end else if (set_sound===1'b1) begin
 			//sound_ID_clk = 6'd0;
-			sound_ID_clk <= arg1_clk[2:0];
+			sound_ID_clk <= arg1_clk[3:0];
 		end else begin
 			sound_ID_clk <= sound_ID_clk;
 			end
@@ -1869,7 +1876,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 				servo_pos2 = servo_pos2;
 				servo_pos3 = servo_pos3;
 				servo_pos_lid = servo_pos_lid;
-				motor_pos = arg2_clk;			//only first bit does anything, 1 for up, 0 for down
+				motor_pos = arg2_clk[0];			//only first bit does anything, 1 for up, 0 for down
 			end 
 		//if maintenance is off
 		end else if (mtne_servo1===1'b0 && mtne_servo2===1'b0 && mtne_servo3===1'b0 && mtne_servo_lid===1'b0 && mtne_motor===1'b0) begin

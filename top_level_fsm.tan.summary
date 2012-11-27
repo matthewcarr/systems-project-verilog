@@ -3,24 +3,24 @@ Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
 Type           : Worst-case tsu
-Slack          : 1.819 ns
+Slack          : 1.807 ns
 Required Time  : 8.000 ns
-Actual Time    : 6.181 ns
+Actual Time    : 6.193 ns
 From           : SD_CMD
-To             : AUDIO_SOPC:sopc_inst|SDCARD:the_SDCARD|Altera_UP_SD_Card_Avalon_Interface:sdcard|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Response_Receiver:response_receiver|registered_data_input[0]
+To             : AUDIO_SOPC:sopc_inst|SDCARD:the_SDCARD|Altera_UP_SD_Card_Avalon_Interface:sdcard|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Response_Receiver:response_receiver|registered_data_input[43]
 From Clock     : --
 To Clock       : CLOCK_50
 Failed Paths   : 0
 
 Type           : Worst-case tco
-Slack          : -3.992 ns
+Slack          : -3.954 ns
 Required Time  : 8.000 ns
-Actual Time    : 11.992 ns
-From           : top_level_fsm:fsm|state[1]~_Duplicate_1
-To             : HEX2[6]
+Actual Time    : 11.954 ns
+From           : top_level_fsm:fsm|state[2]~_Duplicate_1
+To             : mtne_flags[5]
 From Clock     : CLOCK_50
 To Clock       : --
-Failed Paths   : 357
+Failed Paths   : 404
 
 Type           : Worst-case tpd
 Slack          : N/A
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.200 ns
+Actual Time    : 3.124 ns
 From           : altera_internal_jtag~TDIUTAP
 To             : sld_hub:auto_hub|jtag_ir_reg[9]
 From Clock     : --
@@ -43,21 +43,21 @@ To Clock       : altera_internal_jtag~TCKUTAP
 Failed Paths   : 0
 
 Type           : Clock Setup: 'CLOCK_50'
-Slack          : 1.642 ns
+Slack          : 1.880 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
 Actual Time    : N/A
-From           : AUDIO_SOPC:sopc_inst|AUDIO_SOPC_clock_0:the_AUDIO_SOPC_clock_0|AUDIO_SOPC_clock_0_slave_FSM:slave_FSM|slave_read_request
-To             : AUDIO_SOPC:sopc_inst|AUDIO_SOPC_clock_0:the_AUDIO_SOPC_clock_0|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1
+From           : AUDIO_SOPC:sopc_inst|AUDIO_SOPC_clock_0:the_AUDIO_SOPC_clock_0|AUDIO_SOPC_clock_0_slave_FSM:slave_FSM|slave_write_request
+To             : AUDIO_SOPC:sopc_inst|AUDIO_SOPC_clock_0:the_AUDIO_SOPC_clock_0|altera_std_synchronizer:the_altera_std_synchronizer3|din_s1
 From Clock     : AUDIO_SOPC:sopc_inst|clocks_0:the_clocks_0|altpll:DE_Clock_Generator_System|_clk0
 To Clock       : CLOCK_50
 Failed Paths   : 0
 
 Type           : Clock Setup: 'AUDIO_SOPC:sopc_inst|clocks_0:the_clocks_0|altpll:DE_Clock_Generator_System|_clk0'
-Slack          : 7.559 ns
+Slack          : 7.098 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
-Actual Time    : 80.38 MHz ( period = 12.441 ns )
-From           : AUDIO_SOPC:sopc_inst|sdram_0:the_sdram_0|sdram_0_input_efifo_module:the_sdram_0_input_efifo_module|rd_address
-To             : AUDIO_SOPC:sopc_inst|sdram_0:the_sdram_0|m_addr[3]
+Actual Time    : 77.51 MHz ( period = 12.902 ns )
+From           : AUDIO_SOPC:sopc_inst|cpu_0:the_cpu_0|d_byteenable[1]
+To             : AUDIO_SOPC:sopc_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|dbs_8_reg_segment_0[0]
 From Clock     : AUDIO_SOPC:sopc_inst|clocks_0:the_clocks_0|altpll:DE_Clock_Generator_System|_clk0
 To Clock       : AUDIO_SOPC:sopc_inst|clocks_0:the_clocks_0|altpll:DE_Clock_Generator_System|_clk0
 Failed Paths   : 0
@@ -65,19 +65,19 @@ Failed Paths   : 0
 Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 120.25 MHz ( period = 8.316 ns )
-From           : sld_hub:auto_hub|irsr_reg[2]
+Actual Time    : 96.97 MHz ( period = 10.312 ns )
+From           : sld_hub:auto_hub|irsr_reg[0]
 To             : sld_hub:auto_hub|tdo
 From Clock     : altera_internal_jtag~TCKUTAP
 To Clock       : altera_internal_jtag~TCKUTAP
 Failed Paths   : 0
 
 Type           : Clock Hold: 'CLOCK_50'
-Slack          : 0.091 ns
+Slack          : 0.201 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
 Actual Time    : N/A
-From           : top_level_fsm:fsm|motor_control:motor1|RCServo:servo_m|ClkTick
-To             : top_level_fsm:fsm|motor_control:motor1|RCServo:servo_m|ClkCount[6]
+From           : top_level_fsm:fsm|disp_x_token:green_tokens|RCServo:rc1|ClkCount[0]
+To             : top_level_fsm:fsm|disp_x_token:green_tokens|RCServo:rc1|ClkTick
 From Clock     : CLOCK_50
 To Clock       : CLOCK_50
 Failed Paths   : 0
@@ -100,7 +100,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 357
+Failed Paths   : 404
 
 --------------------------------------------------------------------------------------
 
