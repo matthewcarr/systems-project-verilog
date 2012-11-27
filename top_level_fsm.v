@@ -284,9 +284,9 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	//instantiate motor control
 	motor_control	#(
 		.wait_time	(12'd4),		//time to wait while driving motor
-		.m_up		(8'hff),		//drive the motor 'up'
-		.m_down		(8'h0f),		//drive the motor 'down'
-		.m_halt		(8'h50)			//stop the motor
+		.m_up		(8'h00),		//drive the motor 'up'
+		.m_down		(8'hff),		//drive the motor 'down'
+		.m_halt		(8'h17)			//stop the motor
 		)
 	motor1	(
 		.reset		(reset),		//reset signal

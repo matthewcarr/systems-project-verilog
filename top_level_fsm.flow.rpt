@@ -1,5 +1,5 @@
 Flow report for top_level_fsm
-Tue Nov 27 17:56:42 2012
+Tue Nov 27 20:01:54 2012
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 27 17:56:42 2012        ;
+; Flow Status                        ; Successful - Tue Nov 27 20:01:54 2012        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; top_level_fsm                                ;
 ; Top-level Entity Name              ; wrapper                                      ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                             ; EP2C20F484C7                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 5,474 / 18,752 ( 29 % )                      ;
-;     Total combinational functions  ; 4,913 / 18,752 ( 26 % )                      ;
+; Total logic elements               ; 5,473 / 18,752 ( 29 % )                      ;
+;     Total combinational functions  ; 4,922 / 18,752 ( 26 % )                      ;
 ;     Dedicated logic registers      ; 2,999 / 18,752 ( 16 % )                      ;
 ; Total registers                    ; 3148                                         ;
 ; Total pins                         ; 152 / 315 ( 48 % )                           ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2012 17:53:57 ;
+; Start date & time ; 11/27/2012 19:58:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_level_fsm       ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 124711107512.135403883602620                                                                                           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 124711107512.135404632605156                                                                                           ; --            ; --          ; --             ;
 ; HDL_MESSAGE_LEVEL                  ; Level1                                                                                                                 ; Level2        ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 2-PORT                                                                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 8.0                                                                                                                    ; --            ; --          ; --             ;
@@ -102,11 +102,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:01:00     ; 1.0                     ; 269 MB              ; 00:01:03                           ;
-; Fitter                  ; 00:01:28     ; 1.0                     ; 261 MB              ; 00:01:30                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 222 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:06     ; 1.0                     ; 191 MB              ; 00:00:07                           ;
-; Total                   ; 00:02:37     ; --                      ; --                  ; 00:02:43                           ;
+; Analysis & Synthesis    ; 00:01:05     ; 1.0                     ; 268 MB              ; 00:01:06                           ;
+; Fitter                  ; 00:01:43     ; 1.0                     ; 261 MB              ; 00:01:40                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 222 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:07     ; 1.0                     ; 191 MB              ; 00:00:07                           ;
+; Total                   ; 00:02:59     ; --                      ; --                  ; 00:02:56                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

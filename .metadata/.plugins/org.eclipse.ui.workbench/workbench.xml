@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" minimized="true" width="1024" x="66" y="4">
+<window height="768" maximized="true" width="1024" x="66" y="4">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -35,7 +35,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" partName="hello_world.c" path="D:/Docs/documents/docs/GitHub/systems-project-verilog/software/Audio/hello_world.c" title="hello_world.c" tooltip="Audio/hello_world.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Audio/hello_world.c"/>
-<editorState selectionLength="0" selectionOffset="4334"/>
+<editorState selectionLength="0" selectionOffset="4409"/>
 </editor>
 </editors>
 <views>

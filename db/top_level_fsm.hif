@@ -12673,9 +12673,6 @@ m_down
 PARAMETER_UNSIGNED_BIN
 USR
 }
-# hierarchies {
-top_level_fsm:fsm|motor_control:motor1
-}
 # macro_sequence
 
 # end
@@ -12769,7 +12766,7 @@ ON
 # case_sensitive
 # source_file
 top_level_fsm.v
-6aa97a5b12eea9e851af4e1b94e61fd
+41cb178a276e60ef9aac3244c9c83ab7
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -12789,6 +12786,60 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 top_level_fsm:fsm
+}
+# macro_sequence
+
+# end
+# entity
+motor_control
+# storage
+db|top_level_fsm.(136).cnf
+db|top_level_fsm.(136).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+motor_control.v
+8348af2945fb267d582d173038cce1
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+wait_time
+000000000100
+PARAMETER_UNSIGNED_BIN
+USR
+m_up
+00000000
+PARAMETER_UNSIGNED_BIN
+USR
+m_halt
+00010111
+PARAMETER_UNSIGNED_BIN
+USR
+m_down
+11111111
+PARAMETER_UNSIGNED_BIN
+USR
+}
+# hierarchies {
+top_level_fsm:fsm|motor_control:motor1
 }
 # macro_sequence
 

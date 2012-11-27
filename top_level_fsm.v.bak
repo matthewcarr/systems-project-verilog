@@ -13,7 +13,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	output txbusy,				//transmitter is busy
 	output [4:0] pwm,			//pwm signals for servos and motor
 	output reg [5:0] led_out,	//LED outputs
-	output [2:0] sound_ID_out,
+	output [3:0] sound_ID_out,
 	output start_sound_out,
 	output [5:0] mtne_flags 
 	);
@@ -74,7 +74,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg mtne_servo3_clk;
 	reg mtne_servo_lid_clk;
 	reg mtne_motor_clk;
-	reg [2:0]sound_ID_clk;
+	reg [3:0]sound_ID_clk;
 	
 	//wires for module instantiations
 	wire [7:0]w_serial_data; 	//wire to connect to the reciver
@@ -286,7 +286,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.wait_time	(12'd4),		//time to wait while driving motor
 		.m_up		(8'hff),		//drive the motor 'up'
 		.m_down		(8'h0f),		//drive the motor 'down'
-		.m_halt		(8'h50)			//stop the motor
+		.m_halt		(8'h17)			//stop the motor
 		)
 	motor1	(
 		.reset		(reset),		//reset signal
@@ -1832,7 +1832,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			sound_ID_clk <= 6'd0;
 		end else if (set_sound===1'b1) begin
 			//sound_ID_clk = 6'd0;
-			sound_ID_clk <= arg1_clk[2:0];
+			sound_ID_clk <= arg1_clk[3:0];
 		end else begin
 			sound_ID_clk <= sound_ID_clk;
 			end
