@@ -13,9 +13,9 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	output txbusy,				//transmitter is busy
 	output [4:0] pwm,			//pwm signals for servos and motor
 	output reg [5:0] led_out,	//LED outputs
-	output [3:0] sound_ID_out,
-	output start_sound_out,
-	output [5:0] mtne_flags 
+	output [3:0] sound_ID_out,	//output sound to NIOS II sound control
+	output start_sound_out,		//start playing sound
+	output [5:0] mtne_flags 	//output maintenance flags
 	);
 
 	reg [7:0]serial_in; 	//register to store the value of the most recent valid command from the RS232
@@ -47,14 +47,20 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg servo_lid_mtne_up;
 	reg motor_mtne_up;
 	
-	//set maintenance mode for servos and motor
+	//set maintenance mode for servos, motor and LEDs
 	reg mtne_servo1;		
 	reg mtne_servo2;
 	reg mtne_servo3;
 	reg mtne_servo_lid;
 	reg mtne_motor;
 	reg mled;				//LED maintenance, sets all LEDs high
+	reg mtne_servo1_clk;
+	reg mtne_servo2_clk;
+	reg mtne_servo3_clk;
+	reg mtne_servo_lid_clk;
+	reg mtne_motor_clk;
 	reg mled_clk;
+	
 	reg tran_trig;			//allow transmission
 	reg tran_trig_clk;		
 	reg [7:0]trans_word_clk;
@@ -69,11 +75,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	reg servo_anim_clk;
 	reg motor_anim;			//motor (mouth) enable
 	reg motor_anim_clk;
-	reg mtne_servo1_clk;
-	reg mtne_servo2_clk;
-	reg mtne_servo3_clk;
-	reg mtne_servo_lid_clk;
-	reg mtne_motor_clk;
 	reg [3:0]sound_ID_clk;
 	
 	//wires for module instantiations
@@ -97,7 +98,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	//assign  w_data_ready 	= 	data_trig;			//overrides the receiver, used for debugging
 	//assign  w_serial_data 	= 	data;				//overrides the receiver, used for debugging
 	assign  serial_return 	= 	w_serial_out;		//serial data out
-	assign  txbusy 			= 	w_trans_busy;	//transmission busy
+	assign  txbusy 			= 	w_trans_busy;		//transmission busy
 	assign	state_out 		= 	state;				//output current state, used for debugging
 	assign  w_all_done 		= 	(w_red_done && w_blue_done && w_green_done);		//all servo modules are done processing
 	assign  pwm[0] 			= 	w_pwm_red;			//pin l18, pwm for red dispense servo
@@ -107,7 +108,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 	assign	pwm[4]			=	w_pwm_motor;		//pin j20, pwm for mouth motor
 	assign  start_sound_out = 	start_sound_clk;
 	assign	sound_ID_out	=	sound_ID_clk;
-	assign  mtne_flags[0]	=	mtne_servo1;
+	assign  mtne_flags[0]	=	mtne_servo1;		//assign maintenance flags to output for debugging
 	assign  mtne_flags[1]	=	mtne_servo2;
 	assign  mtne_flags[2]	=	mtne_servo3;
 	assign  mtne_flags[3]	=	mtne_servo_lid;
@@ -149,19 +150,18 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 				s_sound_txvb =	6'd31,		//transmit verb
 				s_sound_buffer =6'd32,		//extra state to buffer sound for longer
 				s_wt_fresp 	= 	6'd33,		//wait for transmission to finish
-				s_confirm 	= 	6'd34,
-				s_sound_buffer2 =6'd35,
+				s_confirm 	= 	6'd34,		//respond with dispense done
+				s_sound_buffer2 =6'd35,		//sound buffers, allow time for sound to buffer to play
 				s_sound_buffer3 =6'd36,
 				s_sound_buffer4 =6'd37,
 				s_sound_buffer5 =6'd38,
 				s_sound_buffer6 =6'd39,
 				s_sound_buffer7 =6'd40,
 				s_sound_buffer8 =6'd41,
-				s_sound_buffer9 =6'd42,		//respond with dispense done
-				s_init2_tran	=6'd43,
+				s_sound_buffer9 =6'd42,		
+				s_init2_tran	=6'd43,		//second initialise transmit, lowers chance of mbed detecting an init packet by noise
 				s_wt_ftran2		=6'd44;	
 				
-
 	//verb list
 	localparam  v_ping 	= 	8'd2,		//ping verb, will respond with pong
 				v_mtne 	= 	8'd3,		//start maintenance, allows direct hardware control
@@ -186,9 +186,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 				m_motor 	= 	8'd5,	//maintenance of motor
 				m_leds 		= 	8'd6;	//maintenance of LEDs
 
-
 	//instantiate the transmitter/reciver
-	
 	async_receiver #(
 		.ClkFrequency(50000000), 		//clock frequency
 		.Baud(115200)					//baud rate of receiver (must be same as mbed transmitter)
@@ -199,7 +197,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.RxD_data_ready(w_data_ready), 	//data ready to be read
 		.RxD_data(w_serial_data)		//8 bit data to be read
 		);
-	
 	
 	async_transmitter #(
 		.ClkFrequency(50000000), 		//clock frequency
@@ -213,7 +210,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.TxD_busy(w_trans_busy)			//transmission is busy
 		);
 	
-		
 	//instatiate the led_controller
 	led_control		led	(
 		.led_enable(led_en), 	//LED enables
@@ -222,6 +218,12 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 		.mtne_mode(mled), 		//maintenance enable, switches all LEDs on
 		.led_output(w_led_out)	//LED outputs
 		);
+	
+	//instantiate the seven segment displays
+	hexdisplay h1 (verb, HEX3[6:0] );
+	hexdisplay h2 (arg1, HEX2[6:0] );
+	hexdisplay h3 (arg2, HEX1[6:0] );
+	hexdisplay h4 (arg3, HEX0[6:0] );
 	
 	//instatiate the 3 token dispensers
 	disp_x_token  #(
@@ -326,106 +328,103 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							nxt_state <=s_init_tran;	//move to announce state to respond with r_init
 						end
 			s_init_tran:begin
-							nxt_state <=s_wt_ftran;	//move to wait for transmission to respond with r_ack
+							nxt_state <=s_wt_ftran;		//move to wait for transmission of first init byte
 						end					
 			s_wt_ftran: begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//check if busy transmitting
 								nxt_state <=s_wt_ftran;								//if so, stay in state
 							end else begin
-								nxt_state <=s_init2_tran;								//go to 
+								nxt_state <=s_init2_tran;								//go to transmit next init vyte
 							end
 						end
 			s_init2_tran:begin
-							nxt_state <=s_wt_ftran2;	//move to wait for transmission to respond with r_ack
+							nxt_state <=s_wt_ftran2;	//move to wait for transmission to respond with r_ack or second init byte
 						end					
 			s_wt_ftran2: begin
 							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//check if busy transmitting
 								nxt_state <=s_wt_ftran2;								//if so, stay in state
 							end else begin
-								nxt_state <=s_wt_verb;								//go to 
+								nxt_state <=s_wt_verb;								//go to for verb
 							end
 						end
 			s_wt_verb: 	begin
-							if(w_data_ready===1'b1) begin
-								nxt_state <=s_wt_arg1;
+							if(w_data_ready===1'b1) begin				//if data is ready to be read
+								nxt_state <=s_wt_arg1;					//read data and advance to read argument 1
 							end else begin
-								nxt_state <=s_wt_verb;
+								nxt_state <=s_wt_verb;					//else wait in verb
 							end
 						end				
 			s_wt_arg1:	begin
-							if(w_data_ready===1'b1) begin
-								nxt_state <=s_wt_arg2;
+							if(w_data_ready===1'b1) begin				//if data is ready to be read
+								nxt_state <=s_wt_arg2;					//read data and advance to read argument 2
 							end else begin
-								nxt_state <=s_wt_arg1;
+								nxt_state <=s_wt_arg1;					//else wait in verb
 							end
 						end			
 			s_wt_arg2:	begin
-							if(w_data_ready===1'b1) begin
-								nxt_state <=s_wt_arg3;
+							if(w_data_ready===1'b1) begin				//if data is ready to be read
+								nxt_state <=s_wt_arg3;					//read data and advance to read argument 3
 							end else begin
-								nxt_state <=s_wt_arg2;
+								nxt_state <=s_wt_arg2;					//else wait in state
 							end
 						end					
 			s_wt_arg3:	begin
-							if(w_data_ready===1'b1) begin
-								nxt_state <=s_decode;
+							if(w_data_ready===1'b1) begin				//if data is ready to be read
+								nxt_state <=s_decode;					//read data and advance to decode the verb
 							end else begin
-								nxt_state <=s_wt_arg3;
+								nxt_state <=s_wt_arg3;					//else wait in state
 							end
 						end					
-			s_decode:	begin
-							case(verb)
-							0:		begin
-									nxt_state <= s_wt_verb;
-									end
+			s_decode:	begin										//decode the verb, changing state based on verb data
+							case(verb)								
 							1:		begin
-									nxt_state <= s_reset;
+									nxt_state <= s_reset;		//reset
 									end
 							v_ping: begin
-									nxt_state <= s_ping;
+									nxt_state <= s_ping;		//ping
 									end
 							v_go:	begin
-									nxt_state <= s_disp;
+									nxt_state <= s_disp;		//dispense
 									end
 							v_mtne:	begin
-									nxt_state <= s_mtne;
+									nxt_state <= s_mtne;		//maintenance
 									end
 							v_sound: begin
-									 nxt_state <= s_sound;
+									 nxt_state <= s_sound;		//sound
 									 end
 							v_anim:	begin
-									nxt_state <= s_anim;
+									nxt_state <= s_anim;		//animatronics
 									end
 							default: begin
-									nxt_state <= s_wt_verb;
+									nxt_state <= s_wt_verb;		//else retrieve for new data
 									end
 							endcase
 						end
 			s_ping:		begin
-						nxt_state <= s_wt_ftran2;
+							nxt_state <= s_wt_ftran2;				//respond to the ping and go to wait for transmission to finish
 						end
 			s_disp:		begin
-						nxt_state <= s_disp_tran;
+							nxt_state <= s_disp_tran;				//transmit verb acknowledgement
 						end
 			s_disp_tran:begin
-						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_disp_tran;
+						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		//if busy transmitting
+								nxt_state <=s_disp_tran;							//wait in state
 							end else begin
-								nxt_state <=s_disp_txvb;
+								nxt_state <=s_disp_txvb;							//else go to transmit verb
 							end	
 						end
 			s_disp_txvb:begin
-						 nxt_state <=s_wt_disp;
+							nxt_state <=s_wt_disp;				//wait for dispensing to finish
 						end				
 			s_wt_disp:	begin
-							if (w_all_done===1'b1) begin
-								nxt_state <=s_wt_fresp;
+							if (w_all_done===1'b1) begin	//if dispensing is finished
+								nxt_state <=s_wt_fresp;		//wait for done to transmit
 							end else begin
-								nxt_state <=s_wt_disp;
+								nxt_state <=s_wt_disp;		//else wait in state
 							end
 						end
 			s_sound:	begin
-							nxt_state <= s_sound_buffer;
+							nxt_state <= s_sound_buffer;	//start to buffer sound
 						end
 		s_sound_buffer:	begin
 							nxt_state <= s_sound_buffer2;
@@ -456,46 +455,46 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						end
 
 			s_sound_tran:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_sound_tran;
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//if busy transmitting ack
+									nxt_state <=s_sound_tran;						//wait in state
 								end else begin
-									nxt_state <=s_sound_txvb;
+									nxt_state <=s_sound_txvb;						//else go to transmit sound verb
 								end	
 							end
 			s_sound_txvb: 	begin
-								nxt_state <= s_wt_ftran2;
+								nxt_state <= s_wt_ftran2;			//go to wait for transmit to finish
 							end
 
-			s_mtne:		begin
-							case(arg1_clk)
+			s_mtne:		begin										//perform maintenance tasks
+							case(arg1_clk)							//enter state based on argument 1
 							m_clear:	begin
-										nxt_state <= s_mclear;
+										nxt_state <= s_mclear;		//clear maintenance mode
 										end
 							m_servo1:	begin
-										nxt_state <= s_mservo1;
+										nxt_state <= s_mservo1;		//perform maintenance on servo 1
 										end
 							m_servo2:	begin
-										nxt_state <= s_mservo2;
+										nxt_state <= s_mservo2;		//perform maintenance on servo 2
 										end
 							m_servo3:	begin
-										nxt_state <= s_mservo3;
+										nxt_state <= s_mservo3;		//perform maintenance on servo 4
 										end
-							m_servo_lid:	begin
-										nxt_state <= s_mservo_lid;
+							m_servo_lid:begin
+										nxt_state <= s_mservo_lid;	//perform maintenance on lid servo
 										end
 							m_motor:	begin
-										nxt_state <= s_m_motor;
+										nxt_state <= s_m_motor;		//perform maintenance on motor
 										end
 							m_leds: 	begin
-										nxt_state <= s_mled;
+										nxt_state <= s_mled;		//perform maintenance on LEDs
 										end
 							default:	begin
-										nxt_state <= s_wt_verb;
+										nxt_state <= s_wt_verb;		//no device selected, retrieve new data
 										end
 							endcase
 						end
 			s_mclear:	begin
-							nxt_state <= s_mservo_tran;
+							nxt_state <= s_mservo_tran;		//go to wait for acknowledgement response to finish
 						end
 			s_mservo1:	begin
 							nxt_state <= s_mservo_tran;
@@ -513,85 +512,34 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							nxt_state <= s_mservo_tran;
 						end
 			s_mservo_tran:begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_mservo_tran;
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//if busy transmitting
+									nxt_state <=s_mservo_tran;						//wait in state
 								end else begin
-									nxt_state <=s_mservo_txvb;
+									nxt_state <=s_mservo_txvb;						//else go to transmit maintenance verb
 								end	
 							end
 			s_mservo_txvb:begin
-							nxt_state <=s_wt_verb;
+							nxt_state <=s_wt_verb;			//retrieve new data
 							end				
-//			s_wt_mservo:	begin
-////							if (arg2_clk[0]===1'b0) begin
-////								nxt_state <=s_wt_fresp;
-////							end else begin
-////								nxt_state <=s_wt_mservo;
-////							end
-//							nxt_state <=s_wt_verb;
-//							end
 			s_mled:		begin
-						nxt_state <= s_mled_tran;
+							nxt_state <= s_mled_tran;			//go to wait for acknowledge response to finish
 						end
 			s_mled_tran:begin
-						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-								nxt_state <=s_mled_tran;
+						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	//if busy transmitting
+								nxt_state <=s_mled_tran;						//wait in state
 							end else begin
-								nxt_state <=s_mled_txvb;
+								nxt_state <=s_mled_txvb;						//else go to transmit maintenance verb
 							end	
 						end
 			s_mled_txvb:begin
-						 nxt_state <=s_wt_verb;
+							nxt_state <=s_wt_verb;		//retrieve new data
 						end				
-
 			s_anim:		begin
-							nxt_state <= s_anim_tran;
+							nxt_state <= s_anim_tran;	//go to wait for acknowledgement response to finish
 						end
-//			s_aleds:		begin
-//							nxt_state <= s_aleds_tran;
-//						end
-//			s_aleds_tran:begin
-//						if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-//								nxt_state <=s_aleds_tran;
-//							end else begin
-//								nxt_state <=s_aleds_txvb;
-//							end	
-//						end
-//			s_aleds_txvb:begin
-//						 nxt_state <=s_wt_verb;
-//						end				
-//			s_wt_aleds:	begin
-////							if (arg2_clk[0]===1'b0) begin
-////								nxt_state <=s_wt_fresp;
-////							end else begin
-////								nxt_state <=s_wt_aleds;
-////							end
-//							nxt_state <=s_wt_verb;
-//						end
-//			s_aservos:	begin
-//							nxt_state <= s_aservos_tran;
-//						end
-//			s_aservos_tran:begin
-//							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-//									nxt_state <=s_aservos_tran;
-//								end else begin
-//									nxt_state <=s_aservos_txvb;
-//							end	
-//						end
-//			s_aservos_txvb:begin
-//						 nxt_state <=s_wt_verb;
-//						end				
-//			s_wt_aservos:	begin
-////							if (arg2_clk[0]===1'b0) begin
-////								nxt_state <=s_wt_fresp;
-////							end else begin
-////								nxt_state <=s_wt_aservos;
-////							end
-//							nxt_state <=s_wt_verb;
-//							end
 			s_anim_tran:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin
-									nxt_state <=s_anim_tran;
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin	
+									nxt_state <=s_anim_tran;						
 								end else begin
 									nxt_state <=s_anim_txvb;
 								end	
@@ -599,8 +547,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			s_anim_txvb:	begin
 								nxt_state <=s_wt_verb;
 							end		
-			s_wt_fresp:	begin
-							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		//this state will probably not be used as it has been decide not to send done after every command
+			s_wt_fresp:	begin														//transmit for dispense done signal
+							if(w_trans_busy===1'b1 || tran_trig_clk===1'b1) begin		
 								nxt_state <=s_wt_fresp;
 							end else begin
 								nxt_state <=s_confirm;
@@ -610,7 +558,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 							nxt_state <= s_wt_ftran2;
 						end
 			default:	begin
-							nxt_state <=reset;
+							nxt_state <=s_reset;		//if invalid state, respond with error and reset
 						end
 			endcase
 		end
@@ -767,7 +715,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 						end				
-			s_wt_verb:begin
+			s_wt_verb:begin										//read verb to store in next state
 						verb =0;
 						arg1 =0;
 						arg2 =0;
@@ -792,7 +740,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 						end					
-			s_wt_arg1:begin
+			s_wt_arg1:begin										//verb is stored and next argument is read
 						verb =serial_in;
 						arg1 =0;
 						arg2 =0;
@@ -1228,32 +1176,6 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 					   end
-//			s_sound_buffer: begin
-//						verb =verb_clk;
-//						arg1 =arg1_clk;
-//						arg2 =arg2_clk;
-//						arg3 =arg3_clk; 
-//						start_disp=1'b0;
-//						tran_trig=1'b0;
-//						trans_word=8'd0;
-//						start_disp=1'b0;
-//						start_led = 1'b0;
-//						set_sound = 1'b0;
-//						start_sound = 1'b1;
-//						servo_anim = servo_anim_clk;
-//						motor_anim = motor_anim_clk;
-//						mled = mled_clk;
-//						mtne_servo1 = mtne_servo1_clk;
-//						mtne_servo2 = mtne_servo2_clk;
-//						mtne_servo3 = mtne_servo3_clk;
-//						mtne_servo_lid = mtne_servo_lid_clk;
-//						mtne_motor = mtne_motor_clk;
-//						servo1_mtne_up = 1'b0;
-//						servo2_mtne_up = 1'b0;
-//						servo3_mtne_up = 1'b0;
-//						servo_lid_mtne_up = 1'b0;
-//						motor_mtne_up = 1'b0;
-//						end
 			s_disp:	begin
 						verb =verb_clk;
 						arg1 =arg1_clk;
@@ -1368,8 +1290,8 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						start_led = 1'b1;
 						set_sound = 1'b0;
 						start_sound = 1'b0;
-						servo_anim = arg1_clk[6];
-						motor_anim = arg1_clk[7];		
+						servo_anim = arg1_clk[6];		//set position flag of lid servo
+						motor_anim = arg1_clk[7];		//set direction of motor
 						mled = mled_clk;
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
@@ -1459,7 +1381,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 						end
-			s_mclear:	begin
+			s_mclear:	begin					//clear all maintenance flags
 						tran_trig=1'b1;
 						verb =verb_clk;
 						arg1 =arg1_clk;
@@ -1498,12 +1420,12 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
 						mled = mled_clk;
-						mtne_servo1 = 1'b1;
+						mtne_servo1 = 1'b1;					//set maintenance mode of servo 1
 						mtne_servo2 = mtne_servo2_clk;
 						mtne_servo3 = mtne_servo3_clk;
 						mtne_servo_lid = mtne_servo_lid_clk;
 						mtne_motor = mtne_motor_clk;
-						servo1_mtne_up = 1'b1;
+						servo1_mtne_up = 1'b1;				//update maintenance position of servo 1
 						servo2_mtne_up = 1'b0;
 						servo3_mtne_up = 1'b0;
 						servo_lid_mtne_up = 1'b0;
@@ -1674,7 +1596,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						start_sound = 1'b0;
 						servo_anim = servo_anim_clk;
 						motor_anim = motor_anim_clk;
-						mled = arg2_clk[0];
+						mled = arg2_clk[0];				//set maintenance of LEDs on or off
 						mtne_servo1 = mtne_servo1_clk;
 						mtne_servo2 = mtne_servo2_clk;
 						mtne_servo3 = mtne_servo3_clk;
@@ -1788,7 +1710,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 						servo_lid_mtne_up = 1'b0;
 						motor_mtne_up = 1'b0;
 						end
-			default: 	begin
+			default: 	begin				//clear everything and transmit error
 						verb =8'd0;
 						arg1 =8'd0;
 						arg2 =8'd0;
@@ -1818,23 +1740,22 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 
 	always @(posedge clk50m or negedge reset) begin		//controls led module inputs
 		if (reset ===1'b0) begin
-			led_en[5:0] = 6'd0;
-		end else if (start_led===1'b1) begin
-			led_en[5:0] = 6'd0;
-			led_en[5:0] = arg1_clk[5:0];
+			led_en[5:0] = 6'd0;							//if resest clear LED enables
+		end else if (start_led===1'b1) begin			//if LEDs are to be started
+			led_en[5:0] = 6'd0;							//clear old value, prevents LEDs holding values
+			led_en[5:0] = arg1_clk[5:0];				//set LEDs
 		end else begin
-			led_en[5:0] = led_en[5:0];
+			led_en[5:0] = led_en[5:0];					//hold old values
 			end
 		end
 
-	always @(posedge clk50m or negedge reset) begin
+	always @(posedge clk50m or negedge reset) begin		//controls sound ID setting
 		if (reset ===1'b0) begin
-			sound_ID_clk <= 6'd0;
+			sound_ID_clk <= 6'd0;						//clear sound ID
 		end else if (set_sound===1'b1) begin
-			//sound_ID_clk = 6'd0;
-			sound_ID_clk <= arg1_clk[3:0];
+			sound_ID_clk <= arg1_clk[3:0];				//set sound ID
 		end else begin
-			sound_ID_clk <= sound_ID_clk;
+			sound_ID_clk <= sound_ID_clk;				//hold old value
 			end
 		end
 
@@ -1847,6 +1768,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			motor_pos = 8'd0;
 		//if any of the maintenance values are to be updated
 		end else if (servo1_mtne_up===1'b1 || servo2_mtne_up===1'b1 || servo3_mtne_up===1'b1 ||servo_lid_mtne_up===1'b1 ||motor_mtne_up===1'b1) begin
+			//set servo/motor position for chosen servo/motor
 			if (servo1_mtne_up===1'b1) begin
 				servo_pos1 = arg2_clk;
 				servo_pos2 = servo_pos2;
@@ -1902,7 +1824,7 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			end
 	end
 
-	always @ (posedge clk50m or negedge reset) begin		//clock variables to prevent reading wrong data on transitions
+	always @ (posedge clk50m or negedge reset) begin		//clock variables to prevent issues with variables changing during state transitions
 		if (reset===1'b0) begin
 			verb_clk=8'd0;
 			arg1_clk=8'd0;
@@ -1941,11 +1863,5 @@ module top_level_fsm ( 			//will need inputs of a clock, reset, datain and outpu
 			start_sound_clk = start_sound;
 		end
 	end
-
-
-	hexdisplay h1 (verb, HEX3[6:0] );
-	hexdisplay h2 (arg1, HEX2[6:0] );
-	hexdisplay h3 (arg2, HEX1[6:0] );
-	hexdisplay h4 (arg3, HEX0[6:0] );
 
 	endmodule 

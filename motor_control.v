@@ -1,18 +1,18 @@
 module motor_control (
-	input reset,
-	input clk_50,
-	input direct,
-	output pwm
+	input reset,		//reset, held high when not reset
+	input clk_50,		//50 Mhz clock
+	input direct,		//direction of motor
+	output pwm			//output pwm signal for motor
 	);
 
 	reg [2:0] state /* synthesis keep */;   //registers for the state and next state
 	reg [2:0] nxt_state;
-	reg last_direct;  //register to store the last direction sent before current 1
+	reg last_direct;  		//register to store the last direction sent before current 1
 	reg last_direct_clk/*synthesis keep*/;
-	reg [7:0]motor_pos;    //registers for the motor potion and the clked version to be passed
+	reg [7:0]motor_pos;    	//registers for the motor potion and the clked version to be passed
 	reg [7:0]motor_pos_clk/*synthesis keep*/;
-	reg [11:0]counter;		// this is the counter to store the current timer
-	reg counter_en;
+	reg [11:0]counter;		//this is the counter to store the current timer
+	reg counter_en;			//counter enable
 	reg counter_en_clk/*synthesis keep*/;
 
 	wire slow_clock;		//wire to move the slow clock to the counter
@@ -29,20 +29,31 @@ module motor_control (
 	localparam up			= 1'b1;
 	localparam down			= 1'b0;
 
-	parameter wait_time = 12'h004;   //the parameter that describes the wait time in milisecond
+	parameter wait_time = 12'h004;  //the parameter that describes the wait time in milisecond
 	parameter m_up= 8'hff;			//postion that cause servo to drive up
 	parameter m_halt = 8'h50;		//postion that halts the motor from turning
 	parameter m_down = 8'h0f;		//postion that drivers motor down
 
-	clk_div #(.clock_div(50000000)) s (.old_clock(clk_50),.reset(reset),.new_clock(slow_clock)); 
+	clk_div #(						//clock divider
+		.clock_div(50000000)		//division factor
+		) 
+	s 	(
+		.old_clock(clk_50),			//clock to be divided
+		.reset(reset),				//reset signal
+		.new_clock(slow_clock)		//returned divided clock signal
+		); 
 
-	RCServo servo_m(.clk(clk_50),.RxD_data(motor_pos_clk),.RCServo_pulse_out(w_pwm));
+	RCServo servo_m(				//create PWM for motor
+		.clk(clk_50),				//clock
+		.RxD_data(motor_pos_clk),	//motor position, determines direction of motor
+		.RCServo_pulse_out(w_pwm)	//pwm signal for motor
+		);
 
-	always@(posedge clk_50 or negedge reset) begin
+	always@(posedge clk_50 or negedge reset) begin	//on clock edge or reset trigger
 		if (reset===1'b0) begin
-			state<=s_reset;
+			state<=s_reset;			//set state to reset
 		end else begin
-			state<=nxt_state;
+			state<=nxt_state;		//set state to next state
 		end
 	end
 
@@ -52,7 +63,7 @@ module motor_control (
 							nxt_state<=s_init;  //when reset go to the init state next
 						end
 			s_init: 	begin
-							nxt_state<=s_wt_go; //once initilaised go to the wait for go 
+							nxt_state<=s_wt_go; //once initialised go to the wait for go
 						end
 			s_wt_go: 	begin
 							//if the direction is 1 and last_direction was not 1 and go is asserted move the shutter up
@@ -123,7 +134,6 @@ module motor_control (
 		endcase	
 	end
 
-
 	//at reset clear these vaules if not reset sync the data to a clock before sending out again
 	always @(posedge clk_50 or negedge reset) begin
 		if (reset===1'b0) begin
@@ -137,23 +147,16 @@ module motor_control (
 		end
 	end
 
-
-
-
-
 	//counter tht will count up when reset is asserted and an enble held high else 
 	//it clears
 	always@(posedge slow_clock or negedge reset or negedge counter_en_clk) begin
 		if (reset===1'b0) begin
-			counter = 12'd0;
+			counter = 12'd0;							//clear counter if reset
 		end else if(counter_en_clk===1'b0) begin
-			counter = 12'd0;
+			counter = 12'd0;							//clear counter if it is not enabled
 		end else if(counter_en_clk===1'b1) begin
-			counter = counter + 12'd1;
+			counter = counter + 12'd1;					//if counter is enabled, increment counter
 		end
 	end
-
-
-
 
 endmodule
